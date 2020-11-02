@@ -3,20 +3,23 @@
 }
 
 
+
+
+
+
+
+
+/* skills sec */
+
 #skill-sec{
-  background-color: #f3558e;
+  background-color: lightsalmon;
 }
 
-#container {
-  margin: 20px;
-  width: 200px;
-  height: 200px;
-  position: relative;
+.primary-skills .language{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: space-between;
 }
-
-
-
-
 
 
 

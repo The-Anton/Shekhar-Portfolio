@@ -10,14 +10,13 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!---------------------------- Fonts -------------------->
-    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <!----------------------------  CSS---------------------->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="stats.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
 
@@ -65,11 +64,6 @@
 
     <section id="home-sec" class="section">
      
-      
-    <div class="home">
-      <h1>Hello!!!</h1>
-    </div>
-      
     </section>
     <!---------------------------- End Home Section------------------------------------------->
 
@@ -84,11 +78,129 @@
     <!---------------------------- Start Skill Section------------------------------------------->
 
     <section id="skill-sec" class="section">
-    <div class="home">      
-      <h1>How Are You!!!</h1>
-      <div id="container"></div>
-    </div>
+    
+      <div class="row">
+        <div class="col-md-6">
+          <div class="primary-skills">
+            <div class="row">
+                  <div class="col-md-6 language">
+                    
+                        <div id="circleBar">
+                          <div class="round" data-size="100" data-thickness="6">
+                            <strong>
+                              <img src="https://img.icons8.com/ios-filled/50/000000/c-plus-plus-logo.png"/>      
+                            </strong>
+                          
+                            <span>
+                            </span>
+                          </div>
+                        </div>
+
+
+                        <div id="circleBar">
+                          <div class="round" data-size="100" data-thickness="6">
+                            <strong> <i class="fab fa-java fa-3x"></i>
+                  
+                            </strong>
+                            <span>
+                            </span>
+                          </div>
+                        </div>
+
+
+
+                        
+                        
+                        <div id="circleBar">
+                          <div class="round" data-size="100" data-thickness="6">
+                            <strong> <i class="fab fa-js fa-3x"></i>
+                  
+                            </strong>
+                            <span>
+                            </span>
+                          </div>
+                        </div>
+                  </div>
+
+                  <div class="col-md-6 language">
+                          <div id="circleBar">
+                            <div class="round" data-size="100" data-thickness="6">
+                              <strong> <img src="https://img.icons8.com/ios-filled/50/000000/python.png"/>
+                    
+                              </strong>
+                              <span>
+                              </span>
+                            </div>
+                          </div>
+
+                          <div id="circleBar">
+                            <div class="round" data-size="100" data-thickness="6">
+                              <strong> <img src="https://img.icons8.com/ios-filled/50/000000/kotlin.png"/>
+                    
+                              </strong>
+                              <span>
+                              </span>
+                            </div>
+                          </div>
+                        
+                          <div id="circleBar">
+                            <div class="round" data-size="100" data-thickness="6">
+                              <strong> <i class="fab fa-html5 fa-3x"></i> 
+                    
+                              </strong>
+                              <span>
+                              </span>
+                            </div>
+                          </div>
+                  
+                  </div>
+            </div>
+          </div>
+        </div>
       
+           
+        <div class="col-md-6">
+          <div class="secondary-skills">
+
+                          <div id="circleBar">
+                            <div class="round" data-size="100" data-thickness="6">
+                              <strong> <i class="fab fa-node-js fa-3x"></i>
+                    
+                              </strong>
+                              <span>
+                              </span>
+                            </div>
+                          </div>
+
+                          
+                          <div id="circleBar">
+                            <div class="round" data-size="100" data-thickness="6">
+                              <strong> <i class="fab fa-android fa-3x"></i>
+                    
+                              </strong>
+                              <span>
+                              </span>
+                            </div>
+                          </div>
+                          
+                        
+                          
+                          <div id="circleBar">
+                            <div class="round" data-size="100" data-thickness="6">
+                              <strong> <i class="fab fa-github fa-3x"></i>
+                    
+                              </strong>
+                              <span>
+                              </span>
+                            </div>
+                          </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    
     </section>
     <!---------------------------- End Skill Section------------------------------------------->
 
@@ -103,10 +215,8 @@
 
 
     <section id="projects-sec" class="section">
-    <div class="home">      
-      <h1>I'm Fine</h1>
-    </div>
-      
+  
+    
     </section>
 
 
@@ -183,9 +293,12 @@
 
 <!---------------------------- Start Bootstrap scripts------------------------------------------->
 
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+            
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js" ></script>
 
 <!---------------------------- End Bootstrap scripts------------------------------------------->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
@@ -194,42 +307,6 @@
 <script  src="stats.js"></script>
 
 
-<script>
-  // progressbar.js@1.0.0 version is used
-// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
-
-var bar = new ProgressBar.Circle(container, {
-    color: '#aaa',
-    // This has to be the same size as the maximum width to
-    // prevent clipping
-    strokeWidth: 4,
-    trailWidth: 1,
-    easing: 'easeInOut',
-    duration: 1400,
-    text: {
-      autoStyleContainer: false
-    },
-    from: { color: '#aaa', width: 1 },
-    to: { color: '#333', width: 4 },
-    // Set default step function for all animate calls
-    step: function(state, circle) {
-      circle.path.setAttribute('stroke', state.color);
-      circle.path.setAttribute('stroke-width', state.width);
-  
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText('');
-      } else {
-        circle.setText(value);
-      }
-  
-    }
-  });
-  bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-  bar.text.style.fontSize = '2rem';
-  
-  bar.animate(1.0);  // Number from 0.0 to 1.0
-</script>
 
 
 
