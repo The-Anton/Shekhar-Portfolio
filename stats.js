@@ -2,8 +2,9 @@
   function Circlle(el){
     $(el).circleProgress({  
 
-      fill:{color: '#fffff'},
-      value: 0.6
+      fill: {
+        gradient: ["red", "orange"]
+      }
 
     })
 	.on('circle-animation-progress', function(event ,progress, stepValue){
@@ -13,5 +14,8 @@
         );
     });
   };
+
+
+
 
   Circlle('.round');

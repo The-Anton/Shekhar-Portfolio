@@ -36,10 +36,10 @@
 /* circle 1 */
 
   #container #circle1 {
-    top: 15%;
+    top: 5%;
   }
   #container #circle1::before {
-    content: "2015";
+    content: "2018";
     color: white;
     position: absolute;
     left: 24px;
@@ -51,8 +51,8 @@
     position: absolute;
     border: 1.5px solid white;
     left: 100px;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 100px;
     color: white;
     padding: 10px;
     top: -10px;
@@ -63,11 +63,17 @@
   #container .circleshow1 {
     animation: circleShow 0.5s linear, breath 4s 3s infinite;
   }
+
+
+
+
+  /* circle 2 */
+
   #container #circle2 {
-    top: 40%;
+    top: 25%;
   }
   #container #circle2::before {
-    content: "2016";
+    content: "2019";
     color: white;
     position: absolute;
     left: -45px;
@@ -91,11 +97,19 @@
   #container .circleshow2 {
     animation: circleShow2 1s linear, breath 4s 3.2s infinite;
   }
+
+
+
+
+
+
+  /* circle 3 */
+
   #container #circle3 {
-    top: 65%;
+    top: 40%;
   }
   #container #circle3::before {
-    content: "2017";
+    content: "2019";
     color: white;
     position: absolute;
     left: 24px;
@@ -117,7 +131,6 @@
   }
   
 
-
   #container .circleshow3 {
     animation: circleShow3 1.5s linear, breath 4s 3.4s infinite;
   }
@@ -129,10 +142,89 @@
 
 
 
+
+
+  /* circle 4 */
+
+  #container #circle4 {
+    top: 60%;
+  }
+  #container #circle4::before {
+    content: "2019 - First Year";
+    color: white;
+    position: absolute;
+    left: 24px;
+    top: 1px;
+    opacity: 1;
+    animation: hide 3.4s, dateShow 1s 3.4s;
+  }
+  #container #circle4 #circle4content {
+    position: absolute;
+    border: 1.5px solid white;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    color: white;
+    padding: 10px;
+    top: -10px;
+    border-radius: 2px;
+    animation: hide 3.6s, dateShow 1s 3.6s;
+  }
+  
+
+  #container .circleshow4 {
+    animation: circleShow4 1.5s linear, breath 4s 3.4s infinite;
+  }
+  #container .breath {
+    animation: breath 3s infinite;
+  }
+  
+
+
+
+
+
+  /* circle 5 */
+
+  #container #circle5 {
+    top: 75%;
+  }
+  #container #circle5::before {
+    content: "2020 - Second Year";
+    color: white;
+    position: absolute;
+    left: 24px;
+    top: 1px;
+    opacity: 1;
+    animation: hide 3.4s, dateShow 1s 3.4s;
+  }
+  #container #circle5 #circle5content {
+    position: absolute;
+    border: 1.5px solid white;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    color: white;
+    padding: 10px;
+    top: -10px;
+    border-radius: 2px;
+    animation: hide 3.6s, dateShow 1s 3.6s;
+  }
+  
+
+  #container .circleshow5 {
+    animation: circleShow5 1.5s linear, breath 4s 3.4s infinite;
+  }
+  #container .breath {
+    animation: breath 3s infinite;
+  }
+  
+
+
+
+
   @keyframes lineShow {
-    0% {
-      height: 0%;
-    }
+    0% {height: 0%;}
     100% {
       height: 100%;
     }

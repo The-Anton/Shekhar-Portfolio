@@ -1,5 +1,6 @@
 #home-sec{
   background-color: yellow;
+  font-family: "Raleway", "Poppins";
 }
 .av-img{
   height: 400px;
@@ -18,6 +19,7 @@
 }
 
 .home{
+
  padding: 5rem;
 }
 .avatar-area{
@@ -32,8 +34,21 @@
 	transition: .3s ease-in;
 }
 
+#name{
+
+  font-size: 6vw;
+  font-weight: bolder;
+
+}
 
 
+/* Intro TypeIt.js */ 
+
+.myelement{
+ font-size: xx-large;
+ font-weight: 500;
+
+}
 
 
 
@@ -45,6 +60,8 @@
 
 #timeline-sec{
   background-color: #28c7fa;
+  font-family: "Raleway", "Poppins";
+
 }
 
 
@@ -57,6 +74,12 @@
 
 #skill-sec{
   background-color: white;
+  font-family: "Raleway", "Poppins";
+
+}
+
+.primary-skills {
+  margin: 5rem 2rem;
 }
 
 .primary-skills .language{
@@ -65,9 +88,19 @@
   justify-content: space-between;
 }
  .tools{
-  display: grid;
-  grid-template-columns: repeat(6,1fr);
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.secondary-skills {
+  margin-left: 2rem;
+}
+
+.tools-logo{
+  margin: 1rem 2rem;
+}
+.tools-logo img , i{
+  margin: 0rem 1rem;
 }
 
 
@@ -236,7 +269,42 @@
 
 
 #mooc-sec{
-  background-color: peru;
+  background-color: #ff8a5c;
+  font-family: "Raleway", "Poppins";
+
+}
+
+
+
+#mooc-sec .catalog-sec{
+  padding: 3rem;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+#mooc-sec .catalog-sec .card{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+
+  border-radius: 5px;
+}
+
+
+#mooc-sec .certificate-sec {
+}
+
+#mooc-sec .certificate-sec .card{
+ 
+  margin-left: 2rem;
+  border-radius: 24px;
+  width: 90%;
+}
+#mooc-sec .certificate-sec img{
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -245,11 +313,21 @@
 
 
 #badges-sec{
-  background-color: skyblue;
+  background-color: white;
 }
 
+.badges{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(3,1fr);
+}
 
+.badges img{
+  width: 50%;
+  border-radius: 5px;
+  box-shadow: 0 14px 26px rgba(0,0,0,0.04);
 
+}
 
 
 
