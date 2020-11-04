@@ -1,0 +1,191 @@
+* {
+    position: relative;
+    padidng: 0px;
+    margin: 0px;
+    box-sizing: none;
+  }
+  
+ 
+  
+  #container {
+    height: 100%;
+    width: 400px;
+    margin: 0px auto;
+  }
+  #container #line {
+    margin: 0px auto;
+    height: 100%;
+    width: 2px;
+    background-color: white;
+    animation: lineShow 0.5s linear;
+  }
+
+
+
+  #container .circle {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    left: 48.1%;
+    background-color: white;
+  }
+
+
+
+/* circle 1 */
+
+  #container #circle1 {
+    top: 15%;
+  }
+  #container #circle1::before {
+    content: "2015";
+    color: white;
+    position: absolute;
+    left: 24px;
+    top: 1px;
+    opacity: 1;
+    animation: hide 3s, dateShow 1s 3s;
+  }
+  #container #circle1 #circle1content {
+    position: absolute;
+    border: 1.5px solid white;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    color: white;
+    padding: 10px;
+    top: -10px;
+    border-radius: 2px;
+    animation: hide 3.6s, dateShow 1s 3.6s;
+  }
+ 
+  #container .circleshow1 {
+    animation: circleShow 0.5s linear, breath 4s 3s infinite;
+  }
+  #container #circle2 {
+    top: 40%;
+  }
+  #container #circle2::before {
+    content: "2016";
+    color: white;
+    position: absolute;
+    left: -45px;
+    top: 1px;
+    opacity: 1;
+    animation: hide 3.2s, dateShow 1s 3.2s;
+  }
+  #container #circle2 #circle2content {
+    position: absolute;
+    border: 1.5px solid white;
+    left: -300px;
+    width: 200px;
+    height: 200px;
+    color: white;
+    padding: 10px;
+    top: -10px;
+    border-radius: 2px;
+    animation: hide 3.6s, dateShow 1s 3.6s;
+  }
+  
+  #container .circleshow2 {
+    animation: circleShow2 1s linear, breath 4s 3.2s infinite;
+  }
+  #container #circle3 {
+    top: 65%;
+  }
+  #container #circle3::before {
+    content: "2017";
+    color: white;
+    position: absolute;
+    left: 24px;
+    top: 1px;
+    opacity: 1;
+    animation: hide 3.4s, dateShow 1s 3.4s;
+  }
+  #container #circle3 #circle3content {
+    position: absolute;
+    border: 1.5px solid white;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    color: white;
+    padding: 10px;
+    top: -10px;
+    border-radius: 2px;
+    animation: hide 3.6s, dateShow 1s 3.6s;
+  }
+  
+
+
+  #container .circleshow3 {
+    animation: circleShow3 1.5s linear, breath 4s 3.4s infinite;
+  }
+  #container .breath {
+    animation: breath 3s infinite;
+  }
+  
+
+
+
+
+  @keyframes lineShow {
+    0% {
+      height: 0%;
+    }
+    100% {
+      height: 100%;
+    }
+  }
+  @keyframes circleShow {
+    0% {
+      top: -10%;
+    }
+    100% {
+      top: 15%;
+    }
+  }
+  @keyframes circleShow2 {
+    0% {
+      top: -10%;
+    }
+    100% {
+      top: 40%;
+    }
+  }
+  @keyframes circleShow3 {
+    0% {
+      top: -10%;
+    }
+    100% {
+      top: 65%;
+    }
+  }
+  @keyframes breath {
+    0% {
+      background-color: white;
+    }
+    20% {
+      background-color: #6c6c6c;
+    }
+    100% {
+      background-color: white;
+    }
+  }
+  @keyframes dateShow {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes hide {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  

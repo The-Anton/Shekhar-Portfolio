@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="stats.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="timeline.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
     
 
     
@@ -64,15 +64,63 @@
     
     <!---------------------------- Start Home Section ------------------------------------------->
 
-    <section id="home-sec" class="section">
-      <div class="project">
-        <div class="project__card">
-         
-          <img class="av-img" src="./avatar.png" alt="avatar">
+    <div id="home-sec" class="section">
+      <div class="home row">
+        <div class="avatar-area col-md-6">
+          <img class="av-img" src="./avatar-2.jpg" alt="avatar">
+
+        </div>
+        <div class="intro-area col-md-6">
+          <img class="av-img" src="./avatar-2.jpg" alt="avatar">
+
         </div>
       </div>
-    </section>
+
+
+
+
+      
+    </div>
     <!---------------------------- End Home Section------------------------------------------->
+  
+  
+  
+  
+  
+  
+  
+  
+    <!---------------------------- Start timeline Section ------------------------------------------->
+
+    <div id="timeline-sec" class="section">
+      
+      
+      
+      <div id="container">
+        <div id="line"></div>
+        <div class="circle circleshow1" id="circle1">
+          <div id="circle1content">Higher Senior Secondry Education - Army Public School, Mathura Cantt</div>
+        </div>
+        <div class="circle circleshow2" id="circle2">
+          <div id="circle2content">Cleared JEE Mains</div>
+        </div>
+        <div class="circle circleshow3" id="circle3">
+          <div id="circle3content">Went to college - Army Institute Of Technology</div>
+        </div>
+        <div class="circle circleshow4" id="circle4">
+          <div id="circle3content">First Year </div>
+        </div>
+        <div class="circle circleshow5" id="circle5">
+          <div id="circle3content">Second Year</div>
+        </div>
+      </div>      
+
+
+
+
+      
+    </div>
+    <!---------------------------- End timeline Section------------------------------------------->
 
 
 
@@ -84,7 +132,7 @@
 
     <!---------------------------- Start Skill Section------------------------------------------->
 
-    <section id="skill-sec" class="section">
+    <div id="skill-sec" class="section">
     
       <div class="row">
         <div class="col-md-6">
@@ -169,38 +217,20 @@
         <div class="col-md-6">
           <div class="secondary-skills">
 
-                          <div id="circleBar">
-                            <div class="round" data-size="100" data-thickness="6">
-                              <strong> <i class="fab fa-node-js fa-3x"></i>
-                    
-                              </strong>
-                              <span>
-                              </span>
-                            </div>
-                          </div>
+            <div class="row tools">
 
-                          
-                          <div id="circleBar">
-                            <div class="round" data-size="100" data-thickness="6">
-                              <strong> <i class="fab fa-android fa-3x"></i>
-                    
-                              </strong>
-                              <span>
-                              </span>
-                            </div>
-                          </div>
-                          
-                        
-                          
-                          <div id="circleBar">
-                            <div class="round" data-size="100" data-thickness="6">
-                              <strong> <i class="fab fa-github fa-3x"></i>
-                    
-                              </strong>
-                              <span>
-                              </span>
-                            </div>
-                          </div>
+              <i class="fab fa-node-js fa-3x"></i>
+              <i class="fab fa-android fa-3x"></i>
+              <i class="fab fa-github fa-3x"></i>
+                            
+
+
+              <img src="https://img.icons8.com/color/60/000000/tensorflow.png"/>
+              <img src="https://img.icons8.com/plasticine/100/000000/oracle-pl-sql--v3.png"/>
+              <img src="https://img.icons8.com/color/48/000000/google-cloud-platform.png"/>
+              <img src="https://img.icons8.com/color/48/000000/nodejs.png"/>
+              <img src="https://img.icons8.com/fluent/60/000000/adobe-xd.png"/>
+            </div>
           </div>
         </div>
       </div>
@@ -208,7 +238,7 @@
 
 
     
-    </section>
+    </div>
     <!---------------------------- End Skill Section------------------------------------------->
 
 
@@ -221,65 +251,160 @@
     <!---------------------------- Start Project Section------------------------------------------->
 
 
-    <section id="projects-sec" class="section">
-    
+    <section id="projects-sec" class="section s1">
+      <img  id="project-anim1" src="./Selected/character 18.svg" alt="">
+
     <div class="projects">
+
+
         <div class="card-container">
           <div class="card">
             <div class="front">
               <div class="card-image"> <img src="" alt=""> </div>
               <div class="card-title">Flower Breed Classifier - PyTorch Machine Learning Model</div>
             </div>
-            <div class="back"><span>A Deep learning neural network that classify flowers per the labels provided. Model is capale of tranfer learning and provids results with Validation Accuracy of 90%</span></div>
+            <div class="back">
+              
+              <div class="card-back-text">
+                <span>A Deep learning neural network that classify flowers per the labels provided. Model is capale of tranfer learning and provids results with Validation Accuracy of 90%</span>
+              </div>
+
+              <div class="card-back-buttons">
+                <i class="fas fa-code-branch fa-3x"></i>
+                <i class="fab fa-github fa-3x"></i>
+              </div>
+            </div>
+              
           </div>
         </div>
+
+
+
+
         <div class="card-container">
           <div class="card">
             <div class="front">
               <div class="card-image"> <img src="" alt=""> </div>
               <div class="card-title">Flower Breed Classifier - PyTorch Machine Learning Model</div>
             </div>
-            <div class="back"><span>Back</span></div>
+            <div class="back">
+              
+              <div class="card-back-text">
+                <span>A Deep learning neural network that classify flowers per the labels provided. Model is capale of tranfer learning and provids results with Validation Accuracy of 90%</span>
+              </div>
+
+              <div class="card-back-buttons">
+                <i class="fas fa-code-branch fa-3x"></i>
+                <i class="fab fa-github fa-3x"></i>
+              </div>
+            </div>
+              
           </div>
         </div>
+
+
+
+
         <div class="card-container">
           <div class="card">
             <div class="front">
               <div class="card-image"> <img src="" alt=""> </div>
               <div class="card-title">Flower Breed Classifier - PyTorch Machine Learning Model</div>
             </div>
-            <div class="back"><span>Back</span></div>
+            <div class="back">
+              
+              <div class="card-back-text">
+                <span>A Deep learning neural network that classify flowers per the labels provided. Model is capale of tranfer learning and provids results with Validation Accuracy of 90%</span>
+              </div>
+
+              <div class="card-back-buttons">
+                <i class="fas fa-code-branch fa-3x"></i>
+                <i class="fab fa-github fa-3x"></i>
+              </div>
+            </div>
+              
           </div>
         </div>
+
+
+
         <div class="card-container">
           <div class="card">
             <div class="front">
               <div class="card-image"> <img src="" alt=""> </div>
               <div class="card-title">Flower Breed Classifier - PyTorch Machine Learning Model</div>
             </div>
-            <div class="back"><span>Back</span></div>
+            <div class="back">
+              
+              <div class="card-back-text">
+                <span>A Deep learning neural network that classify flowers per the labels provided. Model is capale of tranfer learning and provids results with Validation Accuracy of 90%</span>
+              </div>
+
+              <div class="card-back-buttons">
+                <i class="fas fa-code-branch fa-3x"></i>
+                <i class="fab fa-github fa-3x"></i>
+              </div>
+            </div>
+              
           </div>
         </div>
+
+
+
+
+
         <div class="card-container">
           <div class="card">
             <div class="front">
               <div class="card-image"> <img src="" alt=""> </div>
               <div class="card-title">Flower Breed Classifier - PyTorch Machine Learning Model</div>
             </div>
-            <div class="back"><span>Back</span></div>
+            <div class="back">
+              
+              <div class="card-back-text">
+                <span>A Deep learning neural network that classify flowers per the labels provided. Model is capale of tranfer learning and provids results with Validation Accuracy of 90%</span>
+              </div>
+
+              <div class="card-back-buttons">
+                <i class="fas fa-code-branch fa-3x"></i>
+                <i class="fab fa-github fa-3x"></i>
+              </div>
+            </div>
+              
           </div>
         </div>
+
+
+
+
+
         <div class="card-container">
           <div class="card">
             <div class="front">
               <div class="card-image"> <img src="" alt=""> </div>
               <div class="card-title">Flower Breed Classifier - PyTorch Machine Learning Model</div>
             </div>
-            <div class="back"><span>Back</span></div>
+            <div class="back">
+              
+              <div class="card-back-text">
+                <span>A Deep learning neural network that classify flowers per the labels provided. Model is capale of tranfer learning and provids results with Validation Accuracy of 90%</span>
+              </div>
+
+              <div class="card-back-buttons">
+                <i class="fas fa-code-branch fa-3x"></i>
+                <i class="fab fa-github fa-3x"></i>
+              </div>
+            </div>
+              
           </div>
         </div>
+
+
+
         
     </div>
+      <img  id="project-anim2" src="./Selected/character 20.svg" alt="">
+
     </section>
 
 
@@ -294,9 +419,9 @@
 
     <!---------------------------- Start CP Section------------------------------------------->
 
-    <section id="cp-sec" class="section">
-    <div class="home"></div>
-      
+    <section id="cp-sec" class="section s2">
+
+     
     </section>
     <!---------------------------- End CP Section------------------------------------------->
 
@@ -310,13 +435,38 @@
     <!---------------------------- Start Experience Section------------------------------------------->
 
 
-    <section id="experience-sec" class="section">
-      <div class="section">
-        <div class="slide"> </div>
-        <div class="slide"></div>
-        <div class="slide">  </div>
-        <div class="slide"> </div>
-      </div>      
+    <section id="experience-sec" class="section s3">
+        <div class="slide">
+            <div class="slide-container">
+              <div class="card">
+                <div class="card-body">
+                  This is some text within a card body.
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-container">
+              <div class="card">
+                <div class="card-body">
+                  This is some text within a card body.
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="slide">
+            <div class="slide-container">
+              <div class="card">
+                <div class="card-body">
+                  This is some text within a card body.
+                </div>
+              </div>
+            </div>
+        </div>
+        
     </section>
 
     <!---------------------------- End Experience Section------------------------------------------->
@@ -427,8 +577,6 @@
 
 
 
-<script src="jquery.min.js"></script>
-<script src="jquery.hover3d.min.js"></script>
 <!---------------------------- Start Bootstrap scripts------------------------------------------->
 
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -451,11 +599,13 @@
 
 <script>
   new fullpage('#fullpage', {
-	//options here
+  //options here
+  menu: '#menu',
   autoScrolling:true,
-  scrollHorizontally: true,
-  lazyLoading: true,
-  parallax: false,
+
+
+
+
 
 
   afterLoad: function(origin, destination, direction){

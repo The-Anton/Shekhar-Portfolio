@@ -8,6 +8,12 @@
     position: relative;
     margin-bottom: 10px;
   }
+  #circleBar .round2{
+    min-height: 50px;
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 10px;
+  }
   
   #circleBar .round strong{
 
