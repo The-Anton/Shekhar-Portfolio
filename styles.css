@@ -262,6 +262,9 @@
 #experience-sec{
   background-color: lightpink;
 }
+.fp-slidesNav{
+  text-align: center;
+}
 
 .slide-container{
 
@@ -295,6 +298,7 @@
 .company-logo img{
   width: 50%;
 }
+
 
 
 

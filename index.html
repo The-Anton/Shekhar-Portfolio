@@ -27,8 +27,7 @@
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="timeline.css">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.css" integrity="sha512-uTI445rvw38f0lHFivzsIkexI6/PNKT42qMCJp7gXOsHNk1wOkVFwFRfQ6N+FUE6JDL59cJEvQFCYigE95hyug==" crossorigin="anonymous" />    
 
     
     <!----------------------------  Javascript---------------------->
@@ -740,15 +739,19 @@
 
 <!---------------------------- Start Bootstrap scripts------------------------------------------->
 
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-            <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js" ></script>
 
 <!---------------------------- End Bootstrap scripts------------------------------------------->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.js" integrity="sha512-V14sbSKXONAuZE0bmjlAPPkqkzKLBEGTjMTT+ZEsHPpPK2N4hXnwZHBgdKJg+IsgIDKGclhSHMjh9U03xo8Y1Q==" crossorigin="anonymous"></script>
+
+
+
+
 <script  src="app.js"></script>
 <script  src="menu.js"></script>
 <script  src="stats.js"></script>
@@ -771,14 +774,16 @@
 <script>
   new fullpage('#fullpage', {
   //options here
-  menu: '#menu',
   autoScrolling:true,
+  navigation: true,
+  slidesNavigation: true,
+  controlArrows: false,
 
 
 
 
 
-
+/*  causing scrolling error
   afterLoad: function(origin, destination, direction){
 		var loadedSection = this;
 
@@ -788,7 +793,7 @@
 		}
 
 	}
-
+*/ 
 });
 </script>
 
