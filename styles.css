@@ -1,3 +1,13 @@
+:root {
+  --shadow-color: 0px 10px 30px rgba(1, 1, 2, 0.3);
+  --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  --gradient-1: linear-gradient( 135deg, #FFD3A5 10%, #FD6585 100%);
+/*   --gradient-2: linear-gradient(214deg, #8EE2F1 0%, #CDFEDF 55%); */
+  --gradient-2: linear-gradient(315deg, #8EC5FC 0%, #E0C3FC 100%);
+  --gradient-3: linear-gradient(210deg, #74EBD5 0%, #f7e8ad 100%);
+}
+
+
 #home-sec{
   background-color: yellow;
   font-family: "Raleway", "Poppins";
@@ -258,12 +268,33 @@
 }
 
 .slide .card{
+  border-radius: 18px;
 
   width: 1200px;
   height: 600px;
+  left:10px;
+  top:10px;
   margin-left: 10rem;
+  z-index: 1;
+  border-color: white;
+
 }
 
+
+
+.slide .background-card {
+  border-radius: 18px;
+  position: absolute;
+  left:-30px;
+  top:-30px;
+  z-index: 0;
+  background: var(--gradient-1);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-color: white;
+}
+
+.company-logo img{
+  width: 50%;
+}
 
 
 
