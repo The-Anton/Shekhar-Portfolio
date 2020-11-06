@@ -213,61 +213,81 @@
 
             <div class="tools">
                 <div class="web-tools">
-                  <h3 class="text">
-                      Web Devlopment Tools  
-                  </h3>
-
-                  <div class="tools-logo">
-                    <img src="https://img.icons8.com/color/60/000000/nodejs.png"/>
-                    <img src="https://img.icons8.com/color/48/000000/postgreesql.png"/>
-                    <img src="https://img.icons8.com/plasticine/100/000000/oracle-pl-sql--v3.png"/>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Database-mysql.svg/64px-Database-mysql.svg.png"/>
-
+                  <div class="card">
+                    <div class="card-body">
+                          <h4 class="text">
+                            Web Devlopment Tools  
+                        </h4>
+      
+                        <div class="tools-logo">
+                          <img id="node-logo" src="https://img.icons8.com/color/60/000000/nodejs.png"/>
+                          <img id="postgress-logo"src="https://img.icons8.com/color/48/000000/postgreesql.png"/>
+                          <img id="sql-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Database-mysql.svg/64px-Database-mysql.svg.png"/>
+      
+                        </div>
+                    </div>
                   </div>
+                 
 
                 </div>
 
                 <div class="android-tools">
-                  <h3 class="text">
-                    Android Devlopment Tools 
-                  </h3>
-
-                  <div class="tools-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Android_Studio_icon.svg/64px-Android_Studio_icon.svg.png"/>
-                    <img src="https://img.icons8.com/color/48/000000/flutter.png"/>
-                    <img src="https://img.icons8.com/fluent/60/000000/adobe-xd.png"/>
-
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="text">
+                        Android Devlopment Tools 
+                      </h4>
+    
+                      <div class="tools-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Android_Studio_icon.svg/64px-Android_Studio_icon.svg.png"/>
+                        <img src="https://img.icons8.com/color/48/000000/flutter.png"/>
+                        <img src="https://img.icons8.com/fluent/60/000000/adobe-xd.png"/>
+    
+                      </div>
+                    </div>
                   </div>
+
+                  
                 </div>
 
                 <div class="ml-tools">
-                  <h3 class="text">
-                    Machine Learning Tools 
-                  </h3>
-
-                  <div class="tools-logo">
-                    <img src="https://img.icons8.com/color/60/000000/tensorflow.png"/>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/64px-PyTorch_logo_icon.svg.png"/>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/44px-Jupyter_logo.svg.png"/>
-                 <!--   <img src="https://colab.research.google.com/img/colab_favicon_256px.png"/> -->
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/NumPy_logo.svg/128px-NumPy_logo.svg.png"/>
-                    
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="text">
+                        Machine Learning Tools 
+                      </h4>
+    
+                      <div class="tools-logo">
+                        <img src="https://img.icons8.com/color/60/000000/tensorflow.png"/>
+                        <img id="pytorch-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/64px-PyTorch_logo_icon.svg.png"/>
+                        <img id="juypter-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/44px-Jupyter_logo.svg.png"/>
+                        <img id="mathplotlib-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/NumPy_logo.svg/128px-NumPy_logo.svg.png"/>
+                        <img id="colab-logo" src="https://colab.research.google.com/img/colab_favicon_256px.png"/> 
+                        
+                      </div>
+                      </div>
                   </div>
+                 
                 </div>
 
 
 
                 <div class="other-tools">
-                  <h3 class="text">
-                    Other Tools 
-                  </h3>
-
-                  <div class="tools-logo">
-                    <i class="fab fa-android fa-3x"></i>
-                    <i class="fab fa-github fa-3x"></i>
-                    <img src="https://img.icons8.com/color/60/000000/google-cloud-platform.png"/>
-
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="text">
+                        Other Tools 
+                      </h4>
+    
+                      <div class="tools-logo">
+                        <i class="fab fa-android fa-3x" style="color: greenyellow;"></i>
+                        <i class="fab fa-github fa-3x" ></i>
+                        <img id="gcd-logo" src="https://img.icons8.com/color/60/000000/google-cloud-platform.png"/>
+    
+                      </div>
+                      </div>
                   </div>
+                 
                 </div>
 
 
@@ -535,9 +555,13 @@
     <section id="experience-sec" class="section">
 
        <!--   DigitalPersistent -->
-        <div class="slide">
+        <div class="slide slide1">
+          <div class="experience-heading">
+            <p id="experience-heading-text">Experience</p>
+          </div>
             <div class="slide-container">
-              <div class="card">
+              
+              <div class="card front-card">
                 <div class="card-body">
                   <div class="row">
 
@@ -557,7 +581,7 @@
 
                     <div class="col-md-6 row2">
                       <div class="job-text">
-                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                        "Lorem Ipsum is simply dummy text of the printing and typesetting industr It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                       </div>
 
                       <div class="links">
@@ -576,7 +600,7 @@
 
                 </div>
               </div>
-              <div class="card background-card">
+              <div class="card background-card b1">
                 
               </div>
             </div>
@@ -589,7 +613,7 @@
 
         <div class="slide">
             <div class="slide-container">
-              <div class="card">
+              <div class="card front-card">
                 <div class="card-body">
                   <div class="row">
 
@@ -609,7 +633,7 @@
 
                     <div class="col-md-6">
                       <div class="job-text">
-                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                        "Lorem Ipsum is simply dummy text of the printing and typesetting industr It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 
 
                       </div>
@@ -628,7 +652,7 @@
 
                 </div>
               </div>
-              <div class="card background-card">
+              <div class="card background-card b2">
                 
               </div>
             </div>
@@ -642,7 +666,7 @@
 
         <div class="slide">
             <div class="slide-container">
-              <div class="card">
+              <div class="card front-card">
                 <div class="card-body">
                   <div class="row">
 
@@ -662,7 +686,7 @@
 
                     <div class="col-md-6">
                       <div class="job-text">
-                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                        "Lorem Ipsum is simply dummy text of the printing and typesetting industr It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 
 
                       </div>
@@ -683,7 +707,7 @@
 
                 </div>
               </div>
-              <div class="card background-card">
+              <div class="card background-card b3">
                 
               </div>
             </div>
@@ -698,7 +722,7 @@
 
         <div class="slide">
             <div class="slide-container">
-              <div class="card">
+              <div class="card front-card">
                 <div class="card-body">
                   <div class="row">
 
@@ -718,7 +742,7 @@
 
                     <div class="col-md-6">
                       <div class="job-text">
-                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                        "Lorem Ipsum is simply dummy text of the printing and typesetting industr It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 
 
                       </div>
@@ -738,7 +762,7 @@
 
                 </div>
               </div>
-              <div class="card background-card">
+              <div class="card background-card b4">
                 
               </div>
             </div>
@@ -754,7 +778,7 @@
 
         <div class="slide">
             <div class="slide-container">
-              <div class="card">
+              <div class="card front-card">
                 <div class="card-body">
                   <div class="row">
 
@@ -774,7 +798,7 @@
 
                     <div class="col-md-6">
                       <div class="job-text">
-                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                        "Lorem Ipsum is simply dummy text of the printing and typesetting industr It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 
 
                       </div>
@@ -796,7 +820,7 @@
 
                 </div>
               </div>
-              <div class="card background-card">
+              <div class="card background-card b5">
                 
               </div>
             </div>
