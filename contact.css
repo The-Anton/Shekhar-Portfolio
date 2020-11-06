@@ -1,3 +1,13 @@
+.contact-heading p{
+  margin: 1rem 0 0 3rem;
+ font-size: 6vw;
+ text-align: left;
+ font-weight: bolder;
+}
+
+
+
+
 .social-btns .btn,
 .social-btns .btn:before,
 .social-btns .btn .fa {
@@ -140,3 +150,6 @@ input:focus, textarea:focus, select:focus{
   margin-top: auto;
   margin-bottom: auto;
 }
+
+
+

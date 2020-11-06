@@ -1,6 +1,6 @@
 * {
     position: relative;
-    padidng: 0px;
+    padding: 0px;
     margin: 0px;
     box-sizing: none;
   }
@@ -15,7 +15,7 @@
   #container #line {
     margin: 0px auto;
     height: 100%;
-    width: 2px;
+    width: 10px;
     background-color: white;
     animation: lineShow 0.5s linear;
   }
@@ -24,11 +24,45 @@
 
   #container .circle {
     position: absolute;
-    height: 15px;
-    width: 15px;
+   
     border-radius: 20px;
-    left: 48.1%;
+    left: 47.5%;
     background-color: white;
+  }
+
+
+
+/* circle 0 */
+
+  #container #circle0 {
+    top: 10%;
+    height: 20px;
+    width: 20px;
+  }
+  #container #circle0::before {
+    content: "2018";
+    color: white;
+    position: absolute;
+    left: -50px;
+    top: 1px;
+    opacity: 1;
+    animation: hide 6s, dateShow 1s 3s;
+  }
+  #container #circle0 #circle1content {
+    position: absolute;
+    border: 1.5px solid white;
+    left: -400px;
+    width: 300px;
+    height: 80px;
+    color: white;
+    padding: 10px;
+    top: -10px;
+    border-radius: 2px;
+    animation: hide 3.6s, dateShow 1s 3.6s;
+  }
+ 
+  #container .circleshow0 {
+    animation: circleShow 0.5s linear;
   }
 
 
@@ -36,16 +70,18 @@
 /* circle 1 */
 
   #container #circle1 {
-    top: 5%;
+    top: 20%;
+    height: 20px;
+    width: 20px;
   }
   #container #circle1::before {
     content: "2018";
     color: white;
     position: absolute;
-    left: 24px;
+    left: 40px;
     top: 1px;
     opacity: 1;
-    animation: hide 3s, dateShow 1s 3s;
+    animation: hide 6s, dateShow 1s 3s;
   }
   #container #circle1 #circle1content {
     position: absolute;
@@ -61,7 +97,7 @@
   }
  
   #container .circleshow1 {
-    animation: circleShow 0.5s linear, breath 4s 3s infinite;
+    animation: circleShow 1s linear;
   }
 
 
@@ -70,23 +106,25 @@
   /* circle 2 */
 
   #container #circle2 {
-    top: 25%;
+    top: 35%;
+    height: 20px;
+    width: 20px;
   }
   #container #circle2::before {
     content: "2019";
     color: white;
     position: absolute;
-    left: -45px;
+    left: -50px;
     top: 1px;
     opacity: 1;
-    animation: hide 3.2s, dateShow 1s 3.2s;
+    animation: hide 6s, dateShow 1s 3.2s;
   }
   #container #circle2 #circle2content {
     position: absolute;
     border: 1.5px solid white;
     left: -300px;
     width: 200px;
-    height: 200px;
+    height: 50px;
     color: white;
     padding: 10px;
     top: -10px;
@@ -95,7 +133,7 @@
   }
   
   #container .circleshow2 {
-    animation: circleShow2 1s linear, breath 4s 3.2s infinite;
+    animation: circleShow2 2s linear;
   }
 
 
@@ -106,33 +144,36 @@
   /* circle 3 */
 
   #container #circle3 {
-    top: 40%;
+    top: 50%;
+    height: 20px;
+    width: 20px;
   }
   #container #circle3::before {
     content: "2019";
     color: white;
     position: absolute;
-    left: 24px;
+    left: 40px;
     top: 1px;
     opacity: 1;
-    animation: hide 3.4s, dateShow 1s 3.4s;
+    animation: hide 6s, dateShow 1s 3.4s;
   }
   #container #circle3 #circle3content {
     position: absolute;
     border: 1.5px solid white;
     left: 100px;
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 50px;
     color: white;
     padding: 10px;
     top: -10px;
+    text-align: center;
     border-radius: 2px;
     animation: hide 3.6s, dateShow 1s 3.6s;
   }
   
 
   #container .circleshow3 {
-    animation: circleShow3 1.5s linear, breath 4s 3.4s infinite;
+    animation: circleShow3 3s linear;
   }
   #container .breath {
     animation: breath 3s infinite;
@@ -148,32 +189,33 @@
 
   #container #circle4 {
     top: 60%;
+    height: 20px;
+    width: 20px;
   }
   #container #circle4::before {
-    content: "2019 - First Year";
+    content: "2019";
     color: white;
     position: absolute;
-    left: 24px;
+    left: -50px;
     top: 1px;
     opacity: 1;
-    animation: hide 3.4s, dateShow 1s 3.4s;
+    animation: hide 6s, dateShow 1s 3.6s;
   }
   #container #circle4 #circle4content {
     position: absolute;
     border: 1.5px solid white;
-    left: 100px;
+    left: -300px;
     width: 200px;
-    height: 200px;
+    height: 50px;
     color: white;
     padding: 10px;
     top: -10px;
     border-radius: 2px;
-    animation: hide 3.6s, dateShow 1s 3.6s;
+    animation: hide 3.4s, dateShow 1s 3.4s;
   }
-  
 
   #container .circleshow4 {
-    animation: circleShow4 1.5s linear, breath 4s 3.4s infinite;
+    animation: circleShow4 4s linear;
   }
   #container .breath {
     animation: breath 3s infinite;
@@ -188,12 +230,16 @@
 
   #container #circle5 {
     top: 75%;
+    height: 40px;
+    width: 40px;
+    left: 45.15%;
+
   }
   #container #circle5::before {
-    content: "2020 - Second Year";
+    content: "2020";
     color: white;
     position: absolute;
-    left: 24px;
+    left: 50px;
     top: 1px;
     opacity: 1;
     animation: hide 3.4s, dateShow 1s 3.4s;
@@ -203,7 +249,7 @@
     border: 1.5px solid white;
     left: 100px;
     width: 200px;
-    height: 200px;
+    height: 50px;
     color: white;
     padding: 10px;
     top: -10px;
@@ -213,7 +259,7 @@
   
 
   #container .circleshow5 {
-    animation: circleShow5 1.5s linear, breath 4s 3.4s infinite;
+    animation: circleShow5 4s linear, breath 4s 3.4s infinite;
   }
   #container .breath {
     animation: breath 3s infinite;
@@ -226,42 +272,61 @@
   @keyframes lineShow {
     0% {height: 0%;}
     100% {
-      height: 100%;
+      height: 10%;
     }
   }
   @keyframes circleShow {
     0% {
-      top: -10%;
+      top: 10%;
     }
     100% {
-      top: 15%;
+      top: 20%;
     }
   }
   @keyframes circleShow2 {
     0% {
-      top: -10%;
+      top: 20%;
     }
     100% {
-      top: 40%;
+      top: 35%;
     }
   }
   @keyframes circleShow3 {
     0% {
-      top: -10%;
+      top: 35%;
     }
     100% {
-      top: 65%;
+      top: 50%;
+    }
+  }
+  @keyframes circleShow4 {
+    0% {
+      top: 50%;
+    }
+    100% {
+      top: 60%;
+    }
+  }
+  @keyframes circleShow5 {
+    0% {
+      top: 60%;
+    }
+    100% {
+      top: 75%;
     }
   }
   @keyframes breath {
     0% {
       background-color: white;
     }
-    20% {
-      background-color: #6c6c6c;
+    30% {
+      background-color: orange;
     }
-    100% {
+    60% {
       background-color: white;
+    }
+    30% {
+      background-color: orange;
     }
   }
   @keyframes dateShow {

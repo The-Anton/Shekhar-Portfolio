@@ -22,14 +22,15 @@
 
     <!----------------------------  CSS---------------------->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="stats.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="timeline.css">
+    <link rel="stylesheet" href="achievment.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.css" integrity="sha512-uTI445rvw38f0lHFivzsIkexI6/PNKT42qMCJp7gXOsHNk1wOkVFwFRfQ6N+FUE6JDL59cJEvQFCYigE95hyug==" crossorigin="anonymous" />    
 
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!----------------------------  Javascript---------------------->
 
     
@@ -42,32 +43,12 @@
 <body>
 
 
-  <div class="sub-menu">
-    <span class="sub-menu-circle"></span>
-    <a href="#" class="sub-menu-link">
-      <span class="sub-menu-icon">
-      <span class="menu-bar menu-bar-1"></span>
-      <span class="menu-bar menu-bar-2"></span>
-      <span class="menu-bar menu-bar-3"></span>
-      </span>
-    </a>
-  </div>
-  <div class="sub-menu-overlay">
-    <ul class="sub-menu-list">
-      <li><a href="#"> Home</a></li>
-      <li><a href="#"> Skills</a></li>
-      <li><a href="#"> Projects </a></li>
-      <li><a href="#"> Competitive Coding  </a></li>
-      <li><a href="#"> Experience </a></li>
-      <li><a href="#mooc-sec"> MOOC </a></li>
-      <li><a href="#"> Badges </a></li>
-      <li><a href="#contact-sec"> Contact </a></li>
-    </ul>
-  </div>
+  
 
 <div id="fullpage">
   
-    
+
+ 
     <!---------------------------- Start Home Section ------------------------------------------->
 
     <div id="home-sec" class="section">
@@ -106,6 +87,9 @@
       
       <div id="container">
         <div id="line"></div>
+        <div class="circle circleshow0" id="circle0">
+          <div id="circle1content">Higher Senior Secondry Education - Army Public School, Mathura Cantt</div>
+        </div>
         <div class="circle circleshow1" id="circle1">
           <div id="circle1content">Higher Senior Secondry Education - Army Public School, Mathura Cantt</div>
         </div>
@@ -116,10 +100,10 @@
           <div id="circle3content">Went to college - Army Institute Of Technology</div>
         </div>
         <div class="circle circleshow4" id="circle4">
-          <div id="circle3content"></div>
+          <div id="circle4content">First Year ASGE Dept.</div>
         </div>
         <div class="circle circleshow5" id="circle5">
-          <div id="circle3content"></div>
+          <div id="circle5content">Second Year IT Dept.</div>
         </div>
       </div>      
 
@@ -141,7 +125,9 @@
     <!---------------------------- Start Skill Section------------------------------------------->
 
     <div id="skill-sec" class="section">
-    
+      <div class="skills-heading">
+        <p id="skills-heading-text">Skills</p>
+      </div>
       <div class="row">
         <div class="col-md-6">
           <div class="primary-skills">
@@ -311,7 +297,7 @@
     <!---------------------------- Start Project Section------------------------------------------->
 
 
-    <section id="projects-sec" class="section s1">
+    <section id="projects-sec" class="section">
       <img  id="project-anim1" src="./Selected/character 18.svg" alt="">
 
     <div class="projects">
@@ -321,7 +307,13 @@
           <div class="card">
             <div class="front">
               <div class="card-image"> <img src="" alt=""> </div>
+              <div class="tech-stack">
+                <button class="btn">PyTorch</button>
+                <button class="btn">Python</button>
+              </div>
+              <img src="./media/flower.png" id='pr-img-1' alt="">
               <div class="card-title">Flower Breed Classifier - PyTorch Machine Learning Model</div>
+              
             </div>
             <div class="back">
               
@@ -344,8 +336,13 @@
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <div class="card-image"> <img src="" alt=""> </div>
-              <div class="card-title">Flower Breed Classifier - PyTorch Machine Learning Model</div>
+              <div class="tech-stack">
+                <button class="btn">ARcore</button>
+                <button class="btn">Kotlin</button>
+              </div>
+              <img src="./media/globe.png" id='pr-img-2' alt="">
+
+              <div class="card-title">AR Globe - Globe in Augmented Reality</div>
             </div>
             <div class="back">
               
@@ -368,8 +365,13 @@
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <div class="card-image"> <img src="" alt=""> </div>
-              <div class="card-title">Flower Breed Classifier - PyTorch Machine Learning Model</div>
+              <div class="tech-stack">
+                <button class="btn">TesorFlow</button>
+                <button class="btn">Python</button>
+              </div>
+              <img src="./media/ipl.png" id='pr-img-3' alt="">
+
+              <div class="card-title">IPL Match Predictors - PyTorch Machine Learning Model</div>
             </div>
             <div class="back">
               
@@ -391,33 +393,13 @@
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <div class="card-image"> <img src="" alt=""> </div>
-              <div class="card-title">Flower Breed Classifier - PyTorch Machine Learning Model</div>
-            </div>
-            <div class="back">
-              
-              <div class="card-back-text">
-                <span>A Deep learning neural network that classify flowers per the labels provided. Model is capale of tranfer learning and provids results with Validation Accuracy of 90%</span>
+              <div class="tech-stack">
+                <button class="btn">Kotlin</button>
+                <button class="btn">Java</button>
               </div>
+              <img src="./media/mate-2.png" id='pr-img-4' alt="">
 
-              <div class="card-back-buttons">
-                <i class="fas fa-code-branch fa-3x"></i>
-                <i class="fab fa-github fa-3x"></i>
-              </div>
-            </div>
-              
-          </div>
-        </div>
-
-
-
-
-
-        <div class="card-container">
-          <div class="card">
-            <div class="front">
-              <div class="card-image"> <img src="" alt=""> </div>
-              <div class="card-title">Flower Breed Classifier - PyTorch Machine Learning Model</div>
+              <div class="card-title">Mate - Event Managment & Live Leaderboard App</div>
             </div>
             <div class="back">
               
@@ -441,8 +423,43 @@
         <div class="card-container">
           <div class="card">
             <div class="front">
-              <div class="card-image"> <img src="" alt=""> </div>
-              <div class="card-title">Flower Breed Classifier - PyTorch Machine Learning Model</div>
+              <div class="tech-stack">
+                <button class="btn">Kotlin</button>
+                <button class="btn">JavaScript</button>
+              </div>
+              <img src="./media/qzoid-trans.png" id='pr-img-5' alt="">
+
+              <div class="card-title">Qzoid - Crossplatform Quiz/Survey Sharing App</div>
+            </div>
+            <div class="back">
+              
+              <div class="card-back-text">
+                <span>A Deep learning neural network that classify flowers per the labels provided. Model is capale of tranfer learning and provids results with Validation Accuracy of 90%</span>
+              </div>
+
+              <div class="card-back-buttons">
+                <i class="fas fa-code-branch fa-3x"></i>
+                <i class="fab fa-github fa-3x"></i>
+              </div>
+            </div>
+              
+          </div>
+        </div>
+
+
+
+
+
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <div class="tech-stack">
+                <button class="btn">Kotlin</button>
+                <button class="btn">ExoPlayer</button>
+              </div>
+              <img src="./media/fireplayer.png" id='pr-img-6' alt="">
+
+              <div class="card-title">Fireplayer - Video Streaming Using ExoPlayer</div>
             </div>
             <div class="back">
               
@@ -478,10 +495,32 @@
 
     <!---------------------------- Start CP Section------------------------------------------->
 
-    <section id="cp-sec" class="section s2">
+    <section id="achieve-sec" class="section s5">
+      <div class="achieve-heading">
+        <p id="achieve-heading-text">Milestones</p>
+      </div>
 
+      <div id="circle1" class="animate__animated animate__bounceInDown animate__delay-0s"></div>
+      <div id="circle2" class="animate__animated animate__bounceInDown animate__delay-0s"></div>
+      <div id="circle5" class="animate__animated animate__bounceInDown animate__delay-2s"></div>
+      <div id="circle7" class="animate__animated animate__bounceInDown animate__delay-0s"></div>
+      <div id="circle10" class="animate__animated animate__bounceInDown animate__delay-0s"></div>
+      <div id="circle11" class="animate__animated animate__bounceInDown animate__delay-0s"></div>
+      
+      <div id="circle3" > <span>Core Team Member - Google Devloper Students Club</span> </div>
+      <div id="circle4" class="animate__animated animate__bounceInDown animate__delay-1s"><span>AIT CodeDown 2020 Winner</span></div>
+      <div id="circle6" class="animate__animated animate__bounceInDown animate__delay-2s"><span>Paskathon Finalist</span></div>
+      <div id="circle8" class="animate__animated animate__bounceInDown animate__delay-5s"><span>F.E Project Based Learning 2019 - Winner</span></div>
+      <div id="circle9" class="animate__animated animate__bounceInDown animate__delay-4s"><span>Completed Udacity AI Nanodegree</span></div>
+      
+      
+      <div id="circle-min1"></div>
+      <div id="circle-min2"></div>
+      <div id="circle-min3"></div>
+      <div id="circle-min4"></div>
      
     </section>
+      
     <!---------------------------- End CP Section------------------------------------------->
 
 
@@ -493,33 +532,39 @@
     <!---------------------------- Start Experience Section------------------------------------------->
 
 
-    <section id="experience-sec" class="section s3">
+    <section id="experience-sec" class="section">
+
+       <!--   DigitalPersistent -->
         <div class="slide">
             <div class="slide-container">
               <div class="card">
                 <div class="card-body">
                   <div class="row">
 
-                    <div class="col-md-6">
-                      <div class="company-logo">
-                        <img src="media/logo2.png" alt="">
+                    <div class="col-md-6 row1">
+                      <div class="company-logo digitalpersistent-logo">
+                        <img src="media/Digital Persistent.png" alt="">
                       </div>
 
                       <div class="company-position">
-                       <p>Job Role : Jr. Web Devloper</p>
-                       <p>Job Duration: 1 Month</p>
-                       <p>Job Type: Internship</p>
+                       <p><b>Job Role</b> :    Jr. Web Developer</p>
+                       <p><b>Job Duration</b> : 1 Month</p>
+                       <p><b>Job Type</b> :     Internship</p>
                       </div>
                     </div>
 
 
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 row2">
                       <div class="job-text">
-
+                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                       </div>
 
                       <div class="links">
+                        <button class="btn">PHP</button>
+                        <button class="btn">CSS3</button>
+                        <button class="btn">Frontend</button>
+                        <button class="btn">HTML</button>
 
                       </div>
                     </div>
@@ -537,27 +582,227 @@
             </div>
         </div>
 
-        <div class="slide">
-            <div class="slide-container">
-              <div class="card">
-                <div class="card-body">
-                  This is some text within a card body.
-                </div>
-              </div>
-            </div>
-        </div>
+
+       <!--   examcenter acadmey -->
+
 
 
         <div class="slide">
             <div class="slide-container">
               <div class="card">
                 <div class="card-body">
-                  This is some text within a card body.
+                  <div class="row">
+
+                    <div class="col-md-6">
+                      <div class="company-logo examcenter-logo">
+                        <img src="media/examcenter.png" alt="">
+                      </div>
+
+                      <div class="company-position">
+                       <p><b>Job Role</b> : Senior Web Developer</p>
+                       <p><b>Job Duration</b>: 4 Month</p>
+                       <p><b>Job Type</b>: Internship</p>
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-md-6">
+                      <div class="job-text">
+                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+
+
+                      </div>
+
+                      <div class="links">
+                        <button class="btn">JavaScript</button>
+                        <button class="btn">Node.js</button>
+                        <button class="btn">Firebase</button>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+
+
                 </div>
+              </div>
+              <div class="card background-card">
+                
               </div>
             </div>
         </div>
-        
+
+
+
+       <!--   Mate -->
+
+
+
+        <div class="slide">
+            <div class="slide-container">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+
+                    <div class="col-md-6">
+                      <div class="company-logo mate-logo">
+                        <img src="media/mate.png" alt="">
+                      </div>
+
+                      <div class="company-position">
+                       <p><b>Job Role</b> : Android Developer</p>
+                       <p><b>Job Duration</b>: 2 Month</p>
+                       <p><b>Job Type</b>: Self-Owned Project</p>
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-md-6">
+                      <div class="job-text">
+                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+
+
+                      </div>
+
+                      <div class="links">
+                        <button class="btn">Kotlin</button>
+                        <button class="btn">Java</button>
+                        <button class="btn">XML</button>
+                        <button class="btn">JSON</button>
+                        <button class="btn">Firebase</button>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+
+
+                </div>
+              </div>
+              <div class="card background-card">
+                
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+       <!--   IGPixel -->
+
+
+        <div class="slide">
+            <div class="slide-container">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+
+                    <div class="col-md-6">
+                      <div class="company-logo igpixel-logo">
+                        <img src="media/igpixel-black.png" alt="">
+                      </div>
+
+                      <div class="company-position">
+                       <p><b>Job Role</b> : Backend Developer</p>
+                       <p><b>Job Duration</b>: 1 Month</p>
+                       <p><b>Job Type</b>: Internship</p>
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-md-6">
+                      <div class="job-text">
+                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+
+
+                      </div>
+
+                      <div class="links">
+                        <button class="btn">PHP</button>
+                        <button class="btn">CSS3</button>
+                        <button class="btn">Frontend</button>
+                        <button class="btn">HTML</button>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+
+
+                </div>
+              </div>
+              <div class="card background-card">
+                
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+
+       <!--   Qzoid -->
+
+
+        <div class="slide">
+            <div class="slide-container">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+
+                    <div class="col-md-6">
+                      <div class="company-logo qzoid-logo">
+                        <img src="media/qzoid-trans.png" alt="">
+                      </div>
+
+                      <div class="company-position">
+                       <p><b>Job Role</b> : Web Developer</p>
+                       <p><b>Job Duration</b>: 1 Month</p>
+                       <p><b>Job Type</b>: Self-Owned Project</p>
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-md-6">
+                      <div class="job-text">
+                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+
+
+                      </div>
+
+                      <div class="links">
+                        <button class="btn">Java</button>
+                        <button class="btn">Kotlin</button>
+                        <button class="btn">JavaScript</button>
+                        <button class="btn">Node.js</button>
+                        <button class="btn">Adobe Xd</button>
+
+                      </div>
+                    </div>
+
+
+                  </div>
+
+
+
+                </div>
+              </div>
+              <div class="card background-card">
+                
+              </div>
+            </div>
+        </div>
+
+   
     </section>
 
     <!---------------------------- End Experience Section------------------------------------------->
@@ -574,40 +819,100 @@
     <!---------------------------- Start MOOC Section------------------------------------------->
 
     <section id="mooc-sec" class="section">
-    <div class="row">
-      <div class="col-md-4 catalog-sec">
-        <div class="card">
-          <div class="card-body">
-            AI Programming Nanodegree - Udacity
-          </div>
+
+      
+      <div class="slide">
+          <div id="cert-sec">
+            <div class="row">
+              <div class="col-md-4 catalog-sec">
+                <div class="card">
+                  <div class="card-body" onclick="loadImage('ai-nanodegree.jpg')">
+                    AI Nanodegree - Udacity
+                  </div>
+                </div>
+                <div class="card" onclick="loadImage('30DaysOfKotlin.jpg')">
+                  <div class="card-body" >
+                    #30DayOfKotlin
+                  </div>
+                </div>
+                <div class="card" onclick="loadImage('cyber.png')">
+                  <div class="card-body" >
+                    Introduction To Cyber Security
+                  </div>
+                </div>
+                <div class="card" onclick="loadImage('MicrosoftAIClassroom.jpg')">
+                  <div class="card-body" >
+                    Microsoft AI Classroom Series          
+                  </div>
+                </div>
+                
+              </div>
+
+
+              <div class="col-md-8 certificate-sec" id="certificate-area-card" >
+                <div class="card">
+                  <div class="card-body">
+                    <img src="media/ai-nanodegree.jpg"/>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div> 
+           
         </div>
-        <div class="card">
-          <div class="card-body">
-            #30DayOfKotlin
+
+
+
+      <div class="slide">
+        <section id="badges-sec" >
+          <div class="badge-heading">
+            <p>Google Cloud Skill Badges</p>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            Introduction To Cyber Security
+  
+          <div class="badges">
+            <img src="https://cdn.qwiklabs.com/sKP7%2Fq69EFKGaS5hVjP6eyNNqfGztiKPtEuk4a8ouVQ%3D" alt="">
+  
+            <div class="">
+              <img src="https://cdn.qwiklabs.com/apNpv%2BiHmmdV7%2F9uQ4WV%2BJJsqaD9aGMI6KsMJsgpnlA%3D" alt="">
+            </div>
+            <div class="">
+              <img src="https://cdn.qwiklabs.com/%2FOMWtep04OmVV4X67ODrPJD%2BnsuN977UFkyO6SD486c%3D" alt="">
+            </div>
+            <div class="">
+              <img src="https://cdn.qwiklabs.com/l0sFLZS%2BO9dGHcecgA2MrRf7u2BRusBkSVPzUDf8AUg%3D" alt="">
+            </div>
+            <div class="">
+              <img src="https://cdn.qwiklabs.com/y3NiciFy8M48berRddcZjybSS0LABCiYCBX6L2U%2FPjk%3D" alt="">
+            </div>
+            <div class="">
+              <img src="https://cdn.qwiklabs.com/id9fOsGQY3dzozgELKMTfVQA6QVr5047qDY6BTTJ17I%3D" alt="">
+            </div>
+            <div class="">
+              <img src="https://cdn.qwiklabs.com/2nd5TLO%2BpmXArh2laFfQeO1ypildO%2FpayYNZJUStvRs%3D" alt="">
+            </div>
+            <div class="">
+              <img src="https://cdn.qwiklabs.com/VjyAwxm%2FPfVYFe925M0qxSVYaVxDhz2woSQRdAEBMZ8%3D" alt="">
+            </div>
+            <div class="">
+              <img src="https://cdn.qwiklabs.com/N3%2BwDzFLMX6LfRsvQUIvQJcjCa3AxXLw2LOjRXICzkA%3D" alt="">
+            </div>
+            <div class="">
+              <img src="https://cdn.qwiklabs.com/2vbDZtRsIX5OPOvwaasl0Zcak6MtW6QdpEEWcHSnYek%3D" alt="">
+            </div>
+            <div class="">
+     <!--         <img id='orange-badge' src="media/gcdbadge.png" alt="">
+            </div>
+            <div class="">
+              <img src="https://cdn.qwiklabs.com/s7dCzJmly3eTjXxr4VKDE4OlhSFwOxjep%2BevnIVM1Ag%3D" alt="">
+            </div>
+            -->
           </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            Microsoft AI Classroom Series          
-          </div>
-        </div>
-        
+          
+        </section>
       </div>
 
 
-      <div class="col-md-8 certificate-sec">
-        <div class="card">
-          <div class="card-body">
-            <img src="media/ai-nanodegree.jpg"/>
-          </div>
-        </div>
-      </div>
-    </div>      
+         
     </section>
     <!---------------------------- End MOOC Section------------------------------------------->
 
@@ -622,47 +927,7 @@
       <!---------------------------- Start Badges Section------------------------------------------->
 
 
-      <section id="badges-sec" class="section">
-        <div class="badges">
-          <img src="https://cdn.qwiklabs.com/sKP7%2Fq69EFKGaS5hVjP6eyNNqfGztiKPtEuk4a8ouVQ%3D" alt="">
-
-          <div class="">
-            <img src="https://cdn.qwiklabs.com/apNpv%2BiHmmdV7%2F9uQ4WV%2BJJsqaD9aGMI6KsMJsgpnlA%3D" alt="">
-          </div>
-          <div class="">
-            <img src="https://cdn.qwiklabs.com/%2FOMWtep04OmVV4X67ODrPJD%2BnsuN977UFkyO6SD486c%3D" alt="">
-          </div>
-          <div class="">
-            <img src="https://cdn.qwiklabs.com/l0sFLZS%2BO9dGHcecgA2MrRf7u2BRusBkSVPzUDf8AUg%3D" alt="">
-          </div>
-          <div class="">
-            <img src="https://cdn.qwiklabs.com/y3NiciFy8M48berRddcZjybSS0LABCiYCBX6L2U%2FPjk%3D" alt="">
-          </div>
-          <div class="">
-            <img src="https://cdn.qwiklabs.com/id9fOsGQY3dzozgELKMTfVQA6QVr5047qDY6BTTJ17I%3D" alt="">
-          </div>
-          <div class="">
-            <img src="https://cdn.qwiklabs.com/2nd5TLO%2BpmXArh2laFfQeO1ypildO%2FpayYNZJUStvRs%3D" alt="">
-          </div>
-          <div class="">
-            <img src="https://cdn.qwiklabs.com/VjyAwxm%2FPfVYFe925M0qxSVYaVxDhz2woSQRdAEBMZ8%3D" alt="">
-          </div>
-          <div class="">
-            <img src="https://cdn.qwiklabs.com/N3%2BwDzFLMX6LfRsvQUIvQJcjCa3AxXLw2LOjRXICzkA%3D" alt="">
-          </div>
-          <div class="">
-            <img src="https://cdn.qwiklabs.com/2vbDZtRsIX5OPOvwaasl0Zcak6MtW6QdpEEWcHSnYek%3D" alt="">
-          </div>
-          <div class="">
-            <img src="https://cdn.qwiklabs.com/DaglcRiTwtqkPBnShSCuwfDetQnVlBZPRL3AiiPJU%2Bg%3D" alt="">
-          </div>
-          <div class="">
-            <img src="https://cdn.qwiklabs.com/s7dCzJmly3eTjXxr4VKDE4OlhSFwOxjep%2BevnIVM1Ag%3D" alt="">
-          </div>
-          
-        </div>
-        
-      </section>
+     
 
       <!---------------------------- End Badges Section------------------------------------------->
 
@@ -671,7 +936,9 @@
 
 
       <section id="contact-sec" class="section">
-      
+      <div class="contact-heading">
+        <p id="contact-heading-text">Contact</p>
+      </div>
 
 
       <div class="row">
@@ -753,8 +1020,9 @@
 
 
 <script  src="app.js"></script>
-<script  src="menu.js"></script>
 <script  src="stats.js"></script>
+<script  src="achievments.js"></script>
+<script  src="mooc.js"></script>
 
 
 
@@ -778,6 +1046,10 @@
   navigation: true,
   slidesNavigation: true,
   controlArrows: false,
+ navigationTooltips: ['Home', 'Skills', 'Projects', 'Achievments', "Experience", 'Certifications', 'Badges', 'Contact'],
+ css3: true,
+ lockAnchors: false,
+ menu: '#menu'
 
 
 

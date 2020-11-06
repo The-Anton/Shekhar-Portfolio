@@ -1,10 +1,5 @@
 
-.cover {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  transition: opacity 0.3s ease-in-out;
-}
+
 /* ------------- */
 .sub-menu {
   position: absolute;
@@ -12,6 +7,7 @@
   left: 20px;
   height: 46px;
   width: 46px;
+
 }
 
 .sub-menu-link {
@@ -34,7 +30,7 @@
 
 /* ------------- */
 .menu-bar {
-  background-color: #fff;
+  background-color: black;
   height: 4px;
   width: 100%;
   position: absolute;
@@ -66,7 +62,7 @@
 
 /* ------------- */
 .sub-menu-circle {
-  background-color: tomato;
+  background-color: skyblue;
   position: absolute;
   transform: scale(1);
   z-index: 1000;
@@ -87,7 +83,7 @@
   position: fixed;
   text-align: center;
   transition: opacity 0.3s ease-in-out;
-  z-index: 1001;
+  z-index: 1000;
   opacity: 0;
   visibility: hidden;
   display: flex;

@@ -1,8 +1,15 @@
-$(function() {  
-    $(".sub-menu-link").click(function(e) {
-      e.preventDefault();    
-      $(".sub-menu-overlay").toggleClass("open");
-      $(".sub-menu").toggleClass("open");
-      $("body").toggleClass("cover");
-    });	
+$(function () {
+  $(".clickEvent").click(function (e) {
+    e.preventDefault();
+    $(".sub-menu-overlay").toggleClass("open");
+    $(".sub-menu").toggleClass("open");
+    $("body").toggleClass("cover");
+    
   });
+
+  $('#skill-sec-link').click(function(){
+    $(document).scrollTop(1000) // any value you need
+    });
+
+});
+

@@ -7,8 +7,12 @@
   --gradient-3: linear-gradient(210deg, #74EBD5 0%, #f7e8ad 100%);
 }
 
+body{
+  font-family: "Raleway", "Poppins";
+}
 
 #home-sec{
+  z-index: 0;
   background-color: yellow;
   font-family: "Raleway", "Poppins";
 }
@@ -87,6 +91,12 @@
   font-family: "Raleway", "Poppins";
 
 }
+.skills-heading p{
+  margin: 1rem 0 0 3rem;
+ font-size: 6vw;
+ text-align: left;
+ font-weight: bolder;
+}
 
 .primary-skills {
   margin: 5rem 2rem;
@@ -141,7 +151,7 @@
   z-index: 0;
   width: 20%;
   position: absolute;
-  bottom: -10px;
+  bottom: 0px;
   left: 0px;
 }
 #project-anim2{
@@ -155,6 +165,10 @@
 }
 
 .card-title{
+  z-index: 100;
+
+  position: absolute;
+  bottom: 5%;
   text-align: center;
   margin: 0.5rem;
   font-size: medium;
@@ -189,14 +203,64 @@
    width: 100%;
    height: 100%;
    border-radius: 5px;
-   box-shadow: 0 14px 26px rgba(0,0,0,0.04);
-   backface-visibility: hidden;
+   box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
+      backface-visibility: hidden;
  }
 
  .front {
    background: white;
    font-size: 12px;
  }
+ .front img{
+   position: absolute;
+   top:15%;
+   left:15%;
+   width:70%;
+ }
+ .projects .front .tech-stack {
+  position: absolute;
+  top: 5%;
+  right:10%
+}
+
+#pr-img-3{
+  position: absolute;
+   top:25%;
+   left:15%;
+   width:70%;
+}
+#pr-img-4{
+  position: absolute;
+   top:30%;
+   left:15%;
+   width:70%;
+}
+#pr-img-6{
+  position: absolute;
+   top:20%;
+   left:15%;
+   width:70%;
+}
+#pr-img-3{
+  position: absolute;
+   top:25%;
+   left:15%;
+   width:70%;
+}
+
+ .projects .front .btn {
+   z-index: 100;
+  border: 1.5px solid black;
+  margin: 0.5rem 0.2rem;
+  border-radius: 100px;
+  background-color: transparent;
+  color: black;
+  padding: 6px 10px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+
  .back {
    background: white;
    border-color: transparent;
@@ -244,11 +308,18 @@
 
 
 
-#cp-sec{
-  background-color: black;
+#achieve-sec{
+  background-color: orange;
 }
 
+#achieve-heading-text{
+  margin: 1rem 0 0 3rem;
+ font-size: 6vw;
+ font-weight: bolder;
+ position: absolute;
+ top:-380px;
 
+}
 
 
 
@@ -266,11 +337,8 @@
   text-align: center;
 }
 
-.slide-container{
 
-}
-
-.slide .card{
+#experience-sec .slide .card{
   border-radius: 18px;
 
   width: 1200px;
@@ -283,27 +351,62 @@
 
 }
 
+#experience-sec .slide .card-body{
+  padding: 3rem 5rem;
+}
+
+#experience-sec .slide .links{
+  text-align: center;
+}
+#experience-sec .slide .btn {
+  border: 2px solid #46c3db;
+  margin: 0.5rem 0.5rem;
+  border-radius: 100px;
+  background-color: transparent;
+  color: #46c3db;
+  padding: 8px 13px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
 
-.slide .background-card {
+#experience-sec .slide .background-card {
   border-radius: 18px;
   position: absolute;
   left:-30px;
   top:-30px;
   z-index: 0;
-  background: var(--gradient-1);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: var(--gradient-1);
   border-color: white;
 }
 
-.company-logo img{
-  width: 50%;
+#experience-sec .company-logo img{
+  margin: 2rem 0rem 2rem 2rem;
+  width: 40%;
+  filter: drop-shadow( 0 14px 26px rgba(0, 0, 0, 0.04));
+
+}
+
+#experience-sec .mate-logo img{
+  margin: 3rem;
+  width: 30%;
+}
+
+#experience-sec .company-position{
+  margin: 3rem;
+ 
+
+}
+
+#experience-sec .job-text{
+  margin: 3rem;
 }
 
 
 
-
-
-#mooc-sec{
+#cert-sec{
+  width: 100%;
+  height: 100%;
   background-color: #ff8a5c;
   font-family: "Raleway", "Poppins";
 
@@ -311,36 +414,39 @@
 
 
 
-#mooc-sec .catalog-sec{
+#cert-sec .catalog-sec{
   padding: 3rem;
   margin-top: auto;
   margin-bottom: auto;
 
 }
-#mooc-sec .catalog-sec .card{
-  font-size: 20px;
+#cert-sec .catalog-sec .card{
+  height: 60px;
+  width: 300px;
+  font-size: 16px;
   text-align: center;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   margin-left: 1rem;
+  transition: transform .3s; /* Animation */
 
-  border-radius: 5px;
 }
 
-
-#mooc-sec .certificate-sec {
-}
-
-#mooc-sec .certificate-sec .card{
+#cert-sec .catalog-sec .card:hover{
+  transform: scale(1.09);
  
-  margin-left: 2rem;
-  border-radius: 24px;
-  width: 90%;
+ }
+
+
+
+#cert-sec .certificate-sec .card{
+  margin: 3rem 2rem 3rem 5rem;
+  width: 80%;
 }
-#mooc-sec .certificate-sec img{
+#cert-sec .certificate-sec img{
   width: 100%;
-  height: 100%;
 }
+
 
 
 
@@ -352,16 +458,32 @@
 }
 
 .badges{
+  margin: 10rem 5rem 2rem 5rem;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(2,1fr);
+}
+.badge-heading p{
+  text-align: center;
+  font-size: 3vmax;
 }
 
 .badges img{
-  width: 50%;
+  width: 200px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-radius: 5px;
   box-shadow: 0 14px 26px rgba(0,0,0,0.04);
+  transition: transform .3s; /* Animation */
 
+
+}
+.badges img:hover{  
+  transform: scale(1.2);
+
+}
+.badges #orange-badge{  
+  filter: drop-shadow(0 0 0.75rem orangered);
 }
 
 
