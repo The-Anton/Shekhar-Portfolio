@@ -1,5 +1,4 @@
-
-  function Circlle(el){
+function Circlle(el){
     $(el).circleProgress({  
 
       fill: {

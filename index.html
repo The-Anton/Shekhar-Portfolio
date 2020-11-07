@@ -5,6 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shekhar</title>
 
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+      body{
+        visibility: hidden;
+      }
+      #loader{
+        position: absolute;
+        top:20%;
+        left:30%;
+      }
+      lottie-player {
+        --lottie-player-toolbar-height: 250px;
+
+      }
+    </style>
+<script>
+
+  document.onreadystatechange = function() { 
+    if (document.readyState !== "complete") { 
+        document.querySelector("body").style.visibility = "hidden"; 
+        document.querySelector("#loader").style.visibility = "visible"; 
+    } else { 
+        document.querySelector("#loader").style.display = "none"; 
+        document.querySelector("body").style.visibility = "visible"; 
+    } 
+  }; 
+  </script>
+   <script  src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+ 
+
+
     <link rel="stylesheet" href="css/styles.css">
 
 
@@ -23,9 +64,9 @@
     <!---------------------------- Bootstrap -------------------->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.css" integrity="sha512-uTI445rvw38f0lHFivzsIkexI6/PNKT42qMCJp7gXOsHNk1wOkVFwFRfQ6N+FUE6JDL59cJEvQFCYigE95hyug==" crossorigin="anonymous" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
 
 
@@ -34,13 +75,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.css" integrity="sha512-uTI445rvw38f0lHFivzsIkexI6/PNKT42qMCJp7gXOsHNk1wOkVFwFRfQ6N+FUE6JDL59cJEvQFCYigE95hyug==" crossorigin="anonymous" />    
-
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!----------------------------  Javascript---------------------->
 
     
@@ -52,6 +86,9 @@
 </head>
 <body>
 
+  <div id="loader" class="center">
+    <lottie-player  src="loader.json" background="transparent"  speed="1"  style="width: 600px; height: 600px; text-align: center;" loop  autoplay></lottie-player>
+  </div> 
 
   
 
@@ -1097,14 +1134,14 @@
 
 <!---------------------------- Start Bootstrap scripts------------------------------------------->
 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!---------------------------- End Bootstrap scripts------------------------------------------->
 
 <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js" ></script>
-
-<!---------------------------- End Bootstrap scripts------------------------------------------->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.js" integrity="sha512-V14sbSKXONAuZE0bmjlAPPkqkzKLBEGTjMTT+ZEsHPpPK2N4hXnwZHBgdKJg+IsgIDKGclhSHMjh9U03xo8Y1Q==" crossorigin="anonymous"></script>
 
 
@@ -1134,31 +1171,31 @@
 <script>
   new fullpage('#fullpage', {
   //options here
-  autoScrolling:true,
-  navigation: true,
-  slidesNavigation: true,
-  controlArrows: false,
- navigationTooltips: ['Home', 'Skills', 'Projects', 'Achievments', "Experience", 'Certifications', 'Badges', 'Contact'],
- css3: true,
- lockAnchors: false,
- menu: '#menu'
+        autoScrolling:true,
+        navigation: true,
+        slidesNavigation: true,
+        controlArrows: false,
+      navigationTooltips: ['Home', 'Skills', 'Projects', 'Achievments', "Experience", 'Certifications', 'Badges', 'Contact'],
+      css3: true,
+      lockAnchors: false,
+      menu: '#menu'
 
 
 
 
 
-/*  causing scrolling error
-  afterLoad: function(origin, destination, direction){
-		var loadedSection = this;
+      /*  causing scrolling error
+        afterLoad: function(origin, destination, direction){
+          var loadedSection = this;
 
-		//using index
-		if(origin.index == 0){
-      Circlle('.round');
-		}
+          //using index
+          if(origin.index == 0){
+            Circlle('.round');
+          }
 
-	}
-*/ 
-});
+        }
+      */ 
+      });
 </script>
 
 
