@@ -28,13 +28,18 @@ body {
 }
 
 #projects-sec {
-  background-color: #87ceeb;
+  background-color: white;
+  font-family: Raleway,Poppins;
+
 }
 
 #achieve-sec {
   background-color: white;
+  font-family: Raleway,Poppins;
 }
 
 #experience-sec {
-  background-color: #ffb6c1;
+  background-color: white;
+  font-family: Raleway,Poppins;
+
 }
