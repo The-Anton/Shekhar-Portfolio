@@ -23,6 +23,8 @@
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     margin-left: 1rem;
+    border:0;
+
     box-shadow:
     0 2.9px 1.9px rgba(0, 0, 0, 0.02),
     0 7px 4.1px rgba(0, 0, 0, 0.028),
@@ -44,6 +46,8 @@
   
   
   #cert-sec .certificate-sec .card{
+    border:0;
+
     margin: 3rem 2rem 3rem 5rem;
     width: 80%;
   }

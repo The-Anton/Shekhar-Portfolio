@@ -114,7 +114,6 @@
 
 
 
-
 #contact-column-1 {
   display: flex;
   flex-direction: column;
@@ -134,9 +133,15 @@
 #contact-form .form-group{
     outline: none;
     width: 28rem;
-
+    border: 0;
     box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
     border-color: #fff;
+}
+.wpv-filter-form .form-control{
+  border:0;
+}
+.no-border{
+  border: 0;
 }
 
 input:focus, textarea:focus, select:focus{

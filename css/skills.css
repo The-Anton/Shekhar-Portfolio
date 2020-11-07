@@ -13,6 +13,7 @@
       margin: 2rem 0rem 0rem 5rem;
       width: 70%;
       height: 70%;
+      border:0;
       box-shadow:
     0 2.8px 2.2px rgba(0, 0, 0, 0.02),
     0 6.7px 5.3px rgba(0, 0, 0, 0.028),
@@ -38,21 +39,24 @@
   }
   #circleBar .round{
     min-height: 50px;
-    margin-top: 10px;
+    margin-top: 0px;
     position: relative;
     margin-bottom: 10px;
   }
+  
   #circleBar .round2{
     min-height: 50px;
     margin-top: 10px;
     position: relative;
     margin-bottom: 10px;
   }
+
+ 
   
   #circleBar .round strong{
 
     position: absolute;
-    top: 70%;
+    top: 65%;
     left: 50%;
     margin-top: -50px;
     transform: translate(-50%);

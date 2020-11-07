@@ -23,8 +23,8 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@the
                <img src="${item.thumbnail}" class="blog__topImg"></img>
                <div class="blog__content">
                   <div class="blog_preview">
-                     <h2 class="blog__title">${shortenText(item.title, 0, 30)+ '...'}</h2>
-                     <p class="blog__intro">${'...' + shortenText(toText(item.content),100, 370)+ '...'}</p>
+                     <h2 class="blog__title">${shortenText(item.title)}</h2>
+                     <p class="blog__intro">${'...' + shortenText(toText(item.content),500, 700)+ '...'}</p>
                   </div>
                   <hr>
                   <div class="blog__info">

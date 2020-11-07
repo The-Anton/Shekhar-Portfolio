@@ -2,8 +2,8 @@ function Circlle(el){
     $(el).circleProgress({  
 
       fill: {
-        gradient: ["red", "orange"]
-      }
+      gradient: ["green", "orange","red"], gradientAngle: Math.PI*2.3/4
+    }
 
     })
 	.on('circle-animation-progress', function(event ,progress, stepValue){

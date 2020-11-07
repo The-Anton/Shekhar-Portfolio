@@ -6,7 +6,7 @@
   }
 
 a {
-    color: inherit;
+    color: black;
     text-decoration: none;
   }
   
@@ -52,11 +52,18 @@ a {
     border-radius: 15px;
     margin: 3rem 1rem;
     width: 25%;
-    -webkit-box-shadow: 9px 9px 20px 0px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 9px 9px 20px 0px rgba(0, 0, 0, 0.4);
-    box-shadow: 9px 9px 20px 0px rgba(0, 0, 0, 0.4);
+    border: 0;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07)
+  ;
   }
   .blog__topImg {
+    border-radius: 15px 15px 0px 0px;
     max-width: 100%;
   }
   .blog__content {
@@ -67,6 +74,7 @@ a {
     font-weight: 300;
   }
   .blog__title {
+    color: black;
     margin-top: 0;
     font-size: 1.4rem;
   }
@@ -88,19 +96,5 @@ a {
     display: flex;
     flex-direction: row;
   }
-  .blog__counterItem {
-    height: 20px;
-    width: 20px;
-    margin: .5rem;
-    background-color: lightgray;
-    border: 1px solid lightgray;
-    border-radius: 25px;
-  }
-  .blog__counterItem:hover {
-    cursor: pointer;
-  }
-  .blog__counterItem-active {
-    border: 1px solid lightblue;
-    background-color: lightblue;
-  }
+  
   
