@@ -1,348 +1,325 @@
 * {
-    position: relative;
-    padding: 0px;
-    margin: 0px;
-    box-sizing: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  box-sizing: none;
+}
+
+#container {
+  height: 100%;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#container #line {
+  margin: 0 auto;
+  height: 100%;
+  width: 10px;
+  background-color: #fff;
+  animation: lineShow .5s linear;
+}
+
+#container .circle {
+  position: absolute;
+  border-radius: 20px;
+  left: 47.5%;
+  background-color: #fff;
+}
+
+#container #circle0 {
+  top: 10%;
+  height: 20px;
+  width: 20px;
+}
+
+#container #circle0::before {
+  content: "2018";
+  color: #fff;
+  position: absolute;
+  left: -50px;
+  top: 1px;
+  opacity: 1;
+  animation: hide 6s,dateShow 1s 3s;
+}
+
+#container #circle0 #circle1content {
+  position: absolute;
+  border: 1.5px solid #fff;
+  left: -400px;
+  width: 300px;
+  height: 80px;
+  color: #fff;
+  padding: 10px;
+  top: -10px;
+  border-radius: 2px;
+  animation: hide 3.6s,dateShow 1s 3.6s;
+}
+
+#container .circleshow0 {
+  animation: circleShow .5s linear;
+}
+
+#container #circle1 {
+  top: 20%;
+  height: 20px;
+  width: 20px;
+}
+
+#container #circle1::before {
+  content: "2018";
+  color: #fff;
+  position: absolute;
+  left: 40px;
+  top: 1px;
+  opacity: 1;
+  animation: hide 6s,dateShow 1s 3s;
+}
+
+#container #circle1 #circle1content {
+  position: absolute;
+  border: 1.5px solid #fff;
+  left: 100px;
+  width: 300px;
+  height: 100px;
+  color: #fff;
+  padding: 10px;
+  top: -10px;
+  border-radius: 2px;
+  animation: hide 3.6s,dateShow 1s 3.6s;
+}
+
+#container .circleshow1 {
+  animation: circleShow 1s linear;
+}
+
+#container #circle2 {
+  top: 35%;
+  height: 20px;
+  width: 20px;
+}
+
+#container #circle2::before {
+  content: "2019";
+  color: #fff;
+  position: absolute;
+  left: -50px;
+  top: 1px;
+  opacity: 1;
+  animation: hide 6s,dateShow 1s 3.2s;
+}
+
+#container #circle2 #circle2content {
+  position: absolute;
+  border: 1.5px solid #fff;
+  left: -300px;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  padding: 10px;
+  top: -10px;
+  border-radius: 2px;
+  animation: hide 3.6s,dateShow 1s 3.6s;
+}
+
+#container .circleshow2 {
+  animation: circleShow2 2s linear;
+}
+
+#container #circle3 {
+  top: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+#container #circle3::before {
+  content: "2019";
+  color: #fff;
+  position: absolute;
+  left: 40px;
+  top: 1px;
+  opacity: 1;
+  animation: hide 6s,dateShow 1s 3.4s;
+}
+
+#container #circle3 #circle3content {
+  position: absolute;
+  border: 1.5px solid #fff;
+  left: 100px;
+  width: 400px;
+  height: 50px;
+  color: #fff;
+  padding: 10px;
+  top: -10px;
+  text-align: center;
+  border-radius: 2px;
+  animation: hide 3.6s,dateShow 1s 3.6s;
+}
+
+#container .circleshow3 {
+  animation: circleShow3 3s linear;
+}
+
+#container #circle4 {
+  top: 60%;
+  height: 20px;
+  width: 20px;
+}
+
+#container #circle4::before {
+  content: "2019";
+  color: #fff;
+  position: absolute;
+  left: -50px;
+  top: 1px;
+  opacity: 1;
+  animation: hide 6s,dateShow 1s 3.6s;
+}
+
+#container #circle4 #circle4content {
+  position: absolute;
+  border: 1.5px solid #fff;
+  left: -300px;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  padding: 10px;
+  top: -10px;
+  border-radius: 2px;
+  animation: hide 3.4s,dateShow 1s 3.4s;
+}
+
+#container .circleshow4 {
+  animation: circleShow4 4s linear;
+}
+
+#container #circle5 {
+  top: 75%;
+  height: 40px;
+  width: 40px;
+  left: 45.15%;
+}
+
+#container #circle5::before {
+  content: "2020";
+  color: #fff;
+  position: absolute;
+  left: 50px;
+  top: 1px;
+  opacity: 1;
+  animation: hide 3.4s,dateShow 1s 3.4s;
+}
+
+#container #circle5 #circle5content {
+  position: absolute;
+  border: 1.5px solid #fff;
+  left: 100px;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  padding: 10px;
+  top: -10px;
+  border-radius: 2px;
+  animation: hide 3.6s,dateShow 1s 3.6s;
+}
+
+#container .circleshow5 {
+  animation: circleShow5 4s linear,breath 4s 3.4s infinite;
+}
+
+@keyframes lineShow {
+  0% {
+    height: 0%;
   }
-  
- 
-  
-  #container {
-    height: 100%;
-    width: 400px;
-    margin: 0px auto;
+
+  100% {
+    height: 10%;
   }
-  #container #line {
-    margin: 0px auto;
-    height: 100%;
-    width: 10px;
-    background-color: white;
-    animation: lineShow 0.5s linear;
-  }
+}
 
-
-
-  #container .circle {
-    position: absolute;
-   
-    border-radius: 20px;
-    left: 47.5%;
-    background-color: white;
-  }
-
-
-
-/* circle 0 */
-
-  #container #circle0 {
+@keyframes circleShow {
+  0% {
     top: 10%;
-    height: 20px;
-    width: 20px;
-  }
-  #container #circle0::before {
-    content: "2018";
-    color: white;
-    position: absolute;
-    left: -50px;
-    top: 1px;
-    opacity: 1;
-    animation: hide 6s, dateShow 1s 3s;
-  }
-  #container #circle0 #circle1content {
-    position: absolute;
-    border: 1.5px solid white;
-    left: -400px;
-    width: 300px;
-    height: 80px;
-    color: white;
-    padding: 10px;
-    top: -10px;
-    border-radius: 2px;
-    animation: hide 3.6s, dateShow 1s 3.6s;
-  }
- 
-  #container .circleshow0 {
-    animation: circleShow 0.5s linear;
   }
 
-
-
-/* circle 1 */
-
-  #container #circle1 {
+  100% {
     top: 20%;
-    height: 20px;
-    width: 20px;
   }
-  #container #circle1::before {
-    content: "2018";
-    color: white;
-    position: absolute;
-    left: 40px;
-    top: 1px;
-    opacity: 1;
-    animation: hide 6s, dateShow 1s 3s;
-  }
-  #container #circle1 #circle1content {
-    position: absolute;
-    border: 1.5px solid white;
-    left: 100px;
-    width: 300px;
-    height: 100px;
-    color: white;
-    padding: 10px;
-    top: -10px;
-    border-radius: 2px;
-    animation: hide 3.6s, dateShow 1s 3.6s;
-  }
- 
-  #container .circleshow1 {
-    animation: circleShow 1s linear;
+}
+
+@keyframes circleShow2 {
+  0% {
+    top: 20%;
   }
 
-
-
-
-  /* circle 2 */
-
-  #container #circle2 {
+  100% {
     top: 35%;
-    height: 20px;
-    width: 20px;
   }
-  #container #circle2::before {
-    content: "2019";
-    color: white;
-    position: absolute;
-    left: -50px;
-    top: 1px;
-    opacity: 1;
-    animation: hide 6s, dateShow 1s 3.2s;
-  }
-  #container #circle2 #circle2content {
-    position: absolute;
-    border: 1.5px solid white;
-    left: -300px;
-    width: 200px;
-    height: 50px;
-    color: white;
-    padding: 10px;
-    top: -10px;
-    border-radius: 2px;
-    animation: hide 3.6s, dateShow 1s 3.6s;
-  }
-  
-  #container .circleshow2 {
-    animation: circleShow2 2s linear;
+}
+
+@keyframes circleShow3 {
+  0% {
+    top: 35%;
   }
 
-
-
-
-
-
-  /* circle 3 */
-
-  #container #circle3 {
+  100% {
     top: 50%;
-    height: 20px;
-    width: 20px;
   }
-  #container #circle3::before {
-    content: "2019";
-    color: white;
-    position: absolute;
-    left: 40px;
-    top: 1px;
-    opacity: 1;
-    animation: hide 6s, dateShow 1s 3.4s;
+}
+
+@keyframes circleShow4 {
+  0% {
+    top: 50%;
   }
-  #container #circle3 #circle3content {
-    position: absolute;
-    border: 1.5px solid white;
-    left: 100px;
-    width: 400px;
-    height: 50px;
-    color: white;
-    padding: 10px;
-    top: -10px;
-    text-align: center;
-    border-radius: 2px;
-    animation: hide 3.6s, dateShow 1s 3.6s;
-  }
-  
 
-  #container .circleshow3 {
-    animation: circleShow3 3s linear;
-  }
-  #container .breath {
-    animation: breath 3s infinite;
-  }
-  
-
-
-
-
-
-
-  /* circle 4 */
-
-  #container #circle4 {
+  100% {
     top: 60%;
-    height: 20px;
-    width: 20px;
   }
-  #container #circle4::before {
-    content: "2019";
-    color: white;
-    position: absolute;
-    left: -50px;
-    top: 1px;
-    opacity: 1;
-    animation: hide 6s, dateShow 1s 3.6s;
-  }
-  #container #circle4 #circle4content {
-    position: absolute;
-    border: 1.5px solid white;
-    left: -300px;
-    width: 200px;
-    height: 50px;
-    color: white;
-    padding: 10px;
-    top: -10px;
-    border-radius: 2px;
-    animation: hide 3.4s, dateShow 1s 3.4s;
+}
+
+@keyframes circleShow5 {
+  0% {
+    top: 60%;
   }
 
-  #container .circleshow4 {
-    animation: circleShow4 4s linear;
-  }
-  #container .breath {
-    animation: breath 3s infinite;
-  }
-  
-
-
-
-
-
-  /* circle 5 */
-
-  #container #circle5 {
+  100% {
     top: 75%;
-    height: 40px;
-    width: 40px;
-    left: 45.15%;
-
   }
-  #container #circle5::before {
-    content: "2020";
-    color: white;
-    position: absolute;
-    left: 50px;
-    top: 1px;
+}
+
+@keyframes breath {
+  0% {
+    background-color: #fff;
+  }
+
+  30% {
+    background-color: orange;
+  }
+
+  60% {
+    background-color: #fff;
+  }
+
+  30% {
+    background-color: orange;
+  }
+}
+
+@keyframes dateShow {
+  from {
+    opacity: 0;
+  }
+
+  to {
     opacity: 1;
-    animation: hide 3.4s, dateShow 1s 3.4s;
   }
-  #container #circle5 #circle5content {
-    position: absolute;
-    border: 1.5px solid white;
-    left: 100px;
-    width: 200px;
-    height: 50px;
-    color: white;
-    padding: 10px;
-    top: -10px;
-    border-radius: 2px;
-    animation: hide 3.6s, dateShow 1s 3.6s;
-  }
-  
+}
 
-  #container .circleshow5 {
-    animation: circleShow5 4s linear, breath 4s 3.4s infinite;
+@keyframes hide {
+  from {
+    opacity: 0;
   }
-  #container .breath {
-    animation: breath 3s infinite;
-  }
-  
 
-
-
-
-  @keyframes lineShow {
-    0% {height: 0%;}
-    100% {
-      height: 10%;
-    }
+  to {
+    opacity: 0;
   }
-  @keyframes circleShow {
-    0% {
-      top: 10%;
-    }
-    100% {
-      top: 20%;
-    }
-  }
-  @keyframes circleShow2 {
-    0% {
-      top: 20%;
-    }
-    100% {
-      top: 35%;
-    }
-  }
-  @keyframes circleShow3 {
-    0% {
-      top: 35%;
-    }
-    100% {
-      top: 50%;
-    }
-  }
-  @keyframes circleShow4 {
-    0% {
-      top: 50%;
-    }
-    100% {
-      top: 60%;
-    }
-  }
-  @keyframes circleShow5 {
-    0% {
-      top: 60%;
-    }
-    100% {
-      top: 75%;
-    }
-  }
-  @keyframes breath {
-    0% {
-      background-color: white;
-    }
-    30% {
-      background-color: orange;
-    }
-    60% {
-      background-color: white;
-    }
-    30% {
-      background-color: orange;
-    }
-  }
-  @keyframes dateShow {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes hide {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 0;
-    }
-  }
-  
+}

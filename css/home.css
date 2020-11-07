@@ -1,50 +1,24 @@
-
-
-  .av-img{
+.av-img {
     height: 400px;
     object-fit: cover;
     border-radius: 5px;
-    box-shadow:
-    0 2.9px 1.9px rgba(0, 0, 0, 0.02),
-    0 7px 4.1px rgba(0, 0, 0, 0.028),
-    0 13.1px 7.2px rgba(0, 0, 0, 0.035),
-    0 23.5px 13.3px rgba(0, 0, 0, 0.042),
-    0 43.9px 28.5px rgba(0, 0, 0, 0.05),
-    0 105px 80px rgba(0, 0, 0, 0.07)
-  ;
-  
-  
+    box-shadow: 0 2.9px 1.9px rgba(0,0,0,.02),0 7px 4.1px rgba(0,0,0,.028),0 13.1px 7.2px rgba(0,0,0,.035),0 23.5px 13.3px rgba(0,0,0,.042),0 43.9px 28.5px rgba(0,0,0,.05),0 105px 80px rgba(0,0,0,.07);
   }
   
-  .home{
-  
-   padding: 5rem;
+  .home {
+    padding: 5rem;
   }
-  .avatar-area{
+  
+  .avatar-area {
     text-align: center;
   }
   
-  
-  .hover-in{
-      transition: .3s ease-out;
-  }
-  .hover-out{
-      transition: .3s ease-in;
-  }
-  
-  #name{
-  
+  #name {
     font-size: 6vw;
     font-weight: bolder;
-  
   }
   
-  
-  /* Intro TypeIt.js */ 
-  
-  .myelement{
-   font-size: xx-large;
-   font-weight: 500;
-  
+  .myelement {
+    font-size: xx-large;
+    font-weight: 500;
   }
-  

@@ -7,177 +7,223 @@
 
 }
 
+.main-circle span{
+  font-weight: bold;
+
+}
+.main-circle .circle-text{
+  display: flex;
+  flex-direction: column;
+  
+}
+
 
 #circle1 {
     width: 100px;
     height: 100px;
-    background-color: white;
+    background-color: #22d1ee;
+    color: white;
     border-radius: 50%;
     text-align: center;
     position: absolute;
     left:0px;
     bottom: 0px;
-  }
-
-
-#circle1 span{
-  text-align: center;
 }
-#circle1 span{
+
+#circle2 {
+  width: 200px;
+  height: 200px;
+  background-color: #22d1ee;
+  border-radius: 50%;
+  position: absolute;
+  left:303px;
+  bottom: 2px;
+}
+
+#circle3 {
+  width: 300px;
+  height: 300px;
+  background-color: #83e85a;
+  color: white;
+    border-radius: 50%;
+  position: absolute;
+  left:220px;
+  bottom: 200px;
+}
+
+#circle4 {
+  width: 250px;
+  height: 250px;
+  background-color: #ffd615;
+  color: white;
+    border-radius: 50%;
+  position: absolute;
+  left:60px;
+  bottom: 30px;
+
+}
+
+#circle5 {
+  width: 150px;
+  height: 150px;
+  background-color: #22d1ee;
+  border-radius: 50%;
+  position: absolute;
+  left:0px;
+  bottom: 248px;
+}
+
+
+#circle6 {
+  width: 400px;
+  height: 400px;
+  background-color: #364f6b;
+  color: white;
+    border-radius: 50%;
+  position: absolute;
+  left:485px;
+  bottom: 2px;
+}
+
+
+
+#circle7 {
+  width: 125px;
+  height: 125px;
+  background-color: #22d1ee;
+  border-radius: 50%;
+  position: absolute;
+  left:1410px;
+  bottom: 2px;
+}
+
+
+#circle8 {
+  width: 450px;
+  height: 450px;
+  background-color: #22d1ee;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  left:812px;
+  bottom: 210px;
+}
+
+
+#circle9 {
+  width: 300px;
+  height: 300px;
+  background-color: #ff304f;
+  color: white;
+    border-radius: 50%;
+  position: absolute;
+  left:1130px;
+  bottom: 2px;
+}
+
+
+#circle10 {
+  width: 100px;
+  height: 100px;
+  background-color: #22d1ee;
+  border-radius: 50%;
+  position: absolute;
+  left:1060px;
+  bottom: 2px;
+}
+
+#circle11 {
+  width: 200px;
+  height: 200px;
+  background-color: #22d1ee;
+  border-radius: 50%;
+  position: absolute;
+  left:868px;
+  bottom: 2px;
+}
+
+
+
+#circle1 .circle-text{
+  text-align: center;
   position: absolute;
   left: 30%;
   bottom: 50%;
 }
-#circle2 {
-    width: 200px;
-    height: 200px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    left:303px;
-    bottom: 2px;
-  }
 
-  #circle2 span{
+
+  #circle2 .circle-text{
+    text-align: center;
     position: absolute;
     top:50%;
     left:30%;
   }
-#circle3 {
-    width: 300px;
-    height: 300px;
-    background-color: white;
-    border-radius: 50%;
+
+  #circle3 .circle-text{
+    font-size: 20px;
+    text-align: center;
     position: absolute;
-    left:220px;
-    bottom: 200px;
+    top:30%;
+    left:3%;
   }
 
-  #circle3 span{
+
+  #circle4 .circle-text{
+    text-align: center;
     position: absolute;
-    left: 30%;
+    left: 10%;
+    bottom: 45%;
+  }
+
+
+  #circle5 .circle-text{  
+    text-align: center;
+    position: absolute;
+    left: 10%;
     bottom: 50%;
   }
 
-#circle4 {
-    width: 250px;
-    height: 250px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    left:60px;
-    bottom: 30px;
-
-  }
-
-  #circle4 span{
-    position: absolute;
-    left: 30%;
-    bottom: 50%;
-  }
-
-#circle5 {
-    width: 150px;
-    height: 150px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    left:0px;
-    bottom: 248px;
-  }
-
-  #circle5 span{
+  #circle6 .circle-text{
+    text-align: center;
+    font-size: 24px;
     position: absolute;
     left: 30%;
     bottom: 50%;
   }
 
 
-
-
-  #circle6 {
-    width: 400px;
-    height: 400px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    left:485px;
-    bottom: 2px;
-  }
-
-  #circle6 span{
+  #circle7 .circle-text{
+    text-align: center;
     position: absolute;
     left: 30%;
     bottom: 50%;
   }
 
-  #circle7 {
-    width: 125px;
-    height: 125px;
-    background-color: white;
-    border-radius: 50%;
+  #circle8 .circle-text{
+    text-align: center;
+    font-size: 28px;
     position: absolute;
-    left:1410px;
-    bottom: 2px;
+    left: 20%;
+    bottom: 40%;
   }
-  #circle7 span{
+ 
+  #circle9 .circle-text{
+    font-size: 20px;
+    text-align: center;
     position: absolute;
-    left: 30%;
-    bottom: 50%;
+    left: 20%;
+    bottom: 40%;
   }
 
-  #circle8 {
-    width: 450px;
-    height: 450px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    left:812px;
-    bottom: 210px;
-  }
-  #circle8 span{
+  #circle10 .circle-text{
+    text-align: center;
     position: absolute;
     left: 30%;
     bottom: 50%;
   }
-  #circle9 {
-    width: 300px;
-    height: 300px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    left:1130px;
-    bottom: 2px;
-  }
-  #circle9 span{
-    position: absolute;
-    left: 30%;
-    bottom: 50%;
-  }
-  #circle10 {
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    left:1060px;
-    bottom: 2px;
-  }
-  #circle10 span{
-    position: absolute;
-    left: 30%;
-    bottom: 50%;
-  }
-  #circle11 {
-    width: 200px;
-    height: 200px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    left:868px;
-    bottom: 2px;
-  }
-  #circle11 span{
+  
+  #circle11 .circle-text{
+    text-align: center;
     position: absolute;
     left: 30%;
     bottom: 50%;
