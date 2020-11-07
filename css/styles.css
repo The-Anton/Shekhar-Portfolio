@@ -1,0 +1,111 @@
+:root {
+  --shadow-color: 0px 10px 30px rgba(1, 1, 2, 0.3);
+  --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  --gradient-1: linear-gradient( 135deg, #FFD3A5 10%, #FD6585 100%);
+/*   --gradient-2: linear-gradient(214deg, #8EE2F1 0%, #CDFEDF 55%); */
+  --gradient-2: linear-gradient(315deg, #8EC5FC 0%, #E0C3FC 100%);
+  --gradient-3: linear-gradient(210deg, #74EBD5 0%, #f7e8ad 100%);
+}
+
+body{
+  font-family: "Raleway", "Poppins";
+}
+
+#home-sec{
+  z-index: 0;
+  background-color: yellow;
+  font-family: "Raleway", "Poppins";
+}
+
+
+
+
+
+/* skills sec */
+
+#timeline-sec{
+  background-color: #28c7fa;
+  font-family: "Raleway", "Poppins";
+
+}
+
+
+
+
+
+
+
+/* skills sec */
+
+#skill-sec{
+  background-color: white;
+  font-family: "Raleway", "Poppins";
+
+}
+
+
+/*   project sec */
+
+#projects-sec{
+  background-color: skyblue;
+}
+
+
+
+
+
+
+
+#achieve-sec{
+  background-color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#experience-sec{
+  background-color: lightpink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

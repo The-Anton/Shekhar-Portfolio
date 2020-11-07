@@ -1,0 +1,124 @@
+.skills-heading p{
+    margin: 1rem 0 0 3rem;
+   font-size: 6vw;
+   text-align: left;
+   font-weight: bolder;
+  }
+  
+  .primary-skills {
+    margin: 5rem 2rem;
+  }
+  
+  .primary-skills .language{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: space-between;
+  }
+   .tools{
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  #circleBar{
+    text-align: center;
+  }
+  #circleBar .round{
+    min-height: 50px;
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  #circleBar .round2{
+    min-height: 50px;
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  #circleBar .round strong{
+
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-top: -50px;
+    transform: translate(-50%);
+  
+  }
+  
+  #circleBar span{
+    display: block;
+    color: #999;
+    font-size: 17px;
+    margin-top: 10px;
+  }
+  
+  #circleBar span i{
+    color: black;
+    font-size: 22px;
+    margin-right: 7px;
+  }
+
+
+
+
+
+
+
+  .secondary-skills {
+    margin-left: 2rem;
+    position: relative;
+    top: -120px;
+  }
+  
+  
+  .secondary-skills .tools .card{
+    margin: 1rem 0rem 1rem 0rem;
+    width: 580px;
+    height: 140px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07)
+  ;
+  border-radius: 15px;
+  
+  }
+  
+  .tools-logo{
+    margin: 0.5rem 0rem;
+  }
+  .tools-logo img , i{
+    margin: 0rem 1rem;
+  }
+  
+  
+  #sql-logo{
+    width: 10%;
+  }
+  #colab-logo{
+    width: 15%;
+  }
+  #colab-logo{
+    width: 15%;
+  }
+  #pytorch-logo{
+    width: 7%;
+  }
+  #mathplotlib-logo{
+    width: 20%;
+  }
+  
+  
+  #gcd-logo{
+    position: absolute;
+    top:-8px;
+  }
+  
+  
+  
+  
+  
