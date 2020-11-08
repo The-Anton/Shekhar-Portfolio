@@ -1,18 +1,26 @@
 .skills-heading p{
-    margin: 1rem 0 0 3rem;
+    
+    z-index: 100;
+    position: abolute;
+    left: 3%;
+    top:-50px;
    font-size: 6vw;
    text-align: left;
    font-weight: bolder;
   }
   
+  #skill-sec .row{
+    display: flex;
+    flex-direction: row;
+  }
   .primary-skills {
-    margin: 2rem 2rem;
+    margin: 0rem 0rem;
   }
   #prime-skill-card{
       border-radius: 15px;
       margin: 2rem 0rem 0rem 5rem;
       width: 70%;
-      height: 70%;
+      height: 450px;
       border:0;
       box-shadow:
     0 2.8px 2.2px rgba(0, 0, 0, 0.02),
@@ -25,9 +33,10 @@
   }
   .primary-skills .language{
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(2,1fr);
     justify-content: space-between;
   }
+  
    .tools{
     display: flex;
     flex-direction: column;
@@ -35,23 +44,11 @@
   
 
   #circleBar{
+    margin: 0rem 1rem 0rem 1rem;
     text-align: center;
   }
-  #circleBar .round{
-    min-height: 50px;
-    margin-top: 0px;
-    position: relative;
-    margin-bottom: 10px;
-  }
-  
-  #circleBar .round2{
-    min-height: 50px;
-    margin-top: 10px;
-    position: relative;
-    margin-bottom: 10px;
-  }
 
- 
+
   
   #circleBar .round strong{
 
@@ -83,9 +80,11 @@
 
 
   .secondary-skills {
+    display: flex;
+    flex-direction: column;
     margin-left: 2rem;
     position: relative;
-    top: -120px;
+    top: -20px;
   }
   
   
@@ -139,3 +138,74 @@
   
   
   
+
+  @media screen and (max-width: 600px) {
+    .skills-heading p{
+      margin: 1rem 0 0 2rem;
+      position: abolute;
+      left: 3%;
+      top:0px;
+      font-size: 40px;
+      text-align: left;
+      font-weight: bolder;
+    }
+   
+
+    
+   
+    #skill-sec .row{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .primary-skills .language{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      justify-content: space-between;
+    }
+
+
+    
+    #prime-skill-card{
+      margin: 1rem 0rem 0rem 1.6rem;
+      border-radius: 15px;
+      width: 90%;
+      height: 450px;
+      
+    } 
+    
+    #circleBar{
+      margin: 0rem 0rem 0rem 0rem;
+      text-align: center;
+    }
+
+    .secondary-skills {
+      display: flex;
+      flex-direction: column;
+     
+      position: relative;
+      top: 10px;
+    }
+
+    .secondary-skills h4{
+      font-size: medium;
+    }
+ 
+    .tools-logo{
+      margin: 0.2rem 0rem;
+    }
+    .tools-logo #colab-logo{
+      visibility: hidden;
+    }
+    .secondary-skills .tools .card{
+      width: 95%;
+      height: 140px;
+    }
+    .secondary-skills .web-tools .tools-logo img{
+      width: 70px;
+    }
+    .secondary-skills .ml-tools .tools-logo img{
+      width: 30px;
+    }
+
+  }

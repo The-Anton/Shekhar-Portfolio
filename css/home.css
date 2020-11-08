@@ -9,8 +9,11 @@
     padding: 5rem;
   }
   
+  .home-sec .row{
+    display: flex;
+    flex-direction: row;
+  }
   .avatar-area {
-    text-align: center;
   }
   
   #name {
@@ -18,7 +21,42 @@
     font-weight: bolder;
   }
   
-  .myelement {
+  #myElement {
     font-size: xx-large;
     font-weight: 500;
+  }
+
+
+
+
+
+  @media screen and (max-width: 600px) {
+    
+    
+    .home {
+      padding: 0rem;
+    }
+    .avatar-area{
+      position: absolute;
+      top:-150px;
+      left: 10%;
+      margin: 0rem 5rem 0rem 0rem;;
+    }
+    #name {
+      text-align: center;
+      font-size: 40px;
+      font-weight: bolder;
+    }
+    #myElement {
+      text-align: center;
+      font-size: medium;
+    }
+  
+    .av-img {
+      
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+    }
+   
   }

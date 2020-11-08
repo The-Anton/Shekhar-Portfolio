@@ -1,5 +1,6 @@
-#achieve-heading-text{
-  margin: 1rem 0 0 3rem;
+.achieve-heading p{
+  z-index: 100;
+  left:3%;
  font-size: 6vw;
  font-weight: bolder;
  position: absolute;
@@ -253,3 +254,26 @@
     left: 5%;
     bottom: 30%;
   }
+
+
+
+  @media screen and (max-width: 600px) {
+    .achieve-heading p{
+      z-index: 100;
+      position: abolute;
+      left: 3%;
+      top:-360px;
+     font-size: 40px;
+     text-align: left;
+     font-weight: bolder;
+    }  
+    
+    .main-circle{
+        width: 50%;
+        height: 50%;
+      }
+  }
+
+
+
+

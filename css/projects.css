@@ -1,10 +1,17 @@
+.project-heading p{
+  margin: 0rem 0 0 2rem;
+ font-size: 4vw;
+ text-align: left;
+ font-weight: bolder;
+ position: absolute;
+ left: 0%;
+}
 
 .projects{
     display: grid;
-    
     grid-template-columns: repeat(3,1fr);
     justify-content: space-between;
-    padding: 1rem 18rem;
+    padding: 0 18rem;
   }
   #project-anim1{
     z-index: 0;
@@ -161,3 +168,47 @@
   
   
   
+   @media screen and (max-width: 600px) {
+    
+      .project-heading p{
+        margin: 0rem 0rem 0 2rem;
+        z-index: 100;
+       font-size:40px ;
+       text-align: left;
+       position: abolute;
+        left: 3%;
+        top:10px;
+       font-weight: bolder;
+       position: absolute;
+       left: 0%;
+      }
+    
+    
+    .projects{
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      justify-content: space-between;
+      padding: 0 0;
+
+    }
+
+    .projects .card {
+      z-index: 1;
+      width: 160px;
+      height: 300px;
+      margin: 0.2rem;
+      border-color: transparent;
+      transition: all 1.2s ease;
+      transform-style: preserve-3d;
+    }
+
+
+    #project-anim1{
+      visibility: hidden;
+    }
+    #project-anim2{
+      visibility: hidden;
+    }
+    
+  }

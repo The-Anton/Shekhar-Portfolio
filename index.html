@@ -6,16 +6,6 @@
     <title>Shekhar</title>
 
 
-
-
-
-
-
-
-
-
-
-
     <style>
       body{
         visibility: hidden;
@@ -24,6 +14,14 @@
         position: absolute;
         top:20%;
         left:30%;
+      }
+      @media screen and (max-width: 600px) {
+     
+        #loader{
+          position: absolute;
+          top:20%;
+          left:-28%;
+        }
       }
       lottie-player {
         --lottie-player-toolbar-height: 250px;
@@ -35,11 +33,11 @@
         }
     </style>
 <script>
-
+  
   document.onreadystatechange = function() { 
     if (document.readyState !== "complete") { 
         document.querySelector("body").style.visibility = "hidden"; 
-        document.querySelector("#loader").style.visibility = "visible"; 
+       document.querySelector("#loader").style.visibility = "visible"; 
     } else { 
         document.querySelector("#loader").style.display = "none"; 
         document.querySelector("body").style.visibility = "visible"; 
@@ -52,8 +50,10 @@
     } 
   }; 
   </script>
+
    <script  src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
- 
+ <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
    <link rel="stylesheet" type="text/css" href="fullpage.css" />
    
    <script type="text/javascript" src="fullpage.js"></script>
@@ -79,6 +79,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
 
@@ -98,7 +99,7 @@
 <body>
 
   <div id="loader" class="center">
-    <lottie-player  src="loader.json" background="transparent"  speed="1"  style="width: 600px; height: 600px; text-align: center;" loop  autoplay></lottie-player>
+    <lottie-player id="player-lottie" src="loader.json" background="transparent"  speed="1"  style="width: 600px; height: 600px; text-align: center;" loop  autoplay></lottie-player>
   </div> 
 
   
@@ -111,14 +112,14 @@
 
     <div id="home-sec" class="section">
       <div class="home row">
-        <div class="avatar-area col-md-6">
+        <div class="col-md-6 avatar-area">
           <img class="av-img" src="./avatar-2.jpg" alt="avatar">
 
         </div>
-        <div class="intro-area col-md-6">
+        <div class="col-md-6 intro-area">
 
           <p id="name">Shekhar Kumar</p>
-          <h2 id="myElement"></h2>
+          <p id="myElement"></p>
 
         </div>
       </div>
@@ -131,69 +132,17 @@
     <!---------------------------- End Home Section------------------------------------------->
   
   
-  
-  
-  
-  
-  
-  
-    <!---------------------------- Start timeline Section ------------------------------------------->
-
-    <div id="timeline-sec" class="section">
-      
-      
-      
-      <div id="container">
-        <div id="line"></div>
-        <div class="circle circleshow0" id="circle0">
-          <div id="circle1content">Higher Senior Secondry Education - Army Public School, Mathura Cantt</div>
-        </div>
-        <div class="circle circleshow1" id="circle1">
-          <div id="circle1content">Higher Senior Secondry Education - Army Public School, Mathura Cantt</div>
-        </div>
-        <div class="circle circleshow2" id="circle2">
-          <div id="circle2content">Cleared JEE Mains</div>
-        </div>
-        <div class="circle circleshow3" id="circle3">
-          <div id="circle3content">Went to college - Army Institute Of Technology</div>
-        </div>
-        <div class="circle circleshow4" id="circle4">
-          <div id="circle4content">First Year ASGE Dept.</div>
-        </div>
-        <div class="circle circleshow5" id="circle5">
-          <div id="circle5content">Second Year IT Dept.</div>
-        </div>
-      </div>      
-
-
-
-
-      
-    </div>
-    <!---------------------------- End timeline Section------------------------------------------->
-
-
-
-
-
-
-
-
-
-    <!---------------------------- Start Skill Section------------------------------------------->
-
     <div id="skill-sec" class="section">
       <div class="skills-heading">
         <p id="skills-heading-text">Skills</p>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 primary-skills-sec">
           
           <div class="card" id="prime-skill-card">
             <div class="card-body">
               <div class="primary-skills">
-                <div class="row">
-                      <div class="col-md-6 language">
+                <div class="language">
                         
                             <div id="circleBar">
                               <div class="round r-1" data-value="0.80" data-size="120" data-thickness="8">
@@ -230,9 +179,7 @@
                                 </span>
                               </div>
                             </div>
-                      </div>
-
-                      <div class="col-md-6 language">
+                    
                               <div id="circleBar">
                                 <div class="round" data-value="0.60" data-size="120" data-thickness="8">
                                   <strong> <img src="https://img.icons8.com/color/60/000000/python.png"/>
@@ -262,9 +209,8 @@
                                   </span>
                                 </div>
                               </div>
-                      
-                      </div>
-                </div>
+            
+                </div>    
               </div>
             </div>
           </div>
@@ -291,7 +237,6 @@
                     </div>
                   </div>
                  
-
                 </div>
 
                 <div class="android-tools">
@@ -333,7 +278,7 @@
                  
                 </div>
 
-
+<!--
 
                 <div class="other-tools">
                   <div class="card">
@@ -352,13 +297,7 @@
                   </div>
                  
                 </div>
-
-
-
-
-
-
-
+-->
             </div>
           </div>
         </div>
@@ -368,6 +307,54 @@
 
     
     </div>
+  
+  
+  
+  
+  
+  
+    <!---------------------------- Start timeline Section ------------------------------------------->
+
+    <div id="timeline-sec" class="section">
+      
+      
+      
+      <div id="container">
+        <div id="line"></div>
+        <div class="circle circleshow0" id="circle0">
+          <div id="circle0content">Higher Senior Secondry Education - Army Public School, Mathura Cantt</div>
+        </div>
+        <div class="circle circleshow1" id="circle1">
+          <div id="circle1content">Higher Senior Secondry Education - Army Public School, Mathura Cantt</div>
+        </div>
+        <div class="circle circleshow2" id="circle2">
+          <div id="circle2content">Cleared JEE Mains</div>
+        </div>
+        <div class="circle circleshow3" id="circle3">
+          <div id="circle3content">Went to college - Army Institute Of Technology</div>
+        </div>
+        <div class="circle circleshow4" id="circle4">
+          <div id="circle4content">First Year ASGE Dept.</div>
+        </div>
+        <div class="circle circleshow5" id="circle5">
+          <div id="circle5content">Second Year IT Dept.</div>
+        </div>
+      </div>      
+
+      
+    </div>
+    <!---------------------------- End timeline Section------------------------------------------->
+
+
+
+
+
+
+
+
+
+    <!---------------------------- Start Skill Section------------------------------------------->
+
     <!---------------------------- End Skill Section------------------------------------------->
 
 
@@ -382,10 +369,12 @@
 
     <section id="projects-sec" class="section">
       <img  id="project-anim1" src="./Selected/character 18.svg" alt="">
-
+      <div class="project-heading">
+        <p id="project-heading-text">My works</p>
+      </div>
     <div class="projects">
 
-
+      
         <div class="card-container">
           <div class="card">
             <div class="front">
@@ -949,9 +938,16 @@
 
       
       <div class="slide">
+        <div class="mooc-heading">
+          <p id="mooc-heading-text">Accreditations</p>
+        </div>
+        <img id="main-poster-certificate" src="./Selected/example-scene-2.svg" alt="contact-svg">
+
           <div id="cert-sec">
-            <div class="row">
-              <div class="col-md-4 catalog-sec">
+            
+
+              <div class="col-md-6 catalog-sec">
+
                 <div class="card">
                   <div class="card-body" onclick="loadImage('ai-nanodegree.webp')">
                     AI Nanodegree - Udacity
@@ -976,14 +972,14 @@
               </div>
 
 
-              <div class="col-md-8 certificate-sec" id="certificate-area-card" >
+              <div class="certificate-sec" id="certificate-area-card" >
+
                 <div class="card">
                   <div class="card-body">
                     <img src="media/ai-nanodegree.webp"/>
                   </div>
                 </div>
               </div>
-            </div> 
           </div> 
            
         </div>
@@ -995,7 +991,7 @@
           <div class="badge-heading">
             <p>Google Cloud Skill Badges</p>
           </div>
-  
+
           <div class="badges">
             <img src="https://cdn.qwiklabs.com/sKP7%2Fq69EFKGaS5hVjP6eyNNqfGztiKPtEuk4a8ouVQ%3D" alt="">
   
@@ -1083,33 +1079,38 @@
         <div class="row">
             <div class="col-md-6" id="contact-column-1">
 
-                  <div>
                     <div class="social-btns">
-                      <a class="btn facebook" href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                      <a class="btn twitter" href="#"><i class="fab fa-twitter fa-2x"></i>
-                      </a><a class="btn google" href="#"><i class="fab fa-github fa-2x"></i></a>
-                      <a class="btn dribbble" href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-                      <a class="btn skype" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                      <a class="btn linkedin" href="https://www.linkedin.com/in/the-anton/"><i class="fab fa-linkedin fa-2x"></i></a>
+                      <a class="btn github" href="https://github.com/The-Anton"><i class="fab fa-github fa-2x"></i></a>
+                      <a class="btn dsc" href="https://dsc.community.dev/u/mc929d/#/about"><img src="./media/dsc.webp" alt=""></i></a>
+                      <a class="btn medium" href="https://medium.com/@theAnton"><i class="fab fa-medium fa-2x"></i></a>
+                      <a class="btn quora" href="https://www.quora.com/profile/Shekhar-Kumar-Singh-23"><i class="fab fa-quora fa-2x"></i></a>
+                      <a class="btn facebook" href="https://www.facebook.com/profile.php?id=100005728093339"><i class="fab fa-facebook fa-2x"></i></a>
+                      <a class="btn twitter" href="https://twitter.com/the_anton01"><i class="fab fa-twitter fa-2x"></i></a>
+                      <a class="btn instagram" href="https://www.instagram.com/the_anton.01/"><i class="fab fa-instagram fa-2x"></i></a>
                     </div>
-                  </div>
       
                   <div id="contact-form">
                     <form>
                       <div class="form-group">
-                        <input class="form-control no-border" id="nameInput" aria-describedby="emailHelp" placeholder="Your Awesome Name">
+                        <input class="form-control w3-border-0" id="nameInput" aria-describedby="emailHelp" placeholder="Your Awesome Name">
                       </div>
               
               
                       <div class="form-group">
-                        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                        <input type="email" class="form-control w3-border-0" id="emailInput" placeholder="name@example.com">
                       </div>
                       
               
                       <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Type your doubts...</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label id="contact-input-area" for="exampleFormControlTextarea1"> Type your doubts...</label>
+                        <textarea class="form-control w3-border-0" id="exampleFormControlTextarea1" rows="3"></textarea>
                       </div>
                     </form>
+                  </div>
+
+                  <div class="social-btns" id="sendbutton">
+                    <a class="btn send" href="https://www.linkedin.com/in/the-anton/"><i class=" far fa-paper-plane fa-2x"></i></a>
                   </div>
               
             </div>
@@ -1117,7 +1118,7 @@
 
 
 
-            <div class="col-md-6">
+            <div class="col-md-6" id="contact-column-2"">
               <img id="main-poster-contact" src="./Selected/example-scene-1.svg" alt="contact-svg">
             </div>
               
@@ -1165,14 +1166,8 @@
 
 
 
-
-
-
-
-
-
-
 <script>
+  
   new fullpage('#fullpage', {
   //options here
         autoScrolling:true,

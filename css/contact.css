@@ -1,11 +1,3 @@
-.contact-heading p{
-  margin: 1rem 0 0 3rem;
- font-size: 6vw;
- text-align: left;
- font-weight: bolder;
-}
-
-
 
 
 .social-btns .btn,
@@ -36,23 +28,47 @@
 .social-btns .btn.twitter .fab {
   color: #3cf;
 }
-.social-btns .btn.google:before {
-  background-color: #dc4a38;
+.social-btns .btn.github:before {
+  background-color: black;
 }
-.social-btns .btn.google .fab {
-  color: #dc4a38;
+.social-btns .btn.github .fab {
+  color: black;
 }
-.social-btns .btn.dribbble:before {
-  background-color: #f26798;
+.social-btns .btn.linkedin:before {
+  background-color: #0077b5;
 }
-.social-btns .btn.dribbble .fab {
-  color: #f26798;
+.social-btns .btn.linkedin .fab {
+  color: #0077b5;
 }
-.social-btns .btn.skype:before {
-  background-color: #00aff0;
+.social-btns .btn.instagram:before {
+  background-color: #e1306c;
 }
-.social-btns .btn.skype .fab {
-  color: #00aff0;
+.social-btns .btn.instagram .fab {
+  color:#e1306c;
+}
+.social-btns .btn.medium:before {
+  background-color: black;
+}
+.social-btns .btn.medium .fab {
+  color:black;
+}
+.social-btns .btn.quora:before {
+  background-color: #a82400;
+}
+.social-btns .btn.quora .fab {
+  color:#a82400;
+}
+.social-btns .btn.dsc:before {
+  background-color: #83e85a;
+}
+.social-btns .btn.dsc .fab {
+  color: #83e85a;
+}
+.social-btns .dsc img{
+  text-align: end;
+  width: 35px;
+  margin-top: auto;
+  margin-bottom: 18px;
 }
 .social-btns .btn:focus:before,
 .social-btns .btn:hover:before {
@@ -66,7 +82,8 @@
           transform: scale(1);
 }
 .social-btns {
-  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
   font-size: 0;
   text-align: center;
  
@@ -77,11 +94,23 @@
   width: 90px;
   height: 90px;
   line-height: 90px;
-  margin: 0 10px;
+  margin: 0rem 0rem 1rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
   border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+  opacity: 0.99;
+}
+ #sendbutton .btn{
+  display: inline-block;
+  background-color: #fff;
+  width: 120px;
+  height: 50px;
+  line-height: 45px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
   box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
   opacity: 0.99;
 }
@@ -98,28 +127,30 @@
   vertical-align: middle;
 }
 
+.contact-heading p{
+  z-index: 100;
+  position: abolute;
+  left: 3%;
+  top:0px;
+   font-size: 6vw;
+ text-align: left;
+ font-weight: bolder;
+}
 
+#contact-sec{
+  display: flex;
+  flex-direction: row;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#contact-column-1 {
+#contact-column-1{
+  padding-left: 8rem;
+  padding-right: 8rem;
   display: flex;
   flex-direction: column;
   margin-top: auto;
   margin-bottom: auto;
 }
+
 
 
 #contact-form{
@@ -133,7 +164,7 @@
 #contact-form .form-group{
     outline: none;
     width: 28rem;
-    border: 0;
+    border:0 solid transparent;
     box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
     border-color: #fff;
 }
@@ -156,5 +187,95 @@ input:focus, textarea:focus, select:focus{
   margin-bottom: auto;
 }
 
+#contact-input-area{
+  padding-left: 0.8rem;
+}
+
+#sendbutton{
+ margin: 0 0 0 4rem;
+}
 
 
+
+
+
+
+@media screen and (max-width: 600px) {
+
+  
+#contact-sec{
+  display: flex;
+  flex-direction: column;
+}
+
+
+#main-poster-contact{
+  width: 100px;
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+  .contact-heading p{
+    z-index: 100;
+    position: abolute;
+    left: 3%;
+    top:0px;
+     font-size: 40px;
+   text-align: left;
+   font-weight: bolder;
+  }
+ 
+
+  #contact-column-1{
+    margin-top: 3rem;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+
+  #contact-form{
+    position: absolute;
+    top: 250px;
+    left: 0;
+    margin-top:0rem;
+    margin-left: 2rem;
+}
+ 
+.social-btns {
+  display: grid;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  margin-left: 1.5rem;
+  grid-template-columns: repeat(4,1fr);
+  font-size: 0;
+  text-align: center;
+ 
+}
+
+#main-poster-contact{
+  margin: 2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#contact-form .form-group{
+  outline: none;
+  width: 20rem;
+  border: 0;
+  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+  border-color: #fff;
+}
+#contact-column-2{
+  visibility: hidden ;
+}
+
+#sendbutton{
+  margin: 32rem 0rem 0rem 2rem;
+ }
+ 
+ 
+}

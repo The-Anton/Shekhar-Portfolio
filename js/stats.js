@@ -2,7 +2,7 @@ function Circlle(el){
     $(el).circleProgress({  
 
       fill: {
-      gradient: ["green", "orange","red"], gradientAngle: Math.PI*2.3/4
+      gradient: ["red","orange"]
     }
 
     })

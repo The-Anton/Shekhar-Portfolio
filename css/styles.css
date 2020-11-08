@@ -12,7 +12,7 @@ body {
 
 #home-sec {
   z-index: 0;
-  background-color: #ff0;
+  background-color: white;
   font-family: Raleway,Poppins;
 }
 
@@ -39,6 +39,22 @@ body {
 }
 
 #experience-sec {
+  background-color: white;
+  font-family: Raleway,Poppins;
+
+}
+
+#blog{
+  background-color: white;
+  font-family: Raleway,Poppins;
+
+}
+#mooc-sec{
+  background-color: white;
+  font-family: Raleway,Poppins;
+
+}
+#contact-sec{
   background-color: white;
   font-family: Raleway,Poppins;
 

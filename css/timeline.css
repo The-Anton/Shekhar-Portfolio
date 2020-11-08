@@ -5,6 +5,10 @@
   box-sizing: none;
 }
 
+#timeline-sec{
+  display: flex;
+  flex-direction: row;
+}
 #container {
   height: 100%;
   width: 400px;
@@ -42,7 +46,7 @@
   animation: hide 6s,dateShow 1s 3s;
 }
 
-#container #circle0 #circle1content {
+#container #circle0 #circle0content {
   position: absolute;
   border: 1.5px solid #fff;
   left: -400px;
@@ -323,3 +327,106 @@
     opacity: 0;
   }
 }
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+     
+  #container #circle0 #circle0content {
+    position: absolute;
+    border: 1.5px solid #fff;
+    left: -180px;
+    width: 160px;
+    height: 100px;
+    color: #fff;
+    font-size: smaller;
+    padding: 10px;
+    top: -40px;
+    border-radius: 2px;
+    animation: hide 3.6s,dateShow 1s 3.6s;
+  }
+  
+  #container #circle1 #circle1content {
+    position: absolute;
+    border: 1.5px solid #fff;
+    left: 40px;
+    width: 160px;
+    height: 100px;
+    font-size: smaller;
+  }
+
+  
+#container #circle2 #circle2content {
+  position: absolute;
+  border: 1.5px solid #fff;
+  left: -180px;
+  width: 140px;
+  height: 70px;
+}
+
+  #container #circle3 #circle3content {
+    position: absolute;
+    border: 1.5px solid #fff;
+
+    left: 40px;
+    width: 140px;
+    height: 100px;
+    top: -10px;
+    font-size: smaller;
+  }
+  
+
+  #container #circle4 #circle4content {
+    position: absolute;
+    border: 1.5px solid #fff;
+    left: -180px;
+    width: 150px;
+    height: 80px;
+  }
+
+
+  #container #circle5 #circle5content {
+    position: absolute;
+    border: 1.5px solid #fff;
+    left: 50px;
+    width: 130px;
+    height: 60px;
+  }
+  
+  
+
+
+  #container #circle0::before {
+    position: absolute;
+    left: 35px;
+  }
+
+  #container #circle1::before {
+    left: -45px;
+  }
+
+  #container #circle2::before {
+    left: 35px;
+  }
+
+  #container #circle3::before {
+    left: -45px;
+  }
+
+  #container #circle4::before {
+    left: 35px;
+  }
+  #container #circle5::before {
+    left: -45px;
+  }
+
+
+
+}
+
+
+
+
