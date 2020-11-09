@@ -1,4 +1,4 @@
-fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@theAnton')
+fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@theanton')
    .then((res) => res.json())
    .then((data) => {
       const res = data.items 
@@ -27,7 +27,7 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@the
                      <p style="text-decoration:none" class="blog__intro">${'...' + shortenText(toText(item.content),500, 700)+ '...'}</p>
                   </div>
                   <hr>
-                  <div class="blog__info">
+                  <div style="text-decoration:none" class="blog__info">
                      <span class="blog__author">${item.author}</span>
                      <span class="blog__date">${shortenText(item.pubDate,0 ,10)}</span>
                   </div>

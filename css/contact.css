@@ -210,6 +210,7 @@ input:focus, textarea:focus, select:focus{
 #contact-sec{
   display: flex;
   flex-direction: column;
+  margin-bottom: 5rem;
 }
 
 
