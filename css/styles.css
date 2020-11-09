@@ -17,12 +17,12 @@ body {
 }
 
 #timeline-sec {
-  background-color: #28c7fa;
+  background-color:white;
   font-family: Raleway,Poppins;
 }
 
 #skill-sec {
-  background-color: #fff;
+  background-color: white;
   font-family: Raleway,Poppins;
  
 }
@@ -63,7 +63,6 @@ body {
 .card{
   border:0;
 }
-
 
 
 

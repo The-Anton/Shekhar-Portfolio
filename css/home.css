@@ -13,8 +13,7 @@
     display: flex;
     flex-direction: row;
   }
-  .avatar-area {
-  }
+ 
   
   #name {
     font-size: 6vw;
@@ -38,11 +37,16 @@
     }
     .avatar-area{
       position: absolute;
-      top:-150px;
-      left: 10%;
-      margin: 0rem 5rem 0rem 0rem;;
+      top:0px;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .intro-area{
+      margin-bottom: 18rem;
     }
     #name {
+      margin-top: 5rem;
       text-align: center;
       font-size: 40px;
       font-weight: bolder;
@@ -53,7 +57,10 @@
     }
   
     .av-img {
-      
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 5rem;
       height: 300px;
       width: 300px;
       border-radius: 50%;

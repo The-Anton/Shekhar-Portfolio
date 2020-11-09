@@ -110,7 +110,7 @@
  
     <!---------------------------- Start Home Section ------------------------------------------->
 
-    <div id="home-sec" class="section">
+    <div id="home-sec" class="section fp-auto-height-responsive">
       <div class="home row">
         <div class="col-md-6 avatar-area">
           <img class="av-img" src="./avatar-2.jpg" alt="avatar">
@@ -120,6 +120,7 @@
 
           <p id="name">Shekhar Kumar</p>
           <p id="myElement"></p>
+          
 
         </div>
       </div>
@@ -132,7 +133,55 @@
     <!---------------------------- End Home Section------------------------------------------->
   
   
-    <div id="skill-sec" class="section">
+  
+  
+  
+  
+  
+  
+    <!---------------------------- Start timeline Section ------------------------------------------->
+
+    <div id="timeline-sec" class="section fp-auto-height-responsive">
+      
+      
+      
+      <div id="container">
+        <div id="line"></div>
+        <div class="circle circleshow0" id="circle0">
+          <div id="circle0content">Higher Senior Secondry Education - Army Public School, Mathura Cantt</div>
+        </div>
+        <div class="circle circleshow1" id="circle1">
+          <div id="circle1content">Higher Senior Secondry Education - Army Public School, Mathura Cantt</div>
+        </div>
+        <div class="circle circleshow2" id="circle2">
+          <div id="circle2content">Cleared JEE Mains</div>
+        </div>
+        <div class="circle circleshow3" id="circle3">
+          <div id="circle3content">Went to college - Army Institute Of Technology</div>
+        </div>
+        <div class="circle circleshow4" id="circle4">
+          <div id="circle4content">First Year ASGE Dept.</div>
+        </div>
+        <div class="circle circleshow5" id="circle5">
+          <div id="circle5content">Second Year IT Dept.</div>
+        </div>
+      </div>      
+
+      
+    </div>
+    <!---------------------------- End timeline Section------------------------------------------->
+
+
+
+
+
+
+
+
+
+    <!---------------------------- Start Skill Section------------------------------------------->
+
+    <div id="skill-sec" class="section fp-auto-height-responsive">
       <div class="skills-heading">
         <p id="skills-heading-text">Skills</p>
       </div>
@@ -230,9 +279,11 @@
       
                         <div class="tools-logo">
                           <img id="node-logo" src="https://img.icons8.com/color/60/000000/nodejs.png"/>
+                          <img id="flask-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/60px-Flask_logo.svg.png"/>
+                          
                           <img id="postgress-logo"src="https://img.icons8.com/color/48/000000/postgreesql.png"/>
                           <img id="sql-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Database-mysql.svg/64px-Database-mysql.svg.png"/>
-      
+                          
                         </div>
                     </div>
                   </div>
@@ -266,7 +317,7 @@
                       </h4>
     
                       <div class="tools-logo">
-                        <img src="https://img.icons8.com/color/60/000000/tensorflow.png"/>
+                        <img  id="tensorflow-logo"src="https://img.icons8.com/color/60/000000/tensorflow.png"/>
                         <img id="pytorch-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/64px-PyTorch_logo_icon.svg.png"/>
                         <img id="juypter-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/44px-Jupyter_logo.svg.png"/>
                         <img id="mathplotlib-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/NumPy_logo.svg/128px-NumPy_logo.svg.png"/>
@@ -307,54 +358,6 @@
 
     
     </div>
-  
-  
-  
-  
-  
-  
-    <!---------------------------- Start timeline Section ------------------------------------------->
-
-    <div id="timeline-sec" class="section">
-      
-      
-      
-      <div id="container">
-        <div id="line"></div>
-        <div class="circle circleshow0" id="circle0">
-          <div id="circle0content">Higher Senior Secondry Education - Army Public School, Mathura Cantt</div>
-        </div>
-        <div class="circle circleshow1" id="circle1">
-          <div id="circle1content">Higher Senior Secondry Education - Army Public School, Mathura Cantt</div>
-        </div>
-        <div class="circle circleshow2" id="circle2">
-          <div id="circle2content">Cleared JEE Mains</div>
-        </div>
-        <div class="circle circleshow3" id="circle3">
-          <div id="circle3content">Went to college - Army Institute Of Technology</div>
-        </div>
-        <div class="circle circleshow4" id="circle4">
-          <div id="circle4content">First Year ASGE Dept.</div>
-        </div>
-        <div class="circle circleshow5" id="circle5">
-          <div id="circle5content">Second Year IT Dept.</div>
-        </div>
-      </div>      
-
-      
-    </div>
-    <!---------------------------- End timeline Section------------------------------------------->
-
-
-
-
-
-
-
-
-
-    <!---------------------------- Start Skill Section------------------------------------------->
-
     <!---------------------------- End Skill Section------------------------------------------->
 
 
@@ -367,7 +370,7 @@
     <!---------------------------- Start Project Section------------------------------------------->
 
 
-    <section id="projects-sec" class="section">
+    <div id="projects-sec" class="section fp-auto-height-responsive">
       <img  id="project-anim1" src="./Selected/character 18.svg" alt="">
       <div class="project-heading">
         <p id="project-heading-text">My works</p>
@@ -554,7 +557,7 @@
     </div>
       <img  id="project-anim2" src="./Selected/character 20.svg" alt="">
 
-    </section>
+  </div>
 
 
     <!---------------------------- End Project Section------------------------------------------->
@@ -566,8 +569,8 @@
 
 
     <!---------------------------- Start CP Section------------------------------------------->
-
-    <section id="achieve-sec" class="section s5">
+  
+    <div id="achieve-sec" class="section fp-auto-height-responsive">
       <div class="achieve-heading">
         <p id="achieve-heading-text">Milestones</p>
       </div>
@@ -609,7 +612,8 @@
       <div id="circle4" class="main-circle" > 
         <div class="circle-text">
         <span class="">AIT CodeDown 2020 Winner</span>
-      </div> </div>
+        <span> Consolation</span>  
+      </div>    </div>
       <div id="circle6" class="main-circle" > 
         <div class="circle-text">
         <span class="">PASKATHON Finalist</span>
@@ -631,8 +635,7 @@
       <div id="circle-min3"></div>
       <div id="circle-min4"></div>
      
-    </section>
-      
+    </div>
     <!---------------------------- End CP Section------------------------------------------->
 
 
@@ -644,7 +647,7 @@
     <!---------------------------- Start Experience Section------------------------------------------->
 
 
-    <section id="experience-sec" class="section">
+    <section id="experience-sec" class="section fp-auto-height-responsive">
 
        <!--   DigitalPersistent -->
         <div class="slide slide1">
@@ -841,7 +844,6 @@
                       <div class="links l-4">
                         <button class="btn">PHP</button>
                         <button class="btn">CSS3</button>
-                        <button class="btn">Frontend</button>
                         <button class="btn">HTML</button>
                         <button class="btn">JavaScript</button>
                       </div>
@@ -900,7 +902,6 @@
                         <button class="btn">Kotlin</button>
                         <button class="btn">JavaScript</button>
                         <button class="btn">Node.js</button>
-                        <button class="btn">Adobe Xd</button>
 
                       </div>
                     </div>
@@ -934,7 +935,7 @@
 
     <!---------------------------- Start MOOC Section------------------------------------------->
 
-    <section id="mooc-sec" class="section">
+    <section id="mooc-sec" class="section fp-auto-height-responsive">
 
       
       <div class="slide">
@@ -1049,7 +1050,7 @@
 
       <!---------------------------- Start Articles Section------------------------------------------->
 
-      <section id="blog" class="blog section">
+      <section id="blog" class="blog section fp-auto-height-responsive">
         <div class="article-heading">
           <p id="article-heading-text">Blogs</p>
         </div>
@@ -1062,7 +1063,8 @@
         </ul>
         
       </section>
-     
+   
+      
 
       <!---------------------------- End Articles Section------------------------------------------->
 
@@ -1070,7 +1072,7 @@
       <!---------------------------- Start Badges Section------------------------------------------->
 
 
-      <section id="contact-sec" class="section">
+      <section id="contact-sec" class="section fp-auto-height-responsive">
           <div class="contact-heading">
             <p id="contact-heading-text">Contact</p>
           </div>
@@ -1177,8 +1179,8 @@
       navigationTooltips: ['Home', 'Skills', 'Projects', 'Achievments', "Experience", 'Certifications', 'Badges', 'Contact'],
       css3: true,
       lockAnchors: false,
-      menu: '#menu'
-
+      menu: '#menu',
+      responsiveWidth:600,
 
 
 

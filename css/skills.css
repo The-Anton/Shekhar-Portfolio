@@ -151,8 +151,10 @@
     }
    
 
-    
-   
+   canvas[style]{
+    height: 90px !important;
+    width: 90px !important;
+   }
     #skill-sec .row{
       display: flex;
       flex-direction: column;
@@ -167,10 +169,16 @@
 
     
     #prime-skill-card{
-      margin: 1rem 0rem 0rem 1.6rem;
+      margin: 1rem 0rem 0rem 1rem;
       border-radius: 15px;
       width: 90%;
-      height: 450px;
+      height: 350px;
+      box-shadow:
+        0 6.8px 5.9px rgba(0, 0, 0, 0.015),
+        0 22.8px 18.5px rgba(0, 0, 0, 0.022),
+        0 102px 80px rgba(0, 0, 0, 0.04)
+      ;
+
       
     } 
     
@@ -179,12 +187,36 @@
       text-align: center;
     }
 
+    
+  #circleBar .round strong{
+
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-top: -45px;
+    transform: translate(-50%);
+  
+  }
+  
+
     .secondary-skills {
       display: flex;
       flex-direction: column;
-     
+      margin-left: 1rem;
+      margin-bottom: 5rem;
+
       position: relative;
       top: 10px;
+    }
+
+    .secondary-skills .tools .card{
+      margin: 2rem 0rem 1rem 0rem;
+
+      box-shadow:
+        0 6.8px 5.9px rgba(0, 0, 0, 0.015),
+        0 22.8px 18.5px rgba(0, 0, 0, 0.022),
+        0 102px 80px rgba(0, 0, 0, 0.04)
+      ;
     }
 
     .secondary-skills h4{
@@ -193,6 +225,15 @@
  
     .tools-logo{
       margin: 0.2rem 0rem;
+    }
+    .tools-logo img{
+      margin: 0.1rem 0.1rem;
+    }
+    .web-tools .tools-logo  img{
+      margin: 0.1rem 0.3rem;
+    }
+    .ml-tools .tools-logo  img{
+      margin: 0.1rem 0.5rem;
     }
     .tools-logo #colab-logo{
       visibility: hidden;
@@ -204,8 +245,34 @@
     .secondary-skills .web-tools .tools-logo img{
       width: 70px;
     }
-    .secondary-skills .ml-tools .tools-logo img{
+   
+
+
+    #sql-logo{
+      width: 10%;
+    }
+    
+    #tensorflow-logo{
+      width: 40px;
+    }
+    #colab-logo{
+      width: 70px;
+    }
+    #pytorch-logo{
       width: 30px;
     }
+    #mathplotlib-logo{
+      width: 80px;
+    }
+    
+    #juypter-logo{
+      width: 50px;
+    }
+    
+    #gcd-logo{
+      position: absolute;
+      top:-8px;
+    }
+    
 
   }

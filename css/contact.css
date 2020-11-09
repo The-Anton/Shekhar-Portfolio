@@ -183,6 +183,7 @@ input:focus, textarea:focus, select:focus{
 
 #main-poster-contact{
   margin: 2rem;
+  display: block;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -192,7 +193,10 @@ input:focus, textarea:focus, select:focus{
 }
 
 #sendbutton{
- margin: 0 0 0 4rem;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
 
@@ -219,7 +223,7 @@ input:focus, textarea:focus, select:focus{
     z-index: 100;
     position: abolute;
     left: 3%;
-    top:0px;
+    top:10px;
      font-size: 40px;
    text-align: left;
    font-weight: bolder;
@@ -229,6 +233,7 @@ input:focus, textarea:focus, select:focus{
   #contact-column-1{
     margin-top: 3rem;
     height: 50%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0rem;
@@ -237,44 +242,73 @@ input:focus, textarea:focus, select:focus{
 
 
   #contact-form{
-    position: absolute;
-    top: 250px;
-    left: 0;
-    margin-top:0rem;
-    margin-left: 2rem;
+    width: 80%;
+    margin-left: 2rem !important;
 }
+
  
 .social-btns {
   display: grid;
   z-index: 1;
-  width: 10px;
-  height: 10px;
-  margin-left: 1.5rem;
+  width: 100%;
+  height: 40%;
+  padding: 0 3rem 0 3rem;
+  margin-left: 0rem;
   grid-template-columns: repeat(4,1fr);
   font-size: 0;
   text-align: center;
  
 }
 
+
+.social-btns .btn {
+
+  width: 70px;
+  height: 70px;
+  margin: 0rem 1rem 1rem 0;
+  line-height: 60px;  text-align: center;
+
+}
+
+
+.social-btns .dsc img{
+  text-align: end;
+  width: 30px;
+  margin-top: auto;
+  margin-bottom: 0px;
+}
 #main-poster-contact{
   margin: 2rem;
   margin-top: auto;
   margin-bottom: auto;
 }
 
+
+
 #contact-form .form-group{
+  margin-left: auto;
+  margin-right: auto;
   outline: none;
-  width: 20rem;
-  border: 0;
+  width: 80%;
+  border:0 solid transparent;
   box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
   border-color: #fff;
+}
+
+#contact-form .form-group input{
+  display: block;
+  margin-left: auto;
+  margin-right: auto ;
 }
 #contact-column-2{
   visibility: hidden ;
 }
 
 #sendbutton{
-  margin: 32rem 0rem 0rem 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto !important;
+
  }
  
  
