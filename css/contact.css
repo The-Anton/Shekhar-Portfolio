@@ -94,7 +94,11 @@
   width: 90px;
   height: 90px;
   line-height: 90px;
-  margin: 0rem 0rem 1rem 0;
+  display: block;
+  margin: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -107,11 +111,11 @@
   background-color: #fff;
   width: 120px;
   height: 50px;
-  line-height: 45px;
   position: relative;
   overflow: hidden;
+  line-height: 52px;
   border-radius: 15px;
-  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
   opacity: 0.99;
 }
 .social-btns .btn:before {
@@ -127,10 +131,15 @@
   vertical-align: middle;
 }
 
+.contact-heading {
+  position: absolute;
+  left: 1%;
+  top:0%;
+}
 .contact-heading p{
   z-index: 100;
-  position: abolute;
-  left: 3%;
+  position: absolute;
+  left: 0%;
   top:0px;
    font-size: 6vw;
  text-align: left;
@@ -140,11 +149,24 @@
 #contact-sec{
   display: flex;
   flex-direction: row;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #contact-column-1{
   padding-left: 8rem;
   padding-right: 8rem;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#contact-column-2{
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  padding-right: 2rem;
   display: flex;
   flex-direction: column;
   margin-top: auto;
@@ -156,16 +178,19 @@
 #contact-form{
 
     margin-top: 5rem;
-    margin-left: auto;
-    margin-right: auto;
+     
 }
 
 
 #contact-form .form-group{
     outline: none;
-    width: 28rem;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
     border:0 solid transparent;
-    box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
     border-color: #fff;
 }
 .wpv-filter-form .form-control{
@@ -206,6 +231,9 @@ input:focus, textarea:focus, select:focus{
 
 @media screen and (max-width: 600px) {
 
+  .contact-heading {
+    left: 2%;
+  }
   
 #contact-sec{
   display: flex;
@@ -232,8 +260,9 @@ input:focus, textarea:focus, select:focus{
  
 
   #contact-column-1{
-    margin-top: 3rem;
-    height: 50%;
+    padding-top: 8rem;
+    margin-top: 0rem;
+    height: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -241,11 +270,18 @@ input:focus, textarea:focus, select:focus{
     padding-right: 0rem;
   }
 
+ 
 
   #contact-form{
     width: 80%;
-    margin-left: 2rem !important;
-}
+    margin-left: 3rem;
+ }
+
+ 
+  #contact-form form{
+    position: relative;
+    text-align: center;
+ }
 
  
 .social-btns {
@@ -264,19 +300,22 @@ input:focus, textarea:focus, select:focus{
 
 .social-btns .btn {
 
-  width: 70px;
-  height: 70px;
-  margin: 0rem 1rem 1rem 0;
-  line-height: 60px;  text-align: center;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 1rem 0;
+  line-height: 50px;  text-align: center;
 
 }
-
+.tools-logo img, i {
+  margin: 0rem 0rem;
+}
 
 .social-btns .dsc img{
-  text-align: end;
+  text-align: center;
   width: 30px;
   margin-top: auto;
-  margin-bottom: 0px;
+  margin-bottom: 15px;
 }
 #main-poster-contact{
   margin: 2rem;
@@ -286,11 +325,18 @@ input:focus, textarea:focus, select:focus{
 
 
 
+#contact-form form{
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  
+}
 #contact-form .form-group{
+  display: block;
   margin-left: auto;
   margin-right: auto;
   outline: none;
-  width: 80%;
+  width: 100%;
   border:0 solid transparent;
   box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
   border-color: #fff;

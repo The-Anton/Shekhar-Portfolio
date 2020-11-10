@@ -1,10 +1,14 @@
+.achieve-heading{
+  z-index: 100;
+  left:1%;
+ position: absolute;
+ top:0%;
+
+}
 .achieve-heading p{
   z-index: 100;
-  left:3%;
  font-size: 6vw;
  font-weight: bolder;
- position: absolute;
- top:-380px;
 
 }
 
@@ -27,8 +31,8 @@
     border-radius: 50%;
     text-align: center;
     position: absolute;
-    left:0px;
-    bottom: 0px;
+    left:0%;
+    bottom: 0%;
 }
 
 #circle2 {
@@ -38,8 +42,8 @@
   color: white;
   border-radius: 50%;
   position: absolute;
-  left:303px;
-  bottom: 2px;
+  left:18%;
+  bottom: 0%;
 }
 
 #circle3 {
@@ -49,8 +53,8 @@
   color: white;
   border-radius: 50%;
   position: absolute;
-  left:220px;
-  bottom: 200px;
+  left:13%;
+  bottom: 25%;
 }
 
 #circle4 {
@@ -60,8 +64,8 @@
   color: white;
   border-radius: 50%;
   position: absolute;
-  left:60px;
-  bottom: 30px;
+  left:3.6%;
+  bottom: 3.5%;
 
 }
 
@@ -72,8 +76,8 @@
   border-radius: 50%;
   color: white;
   position: absolute;
-  left:0px;
-  bottom: 248px;
+  left:0%;
+  bottom: 29.4%;
 }
 
 
@@ -84,8 +88,8 @@
   color: white;
   border-radius: 50%;
   position: absolute;
-  left:485px;
-  bottom: 2px;
+  left:28.6%;
+  bottom: 1%;
 }
 
 
@@ -97,7 +101,7 @@
   color: white;
   border-radius: 50%;
   position: absolute;
-  left:1070px;
+  left:63.8%;
   bottom: 300px;
 }
 
@@ -109,8 +113,8 @@
   color: white;
   border-radius: 50%;
   position: absolute;
-  left:680px;
-  bottom: 350px;
+  left:41%;
+  bottom: 41.5%;
 }
 
 
@@ -121,8 +125,8 @@
   color: white;
   border-radius: 50%;
   position: absolute;
-  left:1130px;
-  bottom: 2px;
+  left:66.3%;
+  bottom: 0%;
 }
 
 
@@ -144,8 +148,8 @@
   color: white;
   border-radius: 50%;
   position: absolute;
-  left:877px;
-  bottom: 2px;
+  left:51.5%;
+  bottom: 0%;
 }
 
 #circle12 {
@@ -165,8 +169,8 @@
   color: white;
   border-radius: 50%;
   position: absolute;
-  right:423px;
-  bottom: 253px;
+  left:57.5%;
+  bottom: 29.5%;
 }
 
 #circle1 .circle-text{
@@ -260,32 +264,21 @@
   @media screen and (max-width: 600px) {
     .achieve-heading p{
       z-index: 2;
-      position: abolute;
-      left: 3%;
-      top:-480px;
      font-size: 40px;
-     text-align: right;
-     
-     font-weight: bolder;
+   
     }  
   
     #achieve-sec{
       margin-top: 0rem;
       margin-bottom: 0rem;
-      width: 100% !important;
+      min-width: 300px !important;
       height: 1200px !important ;
     }
 
 
 
     .main-circle span{
-      font-weight: bold;
-    
-    }
-    .main-circle .circle-text{
-      display: flex;
-      flex-direction: column;
-      
+      font-weight: bolder;
     }
     
     
@@ -297,8 +290,8 @@
         border-radius: 50%;
         text-align: center;
         position: absolute;
-        left:0px;
-        bottom: 0px;
+        left:0%;
+        bottom: 0%;
     }
     
     #circle2 {
@@ -309,7 +302,7 @@
       color: white;
       border-radius: 50%;
       position: absolute;
-      left:5px;
+      left:1%;
       bottom: 25.5%;
     }
     
@@ -321,7 +314,7 @@
       color: white;
       border-radius: 50%;
       position: absolute;
-      left:0px;
+      left:0%;
       bottom: 10.5%;
     }
     
@@ -333,8 +326,7 @@
       color: white;
       border-radius: 50%;
       position: absolute;
-      
-      left:179px;
+      left: 46.5%;
       bottom: 65.8%;
     }
     
@@ -347,7 +339,7 @@
       z-index: 200;
       color: white;
       position: absolute;  
-      left:169px;
+      left:45%;
       bottom: 53.5%;
     
     }
@@ -360,7 +352,7 @@
       color: white;
       border-radius: 50%;
       position: absolute;
-      left: 0px;
+      left: 0%;
       bottom:59.8%;
     }
     
@@ -375,7 +367,7 @@
       color: white;
       border-radius: 50%;
       position: absolute;
-      left:0px;
+      left:0%;
       bottom: 43%;
     }
     
@@ -387,7 +379,7 @@
       color: white;
       border-radius: 50%;
       position: absolute;
-      left:150px;
+      left:40%;
       bottom: 0%;
     }
     
@@ -401,8 +393,8 @@
       color: white;
       border-radius: 50%;
       position: absolute;
-      left:195px;
-      bottom: 39%;
+      left:51%;
+      bottom: 38.5%;
     }
     
     
@@ -413,8 +405,8 @@
       color: white;
       border-radius: 50%;
       position: absolute;
-      left:2px;
-      bottom: 2px;
+      left:0%;
+      bottom: 0%;
     }
     
     #circle11 {
@@ -425,7 +417,7 @@
       border-radius: 50%;
       position: absolute;
       
-      left:137px;
+      left:36.5%;
       bottom: 18.5%;
     
     }
@@ -437,7 +429,7 @@
       color: white;
       border-radius: 50%;
       position: absolute;
-      left:116px;
+      left:31%;
       bottom: 0px;
     }
     #circle13 {
@@ -448,7 +440,7 @@
       color: white;
       border-radius: 50%;
       position: absolute;
-      left:89px;
+      left:25%;
       bottom: 35%; 
      
     }
