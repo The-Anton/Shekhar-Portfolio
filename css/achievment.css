@@ -44,11 +44,16 @@
        
      }
    #image-contain-sm img{
-     
+     margin-top: 6rem;
       width: 100%;
       
        
      }
+
+     #achieve-sec{
+      margin-top: 5rem;
+      margin-bottom: 0rem;
+    }
 
   }
 
@@ -56,6 +61,12 @@
 
   @media screen and (max-width: 600px) {
 
+    .achieve-heading {
+      z-index: 2;
+      left: 3%;
+      top: 0;
+      margin-bottom: 10rem;
+    }  
     .achieve-heading p{
       z-index: 2;
      font-size: 40px;
@@ -63,7 +74,7 @@
     }  
   
     #achieve-sec{
-      margin-top: 0rem;
+      margin-top: 5rem;
       margin-bottom: 0rem;
     }
 

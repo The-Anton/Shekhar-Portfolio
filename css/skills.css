@@ -153,7 +153,7 @@
     width: 90px !important;
    }
     #skill-sec {
-      margin: 1rem;
+      margin-top: 4rem;
     }
     #skill-sec .row{
       display: flex;
@@ -224,6 +224,12 @@
     }
     .ml-tools .tools-logo  img{
       margin: 0.1rem 0.5rem;
+    }
+    .other-tools .tools-logo  img{
+      margin: 0.1rem 1rem;
+    }
+    .other-tools .tools-logo  i{
+      margin: 0.1rem 1rem;
     }
     .tools-logo #colab-logo{
       visibility: hidden;

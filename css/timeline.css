@@ -356,8 +356,9 @@
 
 #container {
   height: 860px;
-  width: 400px;
+  width: 350px;
   margin: 0 auto;
+  margin-bottom: 5rem;
 }
 
 #container .end {

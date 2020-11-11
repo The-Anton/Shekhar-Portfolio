@@ -177,8 +177,7 @@
 
 #contact-form{
 
-    margin-top: 5rem;
-     
+    margin-top: 2rem;
 }
 
 
@@ -238,7 +237,6 @@ input:focus, textarea:focus, select:focus{
 #contact-sec{
   display: flex;
   flex-direction: column;
-  margin-bottom: 5rem;
 }
 
 

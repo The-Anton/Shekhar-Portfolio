@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.ba-we-love-subscribers {
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0px 12px 45px rgba(0, 0, 0, .15);
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	margin: 0 2rem 10px 0;
+	overflow: hidden;
+	opacity: 0;
+}
+.ba-we-love-subscribers.open {
+    height: 320px;
+    width: 250px;
+	opacity: 1;
+}
+.ba-we-love-subscribers.popup-ani {
+	-webkit-transition: all .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition: all .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.ba-we-love-subscribers h1 {
+	font-size: 20px;
+	color: #757575;
+	padding: 25px 0;
+	margin: 0;
+  font-weight:400;
+  font-family: Raleway,Poppins;
+
+}
+.wrap {
+    display: absolute;
+    top: 30%;
+    left:25%;
+}
+.wrap i{
+    display: block;
+    margin: auto;
+}
+.ba-we-love-subscribers-fab {
+	width: 65px;
+	height: 65px;
+	background-color: white;
+	border-radius: 50%;
+	float: right;
+	box-shadow: 0px 12px 45px rgba(0, 0, 0, .3);
+	z-index: 5;
+	position: relative;
+}
+
+.ba-we-love-subscribers-fab .wrap {
+	transform: rotate(0deg);
+	-webkit-transition: all .15s cubic-bezier(0.15, 0.87, 0.45, 1.23);
+	transition: all .15s cubic-bezier(0.15, 0.87, 0.45, 1.23);
+}
+
+.ba-we-love-subscribers-fab .close {
+	background-position: -2px 1px;
+	transform: rotate(-45deg);
+	float: none;
+	/*Bootstrap Overide*/
+	opacity: 1;
+	/*Bootstrap Overide*/
+}
+.ba-we-love-subscribers-wrap {
+	position: fixed;
+	right: 25px;
+	bottom: 25px;
+	z-index: 1000;
+}
+.ba-settings {
+	position: absolute;
+	top: -25px;
+	right: 0px;
+	padding: 10px 20px;
+	background-color: #555;
+	border-radius: 5px;
+	color: #fff;
+}
+iframe{
+    border: #fff;
+    font-size: 8px;
+}
+iframe p{
+    font-size: 8px;
+}
+
+.user-request{
+ font-size: 8px !important;
+}
