@@ -6,18 +6,29 @@
     <title>Shekhar</title>
 
 
-    
-
 <script>
   
   document.onreadystatechange = function() { 
     if (document.readyState !== "complete") { 
-       
+        document.getElementById('intro-sec').style.visibility="none";
     } else { 
-       
-        new TypeIt('#myElement', {
-          strings: "Coder Developer"
-        }).go();
+      document.getElementById('intro-sec').style.visibility="visible";
+
+        new TypeIt("#myElement", {
+            speed: 50,
+            waitUntilVisible: true
+          })
+            .type("Coder")
+            .pause(2000)
+            .delete(5)
+            .type('Developer')
+            .pause(2000)
+            .delete(9)
+            .type('DIY Enthusiasts')
+            .pause(2000)
+            .delete(15)
+            .type('A chaos in space time')
+            .go(); 
 
     } 
   }; 
@@ -75,15 +86,15 @@
 
     <div id="home-sec" class="section fp-auto-height-responsive">
       <div class="home row">
-        <div class="col-md-6 avatar-area">
+        <div class="col-md-4 avatar-area">
           <img class="av-img" src="./avatar-2.webp" alt="avatar">
 
         </div>
-        <div class="col-md-6 intro-area">
+        <div class="col-md-8 intro-area">
 
           <p id="name">Shekhar Kumar</p>
           <p id="myElement"></p>
-          <a href="https://drive.google.com/file/d/1EwYQS8r3uF4nF2Ji-vDPCjidyYz5bJOZ/view?usp=sharing" target="_blank" class="btn card" id="cv-btn">C.V</a>
+          <a href="https://drive.google.com/file/d/1EwYQS8r3uF4nF2Ji-vDPCjidyYz5bJOZ/view?usp=sharing" target="_blank" class="btn card" id="cv-btn">Download <br> Resume</a>
           
 
         </div>
@@ -126,12 +137,25 @@
     <div id="intro-sec" class="section fp-auto-height-responsive">
       <div class="home row">
         <div class="col-md-6" id="intro-area">
-            <p>I'm Second Year enthusiast having knowledge in Competitive Programming, Android Development and Machine Learning with a demonstrated history of working in the computer software. Skilled in C++, Java, Python, Node.js,Android Development , Google Cloud , Firebase ,and Arduino Programming. Strong engineering professional witha Bachelor of Engineering - BE focused in Information Technology from Army Institute of Technology, Pune.</p>
+            <p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;I'm Shekhar , a budding programmer from India. I'm currently pursuing B.E in Information Technology from  AIT Pune . I love solving tech problems and devote most of my time to code and develop projects so that I never get bored. Currently I'm floating in the domain of Machine Learning. <br> &nbsp;&nbsp;&nbsp; Apart from this I love Robotics and bing-watching</p>
         </div>
         <div class="col-md-6" id="interest-area">
+          <div class="interest">
+            <p id="topic-1"></p>
+            <p class="multipleStrings">
+            </p>
+          </div>
+          <div class="cp-skills">
+            <p id="cptext"></p>
 
-          <p id="name"></p>
-          <p id="myElement"></p>
+          </div>
+          <div class="soft-skills">
+            <p id="companionMethods"></p>
+
+          </div>
+          
+
+          
           
 
         </div>
@@ -608,7 +632,7 @@
 
        <!--   DigitalPersistent -->
         <div class="slide slide1">
-          <div class="experience-heading">
+          <div class="fixed-hdr experience-heading">
             <p id="experience-heading-text">Experience</p>
           </div>
             <div class="slide-container">
@@ -664,9 +688,7 @@
 
 
         <div class="slide">
-          <div class="experience-heading">
-            <p id="experience-heading-text">Experience</p>
-          </div>
+          
             <div class="slide-container">
               <div class="card front-card">
                 <div class="card-body">
@@ -720,9 +742,7 @@
 
         <div class="slide">
           
-          <div class="experience-heading">
-            <p id="experience-heading-text">Experience</p>
-          </div>
+         
             <div class="slide-container">
               <div class="card front-card">
                 <div class="card-body">
@@ -779,9 +799,7 @@
 
 
         <div class="slide">
-          <div class="experience-heading">
-            <p id="experience-heading-text">Experience</p>
-          </div>
+          
             <div class="slide-container">
               <div class="card front-card">
                 <div class="card-body">
@@ -838,9 +856,7 @@
 
 
         <div class="slide">
-          <div class="experience-heading">
-            <p id="experience-heading-text">Experience</p>
-          </div>
+          
             <div class="slide-container">
               <div class="card front-card">
                 <div class="card-body">
@@ -1151,8 +1167,7 @@
         autoScrolling:true,
         navigation: true,
         slidesNavigation: true,
-        controlArrows: false,
-        navigationTooltips: ['Home', 'Intro', 'Skills', 'Projects', 'Achievments', "Experience", 'Accreditations', 'Blogs', 'Contact'],
+        navigationTooltips: ['Home', 'Intro','Timeline' ,'Skills', 'Projects', 'Achievments', "Experience", 'Accreditations', 'Blogs', 'Contact'],
         css3: true,
         lockAnchors: false,
         menu: '#menu',
@@ -1162,10 +1177,64 @@
 
 
       });
+      
+      
+      new TypeIt("#topic-1", {
+        strings: ["Heavily intrested in ..." ],
+        speed: 50,
+        waitUntilVisible: true,
+
+        afterComplete: function(){
+          new TypeIt(".multipleStrings", {
+            strings: ["⚫ Coding 💻",  "&nbsp⚫ Robotics 👾", "&nbsp⚫ Deep Learning 🤖", "&nbsp⚫ Blogging 📰" ],
+            speed: 50,
+            waitUntilVisible: true,
+            
+            afterComplete: function(){
+              new TypeIt("#cptext", {
+              speed: 50,
+              waitUntilVisible: true,
+                afterComplete: function(){
+                  new TypeIt("#companionMethods", {
+                      speed: 50,
+                      waitUntilVisible: true
+                    })
+                      .type("I'm proeficient in ", {delay: 300})
+                      .move(-11)
+                      .delete(1)
+                      .move('END')
+                      .type(' Spoken 💬 ')
+                      .pause(300)
+                      .type(' as wellll as in ')
+                      .move(-9)
+                      .delete(2)
+                      .move('END')
+                      .type(' Written ✍🏻 english. 🤵🏻')
+                      .pause(500)
+                      .break({delay: 500})
+                      .break({delay: 500})
+                      .type('<em>- My inner me</em>')
+                      .go();   
+                  }
+            })
+              .type("I'm active pupil in competitive programming and have knowledge in Data Structure and Algorithm.")
+              .break({delay: 3000})
+              .type('Also a 5 ⭐ coder on Hacker Rank and rated 1400+ on CodeChef')
+              .go();  
+            }
+          }).go();
+
+        }
+      }).go();
+
+   
 
 
       
+
+      
 </script>
+
 
 
 

@@ -71,15 +71,20 @@ html.fp-enabled,
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
-    left: 15px;
-    width: 0;
-    border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+    left: 20px;
+    border: none;
+    width: 75px;
+    height: 150px;
+    background: url("./media/left-arrow.svg") no-repeat;
+    cursor: pointer;
 }
 .fp-controlArrow.fp-next {
-    right: 15px;
-    border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+    right: 20px;
+    border: none;
+    width: 75px;
+    height: 150px;
+    background: url("./media/right-arrow.svg") no-repeat;
+    cursor: pointer;
 }
 .fp-scrollable {
     overflow: hidden;

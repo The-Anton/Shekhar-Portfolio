@@ -1,4 +1,48 @@
 #intro-area{
-    font-size: 24px
+    font-size: 24px;
+}
+#intro-area p{
+    display: block;
+    margin-top: 5rem;
+    margin-bottom: auto;
 }
 
+#topic-1{
+    display: block;
+    margin: auto;
+    text-align: left;
+    font-size: 26px;
+}
+.multipleStrings{
+    text-align: left;
+    display: block;
+    margin: auto;
+    font-size: 18px;
+}
+
+
+
+#topic-1{
+    margin-bottom: 2rem;
+}
+#interest-area{
+    padding-left: 8rem;
+    
+}
+
+.cp-skills{
+    margin-top: 4rem;
+
+}
+
+#cptext{
+    font-size: 18px;
+}
+
+.soft-skills{
+    margin-top: 5rem;
+}
+
+.soft-skills p{
+    font-size: 18px;
+}
