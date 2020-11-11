@@ -12,256 +12,50 @@
 
 }
 
-.main-circle span{
-  font-weight: bold;
 
-}
-.main-circle .circle-text{
-  display: flex;
-  flex-direction: column;
+
+#image-contain {
+  }
+#image-contain-lg{
+  padding: 4rem;
+
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+   visibility: visible;
+    
+  }
+#image-contain-sm{
+    display: none;    
+  }
+
+
   
-}
+  @media screen and (max-width: 500px) {
 
+    #image-contain-lg{
 
-#circle1 {
-    width: 97px;
-    height: 97px;
-    background-color: #22d1ee;
-    color: white;
-    border-radius: 50%;
-    text-align: center;
-    position: absolute;
-    left:0%;
-    bottom: 0%;
-}
+    display: none;       
+     }
+   #image-contain-sm{
+      visibility: visible;
+      display: block;
+      
+       
+     }
+   #image-contain-sm img{
+     
+      width: 100%;
+      
+       
+     }
 
-#circle2 {
-  width: 200px;
-  height: 200px;
-  background-color: #22d1ee;
-  color: white;
-  border-radius: 50%;
-  position: absolute;
-  left:18%;
-  bottom: 0%;
-}
-
-#circle3 {
-  width: 300px;
-  height: 300px;
-  background-color: #83e85a;
-  color: white;
-  border-radius: 50%;
-  position: absolute;
-  left:13%;
-  bottom: 25%;
-}
-
-#circle4 {
-  width: 250px;
-  height: 250px;
-  background-color: #ffd615;
-  color: white;
-  border-radius: 50%;
-  position: absolute;
-  left:3.6%;
-  bottom: 3.5%;
-
-}
-
-#circle5 {
-  width: 150px;
-  height: 150px;
-  background-color: #22d1ee;
-  border-radius: 50%;
-  color: white;
-  position: absolute;
-  left:0%;
-  bottom: 29.4%;
-}
-
-
-#circle6 {
-  width: 400px;
-  height: 400px;
-  background-color: #364f6b;
-  color: white;
-  border-radius: 50%;
-  position: absolute;
-  left:28.6%;
-  bottom: 1%;
-}
-
-
-
-#circle7 {
-  width: 325px;
-  height: 325px;
-  background-color:#ff304f ;
-  color: white;
-  border-radius: 50%;
-  position: absolute;
-  left:63.8%;
-  bottom: 300px;
-}
-
-
-#circle8 {
-  width: 400px;
-  height: 400px;
-  background-color:#22d1ee;
-  color: white;
-  border-radius: 50%;
-  position: absolute;
-  left:41%;
-  bottom: 41.5%;
-}
-
-
-#circle9 {
-  width: 300px;
-  height: 300px;
-  background-color:   #9f0fef;
-  color: white;
-  border-radius: 50%;
-  position: absolute;
-  left:66.3%;
-  bottom: 0%;
-}
-
-
-#circle10 {
-  width: 123px;
-  height: 123px;
-  background-color: #22d1ee;
-  color: white;
-  border-radius: 50%;
-  position: absolute;
-  left:1412px;
-  bottom: 2px;
-}
-
-#circle11 {
-  width: 254px;
-  height: 254px;
-  background-color: #ff6c5f;
-  color: white;
-  border-radius: 50%;
-  position: absolute;
-  left:51.5%;
-  bottom: 0%;
-}
-
-#circle12 {
-  width: 180px;
-  height: 180px;
-  background-color: #22d1ee;
-  color: white;
-  border-radius: 50%;
-  position: absolute;
-  right:0px;
-  bottom: 236px;
-}
-#circle13 {
-  width: 148px;
-  height: 148px;
-  background-color: #caccd1;
-  color: white;
-  border-radius: 50%;
-  position: absolute;
-  left:57.5%;
-  bottom: 29.5%;
-}
-
-#circle1 .circle-text{
-  text-align: center;
-  position: absolute;
-  left: 30%;
-  bottom: 50%;
-}
-
-
-  #circle2 .circle-text{
-    text-align: center;
-    position: absolute;
-    top:40%;
-    left:20%;
-  }
-
-  #circle3 .circle-text{
-    font-size: 20px;
-    text-align: center;
-    position: absolute;
-    top:30%;
-    left:3%;
-  }
-
-
-  #circle4 .circle-text{
-    text-align: center;
-    position: absolute;
-    left: 10%;
-    bottom: 45%;
-  }
-
-
-  #circle5 .circle-text{  
-    text-align: center;
-    position: absolute;
-    left: 25%;
-    bottom: 40%;
-  }
-
-  #circle6 .circle-text{
-    text-align: center;
-    font-size: 24px;
-    position: absolute;
-    left: 22%;
-    bottom: 50%;
-  }
-
-
-  #circle7 .circle-text{
-    text-align: center;
-    position: absolute;
-    left: 10%;
-    bottom: 40%;
-  }
-
-  #circle8 .circle-text{
-    text-align: center;
-    font-size: 28px;
-    position: absolute;
-    left: 12%;
-    bottom: 40%;
-  }
- 
-  #circle9 .circle-text{
-    font-size: 20px;
-    text-align: center;
-    position: absolute;
-    left: 20%;
-    bottom: 40%;
-  }
-
-  #circle10 .circle-text{
-    text-align: center;
-    position: absolute;
-    left: 30%;
-    bottom: 50%;
-  }
-  
-  #circle11 .circle-text{
-    text-align: center;
-    position: absolute;
-    font-size: 18px;
-    left: 5%;
-    bottom: 30%;
   }
 
 
 
   @media screen and (max-width: 600px) {
+
     .achieve-heading p{
       z-index: 2;
      font-size: 40px;
@@ -271,238 +65,10 @@
     #achieve-sec{
       margin-top: 0rem;
       margin-bottom: 0rem;
-      min-width: 300px !important;
-      height: 1200px !important ;
     }
 
+    
 
-
-    .main-circle span{
-      font-weight: bolder;
-    }
-    
-    
-   #circle1 {
-        width: 25px;
-        height: 25px;
-        background-color: #22d1ee;
-        color: white;
-        border-radius: 50%;
-        text-align: center;
-        position: absolute;
-        left:0%;
-        bottom: 0%;
-    }
-    
-    #circle2 {
-      width: 135px;
-      height: 135px;
-      z-index: 100;
-      background-color: #22d1ee;
-      color: white;
-      border-radius: 50%;
-      position: absolute;
-      left:1%;
-      bottom: 25.5%;
-    }
-    
-    #circle3 {
-      width: 180px;
-      height: 180px;
-      z-index: 101;
-      background-color: #83e85a;
-      color: white;
-      border-radius: 50%;
-      position: absolute;
-      left:0%;
-      bottom: 10.5%;
-    }
-    
-    #circle4 {
-      width: 203px;
-      height: 203px;
-      
-      background-color: #ffd615;
-      color: white;
-      border-radius: 50%;
-      position: absolute;
-      left: 46.5%;
-      bottom: 65.8%;
-    }
-    
-    #circle5 {
-      
-      width: 150px;
-      height: 150px;
-      background-color: #22d1ee;
-      border-radius: 50%;
-      z-index: 200;
-      color: white;
-      position: absolute;  
-      left:45%;
-      bottom: 53.5%;
-    
-    }
-    
-    
-    #circle6 {
-      width: 190px;
-      height: 190px;
-      background-color: #364f6b;
-      color: white;
-      border-radius: 50%;
-      position: absolute;
-      left: 0%;
-      bottom:59.8%;
-    }
-    
-    
-    
-    #circle7 {
-      
-      width: 200px;
-      height: 200px;
-      z-index: 300px;
-      background-color:#ff304f ;
-      color: white;
-      border-radius: 50%;
-      position: absolute;
-      left:0%;
-      bottom: 43%;
-    }
-    
-    
-    #circle8 {
-      width: 220px;
-      height: 220px;
-      background-color:#22d1ee;
-      color: white;
-      border-radius: 50%;
-      position: absolute;
-      left:40%;
-      bottom: 0%;
-    }
-    
-    
-    #circle9 {
-      width: 180px;
-      height: 180px;
-      
-      z-index: 400;
-      background-color:   #9f0fef;
-      color: white;
-      border-radius: 50%;
-      position: absolute;
-      left:51%;
-      bottom: 38.5%;
-    }
-    
-    
-    #circle10 {
-      width: 123px;
-      height: 123px;
-      background-color: #22d1ee;
-      color: white;
-      border-radius: 50%;
-      position: absolute;
-      left:0%;
-      bottom: 0%;
-    }
-    
-    #circle11 {
-      width: 240px;
-      height: 240px;
-      background-color: #ff6c5f;
-      color: white;
-      border-radius: 50%;
-      position: absolute;
-      
-      left:36.5%;
-      bottom: 18.5%;
-    
-    }
-    
-    #circle12 {
-      width: 60px;
-      height: 60px;
-      background-color: #22d1ee;
-      color: white;
-      border-radius: 50%;
-      position: absolute;
-      left:31%;
-      bottom: 0px;
-    }
-    #circle13 {
-      
-      width: 100px;
-      height: 100px;
-      background-color: #caccd1;
-      color: white;
-      border-radius: 50%;
-      position: absolute;
-      left:25%;
-      bottom: 35%; 
-     
-    }
- 
-    
-    
-      #circle2 .circle-text{
-        top:30%;
-        left:7%;
-      }
-    
-      #circle3 .circle-text{
-        font-size: 16px;
-      }
-    
-    
-      #circle4 .circle-text{
-        left: 5%;
-        bottom: 35%;
-      }
-    
-    
-      
-    
-      #circle6 .circle-text{
-        left: 5%;
-        bottom: 30%;
-      }
-    
-    
-      #circle7 .circle-text{
-        left: 0%;
-        bottom: 30%;
-      }
-    
-      #circle8 .circle-text{
-        font-size: 22px;
-        left: 0%;
-        bottom: 28%;
-      }
-     
-      #circle9 .circle-text{
-        font-size: 18px;
-        left: 5%;
-        bottom: 30%;
-      }
-    
-      #circle10 .circle-text{
-        text-align: center;
-        position: absolute;
-        left: 30%;
-        bottom: 50%;
-      }
-      
-      #circle11 .circle-text{
-        text-align: center;
-        position: absolute;
-        font-size: 18px;
-        left: 5%;
-        bottom: 30%;
-      }
-    
     
   }
 

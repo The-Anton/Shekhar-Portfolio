@@ -16,6 +16,11 @@ body {
   font-family: Raleway,Poppins;
 }
 
+
+#intro-sec {
+  background-color:white;
+  font-family: Raleway,Poppins;
+}
 #timeline-sec {
   background-color:white;
   font-family: Raleway,Poppins;
@@ -36,7 +41,11 @@ body {
 #achieve-sec {
   background-color: white;
   font-family: Raleway,Poppins;
+  
+
 }
+
+
 
 #experience-sec {
   background-color: white;

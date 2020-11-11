@@ -6,43 +6,15 @@
     <title>Shekhar</title>
 
 
-    <style>
-      body{
-        visibility: hidden;
-      }
-      #loader{
-        position: absolute;
-        top:20%;
-        left:30%;
-      }
-      @media screen and (max-width: 600px) {
-     
-        #loader{
-          position: absolute;
-          top:20%;
-          left:-28%;
-        }
-      }
-      lottie-player {
-        --lottie-player-toolbar-height: 250px;
+    
 
-      }
-      #fp-nav ul li a span,
-        .fp-slidesNav ul li a span {
-            background: red;
-        }
-    </style>
 <script>
   
   document.onreadystatechange = function() { 
     if (document.readyState !== "complete") { 
-        document.querySelector("body").style.visibility = "hidden"; 
-       document.querySelector("#loader").style.visibility = "visible"; 
+       
     } else { 
-        document.querySelector("#loader").style.display = "none"; 
-        document.querySelector("body").style.visibility = "visible"; 
-        
-
+       
         new TypeIt('#myElement', {
           strings: "Coder Developer"
         }).go();
@@ -51,18 +23,15 @@
   }; 
   </script>
 
-   <script  src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+   <script rel="preload" src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" async></script>
 
-   <link rel="stylesheet" type="text/css" href="fullpage.css" />
-   
-   <script type="text/javascript" src="fullpage.js"></script>
-
-    <link rel="stylesheet" href="css/styles.css">
-
+   <link rel="stylesheet" type="text/css" href="fullpage.css" />  
+   <script type="text/javascript" src="fullpage.js" ></script>
 
     <!----------------------------  CSS---------------------->
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/intro.css">
     <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/projects.css">
@@ -77,15 +46,11 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
 
 
     <!---------------------------- Fonts -------------------->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <!----------------------------  Javascript---------------------->
 
@@ -98,10 +63,7 @@
 </head>
 <body>
 
-  <div id="loader" class="center">
-    <lottie-player id="player-lottie" src="loader.json" background="transparent"  speed="1"  style="width: 600px; height: 600px; text-align: center;" loop  autoplay></lottie-player>
-  </div> 
-
+ 
   
 
 <div id="fullpage">
@@ -120,6 +82,7 @@
 
           <p id="name">Shekhar Kumar</p>
           <p id="myElement"></p>
+          <a href="https://drive.google.com/file/d/1EwYQS8r3uF4nF2Ji-vDPCjidyYz5bJOZ/view?usp=sharing" target="_blank" class="btn card" id="cv-btn">C.V</a>
           
 
         </div>
@@ -136,10 +99,10 @@
   
     <div id="intro-sec" class="section fp-auto-height-responsive">
       <div class="home row">
-        <div class="col-md-6 avatar-area">
-
+        <div class="col-md-6" id="intro-area">
+            <p>I'm Second Year enthusiast having knowledge in Competitive Programming, Android Development and Machine Learning with a demonstrated history of working in the computer software. Skilled in C++, Java, Python, Node.js,Android Development , Google Cloud , Firebase ,and Arduino Programming. Strong engineering professional witha Bachelor of Engineering - BE focused in Information Technology from Army Institute of Technology, Pune.</p>
         </div>
-        <div class="col-md-6 intro-area">
+        <div class="col-md-6" id="interest-area">
 
           <p id="name"></p>
           <p id="myElement"></p>
@@ -218,7 +181,7 @@
                             <div id="circleBar">
                               <div class="round r-1" data-value="0.80" data-size="120" data-thickness="8">
                                 <strong>
-                                  <img src="https://img.icons8.com/color/60/000000/c-plus-plus-logo.png"/>     
+                                  <img src="https://img.icons8.com/color/60/000000/c-plus-plus-logo.png" alt="c++"/>     
                                 </strong>
                               
                                 <span>
@@ -229,7 +192,7 @@
 
                             <div id="circleBar">
                               <div class="round r-2" data-value="0.50" data-size="120" data-thickness="8">
-                                <strong> <img src="https://img.icons8.com/color/60/000000/java-coffee-cup-logo.png"/>
+                                <strong> <img src="https://img.icons8.com/color/60/000000/java-coffee-cup-logo.png" alt="java"/>
                       
                                 </strong>
                                 <span>
@@ -243,7 +206,7 @@
                             
                             <div id="circleBar">
                               <div class="round" data-value="0.60" data-size="120" data-thickness="8">
-                                <strong> <img src="https://img.icons8.com/color/60/000000/javascript.png"/>
+                                <strong> <img src="https://img.icons8.com/color/60/000000/javascript.png" alt="javascript"/>
                       
                                 </strong>
                                 <span>
@@ -253,7 +216,7 @@
                     
                               <div id="circleBar">
                                 <div class="round" data-value="0.60" data-size="120" data-thickness="8">
-                                  <strong> <img src="https://img.icons8.com/color/60/000000/python.png"/>
+                                  <strong> <img src="https://img.icons8.com/color/60/000000/python.png" alt="python"/>
                         
                                   </strong>
                                   <span>
@@ -263,7 +226,7 @@
 
                               <div id="circleBar">
                                 <div class="round" data-size="120" data-value="0.50" data-thickness="8">
-                                  <strong> <img src="https://img.icons8.com/color/60/000000/kotlin.png"/>
+                                  <strong> <img src="https://img.icons8.com/color/60/000000/kotlin.png" alt="kotlin"/>
                         
                                   </strong>
                                   <span>
@@ -273,7 +236,7 @@
                             
                               <div id="circleBar">
                                 <div class="round"  data-value="0.90" data-size="120" data-thickness="8">
-                                  <strong> <img src="https://img.icons8.com/color/60/000000/css3.png"/> 
+                                  <strong> <img src="https://img.icons8.com/color/60/000000/css3.png" alt="css3"/> 
                         
                                   </strong>
                                   <span>
@@ -300,11 +263,11 @@
                         </h4>
       
                         <div class="tools-logo">
-                          <img id="node-logo" src="https://img.icons8.com/color/60/000000/nodejs.png"/>
-                          <img id="flask-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/60px-Flask_logo.svg.png"/>
+                          <img id="node-logo" src="https://img.icons8.com/color/60/000000/nodejs.png" alt="node.js"/>
+                          <img id="flask-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/60px-Flask_logo.svg.png" alt="flsk"/>
                           
-                          <img id="postgress-logo"src="https://img.icons8.com/color/48/000000/postgreesql.png"/>
-                          <img id="sql-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Database-mysql.svg/64px-Database-mysql.svg.png"/>
+                          <img id="postgress-logo"src="https://img.icons8.com/color/48/000000/postgreesql.png" alt="postgress"/>
+                          <img id="sql-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Database-mysql.svg/64px-Database-mysql.svg.png" alt="sql"/>
                           
                         </div>
                     </div>
@@ -320,9 +283,9 @@
                       </h4>
     
                       <div class="tools-logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Android_Studio_icon.svg/64px-Android_Studio_icon.svg.png"/>
-                        <img src="https://img.icons8.com/color/48/000000/flutter.png"/>
-                        <img src="https://img.icons8.com/fluent/60/000000/adobe-xd.png"/>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Android_Studio_icon.svg/64px-Android_Studio_icon.svg.png" alt="android studio"/>
+                        <img src="https://img.icons8.com/color/48/000000/flutter.png" alt="flutter"/>
+                        <img src="https://img.icons8.com/fluent/60/000000/adobe-xd.png" alt="adbobe-xd"/>
     
                       </div>
                     </div>
@@ -339,11 +302,11 @@
                       </h4>
     
                       <div class="tools-logo">
-                        <img  id="tensorflow-logo"src="https://img.icons8.com/color/60/000000/tensorflow.png"/>
-                        <img id="pytorch-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/64px-PyTorch_logo_icon.svg.png"/>
-                        <img id="juypter-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/44px-Jupyter_logo.svg.png"/>
-                        <img id="mathplotlib-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/NumPy_logo.svg/128px-NumPy_logo.svg.png"/>
-                        <img id="colab-logo" src="https://colab.research.google.com/img/colab_favicon_256px.png"/> 
+                        <img  id="tensorflow-logo"src="https://img.icons8.com/color/60/000000/tensorflow.png" alt="tensorflow"/>
+                        <img id="pytorch-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/64px-PyTorch_logo_icon.svg.png" alt="pytorch"/>
+                        <img id="juypter-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/44px-Jupyter_logo.svg.png" alt="juypter"/>
+                        <img id="mathplotlib-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/NumPy_logo.svg/128px-NumPy_logo.svg.png" alt="numpy"/>
+                        <img id="colab-logo" data-src="https://colab.research.google.com/img/colab_favicon_256px.png" alt="collab"/> 
                         
                       </div>
                       </div>
@@ -363,7 +326,7 @@
                       <div class="tools-logo">
                         <i class="fab fa-android fa-3x" style="color: greenyellow;"></i>
                         <i class="fab fa-github fa-3x" ></i>
-                        <img id="gcd-logo" src="https://img.icons8.com/color/60/000000/google-cloud-platform.png"/>
+                        <img id="gcd-logo" data-src="https://img.icons8.com/color/60/000000/google-cloud-platform.png" alt="gcd"/>
     
                       </div>
                       </div>
@@ -393,9 +356,9 @@
 
 
     <div id="projects-sec" class="section fp-auto-height-responsive">
-      <img  id="project-anim1" src="./Selected/character 18.svg" alt="">
+      <img  id="project-anim1" src="./Selected/character 18.svg" alt="svg">
       <div class="project-heading">
-        <p id="project-heading-text">My works</p>
+        <p id="project-heading-text">Projects</p>
       </div>
     <div class="projects">
 
@@ -408,7 +371,7 @@
                 <button class="btn">PyTorch</button>
                 <button class="btn">Python</button>
               </div>
-              <img src="./media/flower.webp" id='pr-img-1' alt="">
+              <img data-src="./media/flower.webp" id='pr-img-1' alt="flower">
               <div class="card-title">Flower Breed Classifier - PyTorch Machine Learning Model</div>
               
             </div>
@@ -437,7 +400,7 @@
                 <button class="btn">ARcore</button>
                 <button class="btn">Kotlin</button>
               </div>
-              <img src="./media/globe.webp" id='pr-img-2' alt="">
+              <img data-src="./media/globe.webp" id='pr-img-2' alt="globe">
 
               <div class="card-title">AR Globe - Globe in Augmented Reality</div>
             </div>
@@ -466,7 +429,7 @@
                 <button class="btn">TesorFlow</button>
                 <button class="btn">Python</button>
               </div>
-              <img src="./media/ipl.webp" id='pr-img-3' alt="">
+              <img data-src="./media/ipl.webp" id='pr-img-3' alt="ipl">
 
               <div class="card-title">IPL Match Predictors - PyTorch Machine Learning Model</div>
             </div>
@@ -494,7 +457,7 @@
                 <button class="btn">Kotlin</button>
                 <button class="btn">Java</button>
               </div>
-              <img src="./media/mate-2.webp" id='pr-img-4' alt="">
+              <img data-src="./media/mate-2.webp" id='pr-img-4' alt="mate">
 
               <div class="card-title">Mate - Event Managment & Live Leaderboard App</div>
             </div>
@@ -524,7 +487,7 @@
                 <button class="btn">Kotlin</button>
                 <button class="btn">JavaScript</button>
               </div>
-              <img src="./media/qzoid-trans.webp" id='pr-img-5' alt="">
+              <img data-src="./media/qzoid-trans.webp" id='pr-img-5' alt="qzoid">
 
               <div class="card-title">Qzoid - Crossplatform Quiz/Survey Sharing App</div>
             </div>
@@ -554,7 +517,7 @@
                 <button class="btn">Kotlin</button>
                 <button class="btn">ExoPlayer</button>
               </div>
-              <img src="./media/fireplayer.webp" id='pr-img-6' alt="">
+              <img data-src="./media/fireplayer.webp" id='pr-img-6' alt="fireplayer">
 
               <div class="card-title">Fireplayer - Video Streaming Using ExoPlayer</div>
             </div>
@@ -577,7 +540,7 @@
 
         
     </div>
-      <img  id="project-anim2" src="./Selected/character 20.svg" alt="">
+      <img  id="project-anim2" data-src="./Selected/character 20.svg" alt="svg">
 
   </div>
 
@@ -596,66 +559,12 @@
       <div class="achieve-heading">
         <p id="achieve-heading-text">Milestones</p>
       </div>
-
-      <div id="circle1" ></div>
-      <div id="circle2" ></div>
-      <div id="circle5" ></div>
-      <div id="circle7" ></div>
-      <div id="circle10" ></div>
-      <div id="circle12" ></div>
-      <div id="circle13" ></div>
-      <div id="circle1" ></div>
-      
-      <div id="circle11" class="main-circle" > 
-        <div class="circle-text">
-        <span class="">Created an Crossplatform </span>
-        <span> Quiz and Survey Sharing App</span>
-      </div> </div>
-      <div id="circle2" class="main-circle" > 
-        <div class="circle-text">
-        <span class="">Command Level</span>
-        <span> Quiz Winner</span>
-      </div> </div>
-      <div id="circle5" class="main-circle" > 
-        <div class="circle-text">
-        <span class="">Cleared </span>
-        <span>JEE Mains</span>
-      </div> </div>
-      <div id="circle7" class="main-circle" > 
-        <div class="circle-text">
-        <span class="">Developed Event Managment And Realtime Leaderboard App</span>
-        <span> With Team Enigma</span>
-      </div> </div>
-      <div id="circle3" class="main-circle" > 
-        <div class="circle-text">
-        <span class="">Core Team Member</span>
-        <span> Google Developer Students Club</span>
-      </div> </div>
-      <div id="circle4" class="main-circle" > 
-        <div class="circle-text">
-        <span class="">AIT CodeDown 2020 Winner</span>
-        <span> Consolation</span>  
-      </div>    </div>
-      <div id="circle6" class="main-circle" > 
-        <div class="circle-text">
-        <span class="">PASKATHON Finalist</span>
-      </div> </div>
-      <div id="circle8" class="main-circle" > 
-        <div class="circle-text">
-        <span class="">Winner Of F.E 2019  </span>
-        <span> Project Based Learning </span>
-      </div> </div>
-      <div id="circle9" class="main-circle" > 
-        <div class="circle-text">
-        <span class="">Completed Udacity </span>
-        <span> AI Nanodegree</span>
-      </div> </div>
-
-      
-      <div id="circle-min1"></div>
-      <div id="circle-min2"></div>
-      <div id="circle-min3"></div>
-      <div id="circle-min4"></div>
+      <div id="image-contain-sm">
+        <img src="./media/achieve-bg-sm.svg" alt="">
+      </div>
+      <div id="image-contain-lg">
+        <img src="./media/achieve-bg.svg" alt="">
+      </div>
      
     </div>
     <!---------------------------- End CP Section------------------------------------------->
@@ -684,7 +593,7 @@
 
                     <div class="col-md-6 row1">
                       <div class="company-logo digitalpersistent-logo">
-                        <img src="media/Digital Persistent.webp" alt="">
+                        <img src="media/Digital Persistent.webp" alt="Diagital Persistent">
                       </div>
 
                       <div class="company-position">
@@ -739,7 +648,7 @@
 
                     <div class="col-md-6 row1">
                       <div class="company-logo examcenter-logo">
-                        <img src="media/examcenter.webp" alt="">
+                        <img data-src="media/examcenter.webp" alt="examcenter">
                       </div>
 
                       <div class="company-position">
@@ -795,7 +704,7 @@
 
                     <div class="col-md-6 row1">
                       <div class="company-logo mate-logo">
-                        <img src="media/mate.webp" alt="">
+                        <img data-src="media/mate.webp" alt="mate">
                       </div>
 
                       <div class="company-position">
@@ -854,7 +763,7 @@
 
                     <div class="col-md-6 row1">
                       <div class="company-logo igpixel-logo">
-                        <img src="media/igpixel-black.webp" alt="">
+                        <img data-src="media/igpixel-black.webp" alt="igpixel">
                       </div>
 
                       <div class="company-position">
@@ -913,7 +822,7 @@
 
                     <div class="col-md-6 row1">
                       <div class="company-logo qzoid-logo">
-                        <img src="media/qzoid-trans.webp" alt="">
+                        <img data-src="media/qzoid-trans.webp" alt="qzoid">
                       </div>
 
                       <div class="company-position">
@@ -977,7 +886,7 @@
         <div class="mooc-heading">
           <p id="mooc-heading-text">Accreditations</p>
         </div>
-        <img id="main-poster-certificate" src="./Selected/example-scene-2.svg" alt="contact-svg">
+        <img id="main-poster-certificate" data-src="./Selected/example-scene-2.svg" alt="contact-svg">
 
           <div id="cert-sec">
             
@@ -1012,7 +921,7 @@
 
                 <div class="card">
                   <div class="card-body">
-                    <img src="media/ai-nanodegree.webp"/>
+                    <img data-src="media/ai-nanodegree.webp" alt="certificate"/>
                   </div>
                 </div>
               </div>
@@ -1029,34 +938,34 @@
           </div>
 
           <div class="badges">
-            <img src="https://cdn.qwiklabs.com/sKP7%2Fq69EFKGaS5hVjP6eyNNqfGztiKPtEuk4a8ouVQ%3D" alt="">
+            <img data-src="https://cdn.qwiklabs.com/sKP7%2Fq69EFKGaS5hVjP6eyNNqfGztiKPtEuk4a8ouVQ%3D" alt="Badge">
   
             <div class="">
-              <img src="https://cdn.qwiklabs.com/apNpv%2BiHmmdV7%2F9uQ4WV%2BJJsqaD9aGMI6KsMJsgpnlA%3D" alt="">
+              <img data-src="https://cdn.qwiklabs.com/apNpv%2BiHmmdV7%2F9uQ4WV%2BJJsqaD9aGMI6KsMJsgpnlA%3D" alt="Badge">
             </div>
             <div class="">
-              <img src="https://cdn.qwiklabs.com/%2FOMWtep04OmVV4X67ODrPJD%2BnsuN977UFkyO6SD486c%3D" alt="">
+              <img data-src="https://cdn.qwiklabs.com/%2FOMWtep04OmVV4X67ODrPJD%2BnsuN977UFkyO6SD486c%3D" alt="Badge">
             </div>
             <div class="">
-              <img src="https://cdn.qwiklabs.com/l0sFLZS%2BO9dGHcecgA2MrRf7u2BRusBkSVPzUDf8AUg%3D" alt="">
+              <img data-src="https://cdn.qwiklabs.com/l0sFLZS%2BO9dGHcecgA2MrRf7u2BRusBkSVPzUDf8AUg%3D" alt="Badge">
             </div>
             <div class="">
-              <img src="https://cdn.qwiklabs.com/y3NiciFy8M48berRddcZjybSS0LABCiYCBX6L2U%2FPjk%3D" alt="">
+              <img data-src="https://cdn.qwiklabs.com/y3NiciFy8M48berRddcZjybSS0LABCiYCBX6L2U%2FPjk%3D" alt="Badge">
             </div>
             <div class="">
-              <img src="https://cdn.qwiklabs.com/id9fOsGQY3dzozgELKMTfVQA6QVr5047qDY6BTTJ17I%3D" alt="">
+              <img data-src="https://cdn.qwiklabs.com/id9fOsGQY3dzozgELKMTfVQA6QVr5047qDY6BTTJ17I%3D" alt="Badge">
             </div>
             <div class="">
-              <img src="https://cdn.qwiklabs.com/2nd5TLO%2BpmXArh2laFfQeO1ypildO%2FpayYNZJUStvRs%3D" alt="">
+              <img data-src="https://cdn.qwiklabs.com/2nd5TLO%2BpmXArh2laFfQeO1ypildO%2FpayYNZJUStvRs%3D" alt="Badge">
             </div>
             <div class="">
-              <img src="https://cdn.qwiklabs.com/VjyAwxm%2FPfVYFe925M0qxSVYaVxDhz2woSQRdAEBMZ8%3D" alt="">
+              <img data-src="https://cdn.qwiklabs.com/VjyAwxm%2FPfVYFe925M0qxSVYaVxDhz2woSQRdAEBMZ8%3D" alt="Badge">
             </div>
             <div class="">
-              <img src="https://cdn.qwiklabs.com/N3%2BwDzFLMX6LfRsvQUIvQJcjCa3AxXLw2LOjRXICzkA%3D" alt="">
+              <img data-src="https://cdn.qwiklabs.com/N3%2BwDzFLMX6LfRsvQUIvQJcjCa3AxXLw2LOjRXICzkA%3D" alt="Badge">
             </div>
             <div class="">
-              <img src="https://cdn.qwiklabs.com/2vbDZtRsIX5OPOvwaasl0Zcak6MtW6QdpEEWcHSnYek%3D" alt="">
+              <img data-src="https://cdn.qwiklabs.com/2vbDZtRsIX5OPOvwaasl0Zcak6MtW6QdpEEWcHSnYek%3D" alt="Badge">
             </div>
             <div class="">
      <!--         <img id='orange-badge' src="media/gcdbadge.webp" alt="">
@@ -1123,7 +1032,7 @@
                     <div class="social-btns">
                       <a class="btn linkedin" href="https://www.linkedin.com/in/the-anton/"><i class="fab fa-linkedin fa-2x"></i></a>
                       <a class="btn github" href="https://github.com/The-Anton"><i class="fab fa-github fa-2x"></i></a>
-                      <a class="btn dsc" href="https://dsc.community.dev/u/mc929d/#/about"><img src="./media/dsc.webp" alt=""></i></a>
+                      <a class="btn dsc" href="https://dsc.community.dev/u/mc929d/#/about"><img data-src="./media/dsc.webp" alt=""></i></a>
                       <a class="btn medium" href="https://medium.com/@theAnton"><i class="fab fa-medium fa-2x"></i></a>
                       <a class="btn quora" href="https://www.quora.com/profile/Shekhar-Kumar-Singh-23"><i class="fab fa-quora fa-2x"></i></a>
                       <a class="btn facebook" href="https://www.facebook.com/profile.php?id=100005728093339"><i class="fab fa-facebook fa-2x"></i></a>
@@ -1145,13 +1054,13 @@
               
                       <div class="form-group">
                         <label id="contact-input-area" for="exampleFormControlTextarea1"> Type your doubts...</label>
-                        <textarea class="form-control w3-border-0" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control w3-border-0" id="msg-box" rows="3"></textarea>
                       </div>
                     </form>
                   </div>
 
                   <div class="social-btns" id="sendbutton">
-                    <a class="btn send" href="https://www.linkedin.com/in/the-anton/"><i class=" far fa-paper-plane fa-2x"></i></a>
+                    <a class="btn send"  onclick='sendMail()''><i class=" far fa-paper-plane fa-2x"></i></a>
                   </div>
               
             </div>
@@ -1160,7 +1069,7 @@
 
 
             <div class="col-md-6" id="contact-column-2"">
-              <img id="main-poster-contact" src="./Selected/example-scene-1.svg" alt="contact-svg">
+              <img id="main-poster-contact" data-src="./Selected/example-scene-1.svg" alt="contact-svg">
             </div>
               
             </div>
@@ -1186,28 +1095,27 @@
 
 <!---------------------------- Start Bootstrap scripts------------------------------------------->
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" ></script>
 <!---------------------------- End Bootstrap scripts------------------------------------------->
 
-<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js" ></script>
 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script  src="js/app.js" ></script>
+<script  src="js/stats.js" ></script>
+<script  src="js/achievments.js" ></script>
+<script  src="js/articles.js" ></script>
+<script  src="js/mooc.js" ></script>
+<script  src="js/contact.js" ></script>
 
 
 
-<script  src="js/app.js"></script>
-<script  src="js/stats.js"></script>
-<script  src="js/achievments.js"></script>
-<script  src="js/articles.js"></script>
-<script  src="js/mooc.js"></script>
-
-
-
-
-<script>
+<script >
   
   new fullpage('#fullpage', {
   //options here
@@ -1215,27 +1123,19 @@
         navigation: true,
         slidesNavigation: true,
         controlArrows: false,
-      navigationTooltips: ['Home', 'Skills', 'Projects', 'Achievments', "Experience", 'Certifications', 'Badges', 'Contact'],
-      css3: true,
-      lockAnchors: false,
-      menu: '#menu',
-      responsiveWidth:600,
+        navigationTooltips: ['Home', 'Intro', 'Skills', 'Projects', 'Achievments', "Experience", 'Accreditations', 'Blogs', 'Contact'],
+        css3: true,
+        lockAnchors: false,
+        menu: '#menu',
+        responsiveWidth:600,
 
 
 
 
-      /*  causing scrolling error
-        afterLoad: function(origin, destination, direction){
-          var loadedSection = this;
-
-          //using index
-          if(origin.index == 0){
-            Circlle('.round');
-          }
-
-        }
-      */ 
       });
+
+
+      
 </script>
 
 
