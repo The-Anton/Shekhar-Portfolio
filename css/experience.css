@@ -194,10 +194,11 @@
     
     #experience-sec .slide .background-card {
       width: 85%;
-      height: 60%;
+      height: 480px;
       left:5%;
-      top:46%;
-     
+      top:5%;
+      padding: 0rem 0rem 0rem 0rem;
+      margin: 0 0 0 0;
       
     }
   

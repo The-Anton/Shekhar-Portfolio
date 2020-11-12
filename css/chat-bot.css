@@ -70,15 +70,7 @@
 	bottom: 25px;
 	z-index: 1000;
 }
-.ba-settings {
-	position: absolute;
-	top: -25px;
-	right: 0px;
-	padding: 10px 20px;
-	background-color: #555;
-	border-radius: 5px;
-	color: #fff;
-}
+
 iframe{
     border: #fff;
     font-size: 8px;
@@ -89,4 +81,26 @@ iframe p{
 
 .user-request{
  font-size: 8px !important;
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+
+	#chatbot-area{
+		display: none;
+	}
+
+
+
+
+
+
+
+
+
 }

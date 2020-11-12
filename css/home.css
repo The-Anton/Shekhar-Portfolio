@@ -52,14 +52,13 @@
       padding: 0rem;
     }
     .avatar-area{
-      position: absolute;
-      top:0px;
-      left: 0;
+
       margin-left: auto;
       margin-right: auto;
     }
     .intro-area{
-      margin-bottom: 18rem;
+      margin-top: 5rem;
+      margin-bottom: 2rem;
     }
     #name {
       margin-top: 5rem;
@@ -77,9 +76,26 @@
       margin-right: auto;
       margin-left: auto;
       margin-top: 5rem;
-      height: 300px;
-      width: 300px;
+      height: 200px;
+      width: 200px;
       border-radius: 50%;
     }
+
+    
+  #cv-btn{
+    display: block;
+    margin-top: 5rem;
+    width: 140px;
+    height: 46px;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    outline: auto;
+    border: 0 !important;
+    box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
+
+}
+
    
   }

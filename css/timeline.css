@@ -54,7 +54,7 @@
 }
 
 #container #circle0::before {
-  content: "2018";
+  content: "2016";
   color: black;
   position: absolute;
   left: -50px;
@@ -356,9 +356,9 @@
 
 #container {
   height: 860px;
-  width: 350px;
-  margin: 0 auto;
-  margin-bottom: 5rem;
+  margin: 5rem auto;
+  
+  margin-bottom: 3rem;
 }
 
 #container .end {
