@@ -97,6 +97,7 @@
   }
 
   .icon-list a {
+    z-index: 100000;
     margin: 1rem;
   }
 
