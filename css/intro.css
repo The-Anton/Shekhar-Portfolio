@@ -1,122 +1,107 @@
-#intro-area{
+#intro-area {
     font-size: 24px;
-}
-#intro-area p{
+  }
+  
+  #intro-area p {
     display: block;
     margin-top: 5rem;
     margin-bottom: auto;
-}
-
-#topic-1{
+  }
+  
+  #topic-1 {
     display: block;
     margin: auto;
     text-align: left;
     font-size: 26px;
-}
-.multipleStrings{
+  }
+  
+  .multipleStrings {
     text-align: left;
     display: block;
     margin: auto;
     font-size: 18px;
-}
-
-
-
-#topic-1{
+  }
+  
+  #topic-1 {
     margin-bottom: 2rem;
-}
-#interest-area{
+  }
+  
+  #interest-area {
     padding-left: 8rem;
-    
-}
-
-.cp-skills{
+  }
+  
+  .cp-skills {
     margin-top: 4rem;
-
-}
-
-#cptext{
+  }
+  
+  #cptext {
     font-size: 18px;
-}
-
-.soft-skills{
+  }
+  
+  .soft-skills {
     margin-top: 5rem;
-}
-
-.soft-skills p{
+  }
+  
+  .soft-skills p {
     font-size: 18px;
-}
-
-
-
-
-
-
-@media screen and (max-width: 600px) {
-    
-    
-    #intro-area{
-        font-size: 18px;
-        padding-left: 3rem;
-        padding-right: 3rem;
+  }
+  
+  @media screen and (max-width: 600px) {
+      
+      
+    #intro-area {
+      font-size: 18px;
+      padding-left: 3rem;
+      padding-right: 3rem;
     }
-    #intro-area p{
-        display: block;
-        margin-top: 5rem;
-        margin-bottom: auto;
-        text-align:center ;
-        text-justify: inter-word;
+  
+    #intro-area p {
+      display: block;
+      margin-top: 5rem;
+      margin-bottom: auto;
+      text-align: center;
+      text-justify: inter-word;
     }
-    
-    #topic-1{
-        display: block;
-        margin: auto;
-        margin-top: 2rem;
-        text-align: center;
-        font-size: 20px;
-        font-weight: bolder;
+  
+    #topic-1 {
+      display: block;
+      margin: auto;
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bolder;
     }
-    .multipleStrings{
-        text-align: center;
-        display: block;
-        margin: auto;
-        font-size: 18px;
+  
+    .multipleStrings {
+      text-align: center;
+      display: block;
+      margin: auto;
+      font-size: 18px;
     }
-    
-    
-    
-    #topic-1{
-        margin-bottom: 2rem;
+  
+    #topic-1 {
+      margin-bottom: 2rem;
     }
-    #interest-area{
-        padding-left: 2rem;
-        
+  
+    #interest-area {
+      padding-left: 2rem;
     }
-    
-    .cp-skills{
-        margin-top: 4rem;
-    
+  
+    .cp-skills {
+      margin-top: 4rem;
     }
-    
-    #cptext{
-        font-size: 18px;
-        text-align:justify ;
-        text-justify: inter-word;
+  
+    #cptext {
+      font-size: 18px;
+      text-align: justify;
+      text-justify: inter-word;
     }
-    
-    .soft-skills{
-        margin-top: 5rem;
+  
+    .soft-skills {
+      margin-top: 5rem;
     }
-    
-    .soft-skills p{
-        font-size: 18px;
+  
+    .soft-skills p {
+      font-size: 18px;
     }
-    
-
-
-
-
-
-
-
-}
+  }

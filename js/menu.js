@@ -8,7 +8,7 @@ $(function () {
   });
 
   $('#skill-sec-link').click(function(){
-    $(document).scrollTop(1000) // any value you need
+    $(document).scrollTop(1000)
     });
 
 });

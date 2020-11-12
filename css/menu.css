@@ -1,5 +1,3 @@
-
-
 /* ------------- */
 .sub-menu {
   position: absolute;
@@ -7,7 +5,6 @@
   left: 20px;
   height: 46px;
   width: 46px;
-
 }
 
 .sub-menu-link {
@@ -37,11 +34,13 @@
   left: 0;
   transition: all 0.25s ease-in-out;
 }
+
 .menu-bar-2 {
   top: 0;
   bottom: 0;
   margin: auto;
 }
+
 .menu-bar-3 {
   bottom: 0;
 }
@@ -49,12 +48,15 @@
 .sub-menu.open .menu-bar-1 {
   transform: translateY(10px) translateY(-50%) rotate(-45deg);
 }
+
 .sub-menu.open .menu-bar-2 {
   opacity: 0;
 }
+
 .sub-menu.open .menu-bar-3 {
   transform: translateY(-10px) translateY(50%) rotate(45deg);
 }
+
 .sub-menu.open .menu-bar-4 {
   opacity: 0;
 }
@@ -68,6 +70,7 @@
   z-index: 1000;
   transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
+
 .sub-menu.open .sub-menu-circle {
   transform: scale(2);
   width: 100vw;
@@ -91,29 +94,37 @@
   justify-content: center;
   align-items: center;
 }
+
 .sub-menu-overlay.open {
   opacity: 1;
   visibility: visible;
   transition: opacity 0.3s ease-in-out;
 }
+
 .sub-menu-list {
   margin-bottom: 2rem;
   list-style: none;
 }
+
 .sub-menu-list li {
   margin: 1.5em;
 }
+
 .sub-menu-list li a {
   color: #fff;
   font-size: 1.5em;
   fontweight: 700;
   text-align: center;
   position: abusolute;
-  top:0;right:0;bottom:0;left:0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   margin: auto;
   transition: all 0.1.25s ease;
   text-decoration: none;
 }
+
 .sub-menu-list li a:hover {
   border-bottom: 3px solid #fff;
 }

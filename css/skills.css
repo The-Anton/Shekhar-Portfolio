@@ -1,274 +1,254 @@
 .skills-heading {
-    
-    
-    position: absolute;
-    left: 1%;
-    top:0%;
-  }
-.skills-heading p{
-    
-    z-index: 100;
-   font-size: 6vw;
-   text-align: left;
-   font-weight: bolder;
-  }
-  
-  #skill-sec .row{
-    display: flex;
-    flex-direction: row;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  .primary-skills {
-    display: block;
-    margin: auto;
-  }
-  #prime-skill-card{
-      border-radius: 15px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 8rem;
-      width: 70%;
-      border:0;
-      padding: 2%;
-      box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 1%;
+  top: 0%;
+}
 
+.skills-heading p {
+  z-index: 100;
+  font-size: 6vw;
+  text-align: left;
+  font-weight: bolder;
+}
+
+#skill-sec .row {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.primary-skills {
+  display: block;
+  margin: auto;
+}
+
+#prime-skill-card {
+  border-radius: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8rem;
+  width: 70%;
+  border: 0;
+  padding: 2%;
+  box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
+}
+
+.primary-skills .language {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: space-between;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+}
+
+#circleBar {
+  margin: 0rem 1rem 0rem 1rem;
+  text-align: center;
+}
+
+#circleBar .round strong {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  margin-top: -50px;
+  transform: translate(-50%);
+}
+
+#circleBar span {
+  display: block;
+  color: #999;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+#circleBar span i {
+  color: black;
+  font-size: 22px;
+  margin-right: 7px;
+}
+
+.secondary-skills {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.secondary-skills .tools .card {
+  margin: 1rem 0rem 1rem 0rem;
+  width: 80%;
+  height: 140px;
+  box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  border-color: white;
+}
+
+.tools-logo {
+  margin: 0.5rem 0rem;
+}
+
+.tools-logo img , i {
+  margin: 0rem 1rem;
+}
+
+#sql-logo {
+  width: 10%;
+}
+
+#colab-logo {
+  width: 15%;
+}
+
+#colab-logo {
+  width: 15%;
+}
+
+#pytorch-logo {
+  width: 7%;
+}
+
+#mathplotlib-logo {
+  width: 20%;
+}
+
+#gcd-logo {
+  position: absolute;
+  top: -8px;
+}
+
+@media screen and (max-width: 600px) {
+  .skills-heading p {
+    margin: 2rem 0 0 2rem;
+    position: absolute;
+    left: 3%;
+    top: 0px;
+    font-size: 40px;
+    text-align: left;
+    font-weight: bolder;
   }
-  .primary-skills .language{
+
+  canvas[style] {
+    height: 90px !important;
+    width: 90px !important;
+  }
+
+  #skill-sec {
+    margin-top: 4rem;
+  }
+
+  #skill-sec .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .primary-skills .language {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-content: space-between;
   }
-  
-   .tools{
-    display: flex;
-    flex-direction: column;
-  }
-  
 
-  #circleBar{
-    margin: 0rem 1rem 0rem 1rem;
+  #prime-skill-card {
+    border-radius: 15px;
+    width: 90%;
+  }
+
+  #circleBar {
+    margin: 0rem 0rem 0rem 0rem;
     text-align: center;
   }
 
-
-  
-  #circleBar .round strong{
-
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    margin-top: -50px;
-    transform: translate(-50%);
-  
-  }
-  
-  #circleBar span{
-    display: block;
-    color: #999;
-    font-size: 17px;
-    margin-top: 10px;
-  }
-  
-  #circleBar span i{
-    color: black;
-    font-size: 22px;
-    margin-right: 7px;
-  }
-
-
-
-
-
-
-
-  .secondary-skills {
-    display: flex;
-    flex-direction: column;
-    margin-left: 2rem;
-    
-  
-  }
-  
-  
-  .secondary-skills .tools .card{
-    margin: 1rem 0rem 1rem 0rem;
-    width: 80%;
-    height: 140px;
-    box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    border-color: white;
-  }
-  
-  .tools-logo{
-    margin: 0.5rem 0rem;
-  }
-  .tools-logo img , i{
-    margin: 0rem 1rem;
-  }
-  
-  
-  #sql-logo{
-    width: 10%;
-  }
-  #colab-logo{
-    width: 15%;
-  }
-  #colab-logo{
-    width: 15%;
-  }
-  #pytorch-logo{
-    width: 7%;
-  }
-  #mathplotlib-logo{
-    width: 20%;
-  }
-  
-  
-  #gcd-logo{
-    position: absolute;
-    top:-8px;
-  }
-  
-  
-  
-  
-  
-
-  @media screen and (max-width: 600px) {
-    .skills-heading p{
-      margin: 2rem 0 0 2rem;
-      position: absolute;
-      left: 3%;
-      top:0px;
-      font-size: 40px;
-      text-align: left;
-      font-weight: bolder;
-    }
-   
-
-   canvas[style]{
-    height: 90px !important;
-    width: 90px !important;
-   }
-    #skill-sec {
-      margin-top: 4rem;
-    }
-    #skill-sec .row{
-      display: flex;
-      flex-direction: column;
-      
-    }
-    
-    .primary-skills .language{
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      justify-content: space-between;
-    }
-
-
-    
-    #prime-skill-card{
-      border-radius: 15px;
-      width: 90%;
-      
-
-      
-    } 
-    
-    #circleBar{
-      margin: 0rem 0rem 0rem 0rem;
-      text-align: center;
-    }
-
-    
-  #circleBar .round strong{
-
+  #circleBar .round strong {
     position: absolute;
     top: 65%;
     left: 50%;
     margin-top: -45px;
     transform: translate(-50%);
-  
   }
-  
 
-    .secondary-skills {
-      display: flex;
-      flex-direction: column;
-      margin-left: 1rem;
-      margin-bottom: 5rem;
-
-      position: relative;
-      top: 10px;
-    }
-
-    .secondary-skills .tools .card{
-      margin: 2rem 0rem 1rem 0rem;
-
-    }
-
-    .secondary-skills h4{
-      font-size: medium;
-    }
- 
-    .tools-logo{
-      margin: 0.2rem 0rem;
-    }
-    .tools-logo img{
-      margin: 0.1rem 0.1rem;
-    }
-    .web-tools .tools-logo  img{
-      margin: 0.1rem 0.3rem;
-    }
-    .ml-tools .tools-logo  img{
-      margin: 0.1rem 0.5rem;
-    }
-    .other-tools .tools-logo  img{
-      margin: 0.1rem 1rem;
-    }
-    .other-tools .tools-logo  i{
-      margin: 0.1rem 1rem;
-    }
-    .tools-logo #colab-logo{
-      visibility: hidden;
-    }
-    .secondary-skills .tools .card{
-      width: 95%;
-      height: 140px;
-    }
-    .secondary-skills .web-tools .tools-logo img{
-      width: 70px;
-    }
-   
-
-
-    #sql-logo{
-      width: 10%;
-    }
-    
-    #tensorflow-logo{
-      width: 40px;
-    }
-    #colab-logo{
-      width: 70px;
-    }
-    #pytorch-logo{
-      width: 30px;
-    }
-    #mathplotlib-logo{
-      width: 80px;
-    }
-    
-    #juypter-logo{
-      width: 50px;
-    }
-    
-    #gcd-logo{
-      position: absolute;
-      top:-8px;
-    }
-    
-
+  .secondary-skills {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-bottom: 5rem;
+    position: relative;
+    top: 10px;
   }
+
+  .secondary-skills .tools .card {
+    margin: 2rem 0rem 1rem 0rem;
+  }
+
+  .secondary-skills h4 {
+    font-size: medium;
+  }
+
+  .tools-logo {
+    margin: 0.2rem 0rem;
+  }
+
+  .tools-logo img {
+    margin: 0.1rem 0.1rem;
+  }
+
+  .web-tools .tools-logo  img {
+    margin: 0.1rem 0.3rem;
+  }
+
+  .ml-tools .tools-logo  img {
+    margin: 0.1rem 0.5rem;
+  }
+
+  .other-tools .tools-logo  img {
+    margin: 0.1rem 1rem;
+  }
+
+  .other-tools .tools-logo  i {
+    margin: 0.1rem 1rem;
+  }
+
+  .tools-logo #colab-logo {
+    visibility: hidden;
+  }
+
+  .secondary-skills .tools .card {
+    width: 95%;
+    height: 140px;
+  }
+
+  .secondary-skills .web-tools .tools-logo img {
+    width: 70px;
+  }
+
+  #sql-logo {
+    width: 10%;
+  }
+
+  #tensorflow-logo {
+    width: 40px;
+  }
+
+  #colab-logo {
+    width: 70px;
+  }
+
+  #pytorch-logo {
+    width: 30px;
+  }
+
+  #mathplotlib-logo {
+    width: 80px;
+  }
+
+  #juypter-logo {
+    width: 50px;
+  }
+
+  #gcd-logo {
+    position: absolute;
+    top: -8px;
+  }
+}

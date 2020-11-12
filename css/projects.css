@@ -1,327 +1,318 @@
 .project-heading {
- position: absolute;
- left: 1%;
- top: 0%;
+  position: absolute;
+  left: 1%;
+  top: 0%;
 }
-.project-heading p{
- 
- font-weight: bolder;
- font-size: 4vw;
- text-align: left;
+
+.project-heading p {
+  font-weight: bolder;
+  font-size: 4vw;
+  text-align: left;
 }
-#proejcts-sec{
+
+#proejcts-sec {
   margin-top: 8rem;
   margin-bottom: 8rem;
 }
-.projects{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-content: space-between;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  #project-anim1{
-    z-index: 0;
-    width: 15%;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-  }
-  #project-anim2{
-    z-index: 0;
-    width: 15%;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
-  
-  .card-title{
-    z-index: 100;
-  
-    position: absolute;
-    bottom: 5%;
-    text-align: center;
-    margin: 0.5rem;
-    font-size: medium;
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: space-between;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#project-anim1 {
+  z-index: 0;
+  width: 15%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+#project-anim2 {
+  z-index: 0;
+  width: 15%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.card-title {
+  z-index: 100;
+  position: absolute;
+  bottom: 5%;
+  text-align: center;
+  margin: 0.5rem;
+  font-size: medium;
+  font-weight: bolder;
+}
+
+.card-container {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 12px;
+  perspective: 900px;
+  text-align: center;
+}
+
+.projects .card {
+  z-index: 1;
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 250px;
+  height: 310px;
+  margin: 1rem;
+  border-radius: 15px;
+  border-color: transparent;
+  transition: all 1.2s ease;
+  transform-style: preserve-3d;
+}
+
+.front, .back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
+  backface-visibility: hidden;
+}
+
+.front {
+  background: white;
+  font-size: 12px;
+}
+
+.front img {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+}
+
+.projects .front .tech-stack {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+
+#pr-img-3 {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: 70%;
+}
+
+#pr-img-4 {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  width: 70%;
+}
+
+#pr-img-6 {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 70%;
+}
+
+#pr-img-3 {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: 70%;
+}
+
+.projects .front .btn {
+  z-index: 100;
+  border: 1.5px solid black;
+  margin: 0.5rem 0.2rem;
+  border-radius: 100px;
+  background-color: transparent;
+  color: black;
+  padding: 6px 10px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.back {
+  background: white;
+  border-color: transparent;
+  font-size: 14px;
+}
+
+.card-back-text {
+  padding: 2rem;
+  font-size: medium;
+}
+
+.card-back-buttons {
+  position: absolute;
+  left: 25%;
+  bottom: 5%;
+}
+
+.card-back-buttons i {
+  margin: 0.8rem;
+  transition: transform .3s;
+ /* Animation */;
+}
+
+.card-back-buttons i:hover {
+  transform: scale(1.4);
+}
+
+.card-back-buttons {
+  transition: all 1.2s ease;
+}
+
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 600px) {
+    
+  .project-heading {
+    font-size: 40px;
+    position: abolute;
+    left: 3%;
+    top: 0%;
     font-weight: bolder;
-  }
-  
-  
-  .card-container {
-     display: inline-block;
-     margin: 0 auto;
-     padding: 0 12px;
-     perspective: 900px;
-     text-align: center;
-   }
-   
-   .projects .card {
-     z-index: 1;
-     display: block;
-     margin: auto;
-     position: relative;
-     width: 250px;
-     height: 310px;
-     margin: 1rem;
-     border-radius: 15px;
-     border-color: transparent;
-     transition: all 1.2s ease;
-     transform-style: preserve-3d;
-   }
-   .front, .back {
-     position: absolute;
-     display: flex;
-     flex-direction: column;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     border-radius: 15px;
-     box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
-        backface-visibility: hidden;
-   }
-  
-   .front {
-     background: white;
-     font-size: 12px;
-   }
-   .front img{
-     position: absolute;
-     top:15%;
-     left:15%;
-     width:70%;
-   }
-   .projects .front .tech-stack {
     position: absolute;
-    top: 5%;
-    right:10%
   }
-  
-  #pr-img-3{
+
+  .project-heading p {
+    font-size: 40px;
+    position: abolute;
+    left: 3%;
+    top: 10px;
+    font-weight: bolder;
     position: absolute;
-     top:25%;
-     left:15%;
-     width:70%;
   }
-  #pr-img-4{
-    position: absolute;
-     top:30%;
-     left:15%;
-     width:70%;
+
+  #proejcts-sec {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
-  #pr-img-6{
-    position: absolute;
-     top:20%;
-     left:15%;
-     width:70%;
+
+  .projects {
+    margin-top: 10rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    padding: 0 0;
   }
-  #pr-img-3{
-    position: absolute;
-     top:25%;
-     left:15%;
-     width:70%;
-  }
-  
-   .projects .front .btn {
-     z-index: 100;
-    border: 1.5px solid black;
-    margin: 0.5rem 0.2rem;
-    border-radius: 100px;
-    background-color: transparent;
-    color: black;
-    padding: 6px 10px;
-    font-size: 10px;
-    cursor: pointer;
-  }
-  
-  
-   .back {
-     background: white;
-     border-color: transparent;
-     font-size: 14px;
-   }
-  
-   .card-back-text{
-     padding: 2rem;
-     font-size: medium;
-   }
-   .card-back-buttons{
-      
-      position: absolute;
-      left:25%;
-      bottom: 5%;
-   }
-   .card-back-buttons i{
-      margin: 0.8rem;
-      transition: transform .3s; /* Animation */
-  
-   }
-   .card-back-buttons i:hover{
-    transform: scale(1.4);
-  
-   }
-  
-   .card-back-buttons {
-  
+
+  .projects .card {
+    z-index: 1;
+    width: 160px;
+    height: 250px;
+    margin: 0.3rem 0;
+    border-color: transparent;
     transition: all 1.2s ease;
+    transform-style: preserve-3d;
   }
-   
-   .card-container:hover .card {
-     transform: rotateY(180deg);
-   }
-   .back {
-     transform: rotateY(180deg);
-   }
-   
-  
-  
-  
-   @media screen and (max-width: 600px) {
-    
-      .project-heading {
-       font-size:40px ;
-       position: abolute;
-        left: 3%;
-        top:0%;
-       font-weight: bolder;
-       position: absolute;
-      }
-      .project-heading p{
-       font-size:40px ;
-       position: abolute;
-        left: 3%;
-        top:10px;
-       font-weight: bolder;
-       position: absolute;
-      }
-    
-      #proejcts-sec{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-      }
-    .projects{
-      margin-top: 10rem;
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      justify-content: space-between;
-      padding: 0 0;
 
-    }
+  #project-anim1 {
+    visibility: hidden;
+  }
 
-    .projects .card {
-      z-index: 1;
-      width: 160px;
-      height: 250px;
-      margin: 0.3rem 0;
-      border-color: transparent;
-      transition: all 1.2s ease;
-      transform-style: preserve-3d;
-    }
+  #project-anim2 {
+    visibility: hidden;
+  }
 
-
-    #project-anim1{
-      visibility: hidden;
-    }
-    #project-anim2{
-      visibility: hidden;
-    }
-    
-
-
-
-
-
-
-    
-  .card-title{
-    
+  .card-title {
     font-size: smaller;
   }
-  
-  
-  .card-container {
-     margin: 0 auto;
-     padding: 0 12px;
-     perspective: 900px;
-     text-align: center;
-   }
-   
 
- 
+  .card-container {
+    margin: 0 auto;
+    padding: 0 12px;
+    perspective: 900px;
+    text-align: center;
+  }
+
   .front {
     background: white;
     font-size: 12px;
   }
-  .front img{
-    top:25%;
-    left:15%;
-    width:70%;
+
+  .front img {
+    top: 25%;
+    left: 15%;
+    width: 70%;
   }
-  
- 
- #pr-img-4{
-    top:40%;
-    left:15%;
- }
- #pr-img-6{
-    top:20%;
-    left:15%;
- }
- #pr-img-3{
-    top:40%;
-    left:15%;
- }
- 
- 
+
+  #pr-img-4 {
+    top: 40%;
+    left: 15%;
+  }
+
+  #pr-img-6 {
+    top: 20%;
+    left: 15%;
+  }
+
+  #pr-img-3 {
+    top: 40%;
+    left: 15%;
+  }
+
   .projects .front .btn {
-   margin: 0.5rem 0.3rem;
-   font-size: 8px;
- }
- 
- 
- 
-  .card-back-text{
+    margin: 0.5rem 0.3rem;
+    font-size: 8px;
+  }
+
+  .card-back-text {
     padding: 1.5rem 0.5rem 0rem 0.5rem;
     font-size: smaller;
-    
   }
-  .card-back-buttons{
-     
-     position: absolute;
-     left:25%;
-     bottom: 5%;
+
+  .card-back-buttons {
+    position: absolute;
+    left: 25%;
+    bottom: 5%;
   }
-  .card-back-buttons i{
-     margin: 0.1rem 1rem 0.1rem 0rem;
-     transition: transform .3s; /* Animation */
- 
+
+  .card-back-buttons i {
+    margin: 0.1rem 1rem 0.1rem 0rem;
+    transition: transform .3s;
+ /* Animation */;
   }
-  .card-back-buttons i:hover{
-   transform: scale(1);
- 
+
+  .card-back-buttons i:hover {
+    transform: scale(1);
   }
- 
+
   .card-back-buttons {
     display: block;
     margin-left: auto;
     margin-right: auto;
-   transition: all 1.2s ease;
- }
-  
+    transition: all 1.2s ease;
+  }
+
   .card-container:hover .card {
     transform: rotateY(180deg);
   }
+
   .back {
     transform: rotateY(180deg);
   }
-  
- 
- 
-   
-  }
+}
