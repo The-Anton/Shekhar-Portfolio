@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script type="text/javascript" src="fullpage.js" async></script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shekhar</title>
 
 
+
 <script>
-  
+ 
+
   document.onreadystatechange = function() { 
     if (document.readyState !== "complete") { 
-        document.getElementById('intro-sec').style.visibility="none";
     } else { 
       document.getElementById('intro-sec').style.visibility="visible";
-
+      document.getElementById('timeline-sec').style.visibility="visible";
+      document.getElementById('skill-sec').style.visibility="visible";
+      document.getElementById('projects-sec').style.visibility="visible";
+      document.getElementById('achieve-sec').style.visibility="visible";
+      document.getElementById('experience-sec').style.visibility="visible";
+      document.getElementById('mooc-sec').style.visibility="visible";
+      document.getElementById('blog').style.visibility="visible";
+      document.getElementById('contact-sec').style.visibility="visible";
+     
         new TypeIt("#myElement", {
             speed: 50,
             waitUntilVisible: true
@@ -35,7 +46,6 @@
   </script>
 
 
-   <link rel="stylesheet" type="text/css" href="fullpage.css" />  
 
     <!----------------------------  CSS---------------------->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -52,7 +62,8 @@
     <link rel="stylesheet" href="css/articles.css">
     <link rel="stylesheet" href="css/contact.css">
 
-    
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />  
+
     <!---------------------------- Bootstrap -------------------->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
@@ -132,7 +143,7 @@
   
   
   
-    <div id="intro-sec" class="section fp-auto-height-responsive">
+    <div id="intro-sec" class="section fp-auto-height-responsive" style="visibility: hidden; height: 0%;">
       <div class="home row">
         <div class="col-md-6" id="intro-area">
             <p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; I'm Shekhar , a budding programmer from India. I'm currently pursuing B.E in Information Technology from  AIT Pune . I love solving tech problems and devote most of my time to code and develop projects so that I never get bored. Currently I'm floating in the domain of Machine Learning. <br> &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; Apart from this I love Robotics and binge-watching</p>
@@ -170,7 +181,7 @@
   
     <!---------------------------- Start timeline Section ------------------------------------------->
 
-    <div id="timeline-sec" class="section fp-auto-height-responsive">
+    <div id="timeline-sec" class="section fp-auto-height-responsive"  style="visibility: hidden; height: 0%;" >
       
       
       
@@ -214,7 +225,7 @@
 
     <!---------------------------- Start Skill Section------------------------------------------->
 
-    <div id="skill-sec" class="section fp-auto-height-responsive">
+    <div id="skill-sec" class="section fp-auto-height-responsive"  style="visibility: hidden;">
       <div class="skills-heading">
         <p id="skills-heading-text">Skills</p>
       </div>
@@ -229,7 +240,7 @@
                             <div id="circleBar">
                               <div class="round r-1" data-value="0.80" data-size="120" data-thickness="8">
                                 <strong>
-                                  <img src="https://img.icons8.com/color/60/000000/c-plus-plus-logo.png" alt="c++"/>     
+                                  <img src="https://img.icons8.com/color/60/000000/c-plus-plus-logo.png" alt="C++"/>     
                                 </strong>
                               
                                 <span>
@@ -240,7 +251,7 @@
 
                             <div id="circleBar">
                               <div class="round r-2" data-value="0.50" data-size="120" data-thickness="8">
-                                <strong> <img src="https://img.icons8.com/color/60/000000/java-coffee-cup-logo.png" alt="java"/>
+                                <strong> <img src="https://img.icons8.com/color/60/000000/java-coffee-cup-logo.png" alt="Java"/>
                       
                                 </strong>
                                 <span>
@@ -254,7 +265,7 @@
                             
                             <div id="circleBar">
                               <div class="round" data-value="0.60" data-size="120" data-thickness="8">
-                                <strong> <img src="https://img.icons8.com/color/60/000000/javascript.png" alt="javascript"/>
+                                <strong> <img src="https://img.icons8.com/color/60/000000/javascript.png" alt="JavaScript"/>
                       
                                 </strong>
                                 <span>
@@ -274,7 +285,7 @@
 
                               <div id="circleBar">
                                 <div class="round" data-size="120" data-value="0.50" data-thickness="8">
-                                  <strong> <img src="https://img.icons8.com/color/60/000000/kotlin.png" alt="kotlin"/>
+                                  <strong> <img src="https://img.icons8.com/color/60/000000/kotlin.png" alt="Kotlin"/>
                         
                                   </strong>
                                   <span>
@@ -284,7 +295,7 @@
                             
                               <div id="circleBar">
                                 <div class="round"  data-value="0.90" data-size="120" data-thickness="8">
-                                  <strong> <img src="https://img.icons8.com/color/60/000000/css3.png" alt="css3"/> 
+                                  <strong> <img src="https://img.icons8.com/color/60/000000/css3.png" alt="CSS3"/> 
                         
                                   </strong>
                                   <span>
@@ -311,11 +322,11 @@
                         </h4>
       
                         <div class="tools-logo">
-                          <img id="node-logo" src="https://img.icons8.com/color/60/000000/nodejs.png" alt="node.js"/>
-                          <img id="flask-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/60px-Flask_logo.svg.png" alt="flsk"/>
+                          <img id="node-logo" src="https://img.icons8.com/color/60/000000/nodejs.png" alt="Node.js"/>
+                          <img id="flask-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/60px-Flask_logo.svg.png" alt="Flask"/>
                           
                           <img id="postgress-logo"src="https://img.icons8.com/color/48/000000/postgreesql.png" alt="postgress"/>
-                          <img id="sql-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Database-mysql.svg/64px-Database-mysql.svg.png" alt="sql"/>
+                          <img id="sql-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Database-mysql.svg/64px-Database-mysql.svg.png" alt="Sql"/>
                           
                         </div>
                     </div>
@@ -331,9 +342,9 @@
                       </h4>
     
                       <div class="tools-logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Android_Studio_icon.svg/64px-Android_Studio_icon.svg.png" alt="android studio"/>
-                        <img src="https://img.icons8.com/color/48/000000/flutter.png" alt="flutter"/>
-                        <img src="https://img.icons8.com/fluent/60/000000/adobe-xd.png" alt="adbobe-xd"/>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Android_Studio_icon.svg/64px-Android_Studio_icon.svg.png" alt="Android Studio"/>
+                        <img src="https://img.icons8.com/color/48/000000/flutter.png" alt="Flutter"/>
+                        <img src="https://img.icons8.com/fluent/60/000000/adobe-xd.png" alt="Adbobe-xd"/>
     
                       </div>
                     </div>
@@ -350,11 +361,11 @@
                       </h4>
     
                       <div class="tools-logo">
-                        <img  id="tensorflow-logo"src="https://img.icons8.com/color/60/000000/tensorflow.png" alt="tensorflow"/>
-                        <img id="pytorch-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/64px-PyTorch_logo_icon.svg.png" alt="pytorch"/>
-                        <img id="juypter-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/44px-Jupyter_logo.svg.png" alt="juypter"/>
-                        <img id="mathplotlib-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/NumPy_logo.svg/128px-NumPy_logo.svg.png" alt="numpy"/>
-                        <img id="colab-logo" data-src="https://colab.research.google.com/img/colab_favicon_256px.png" alt="collab"/> 
+                        <img  id="tensorflow-logo"src="https://img.icons8.com/color/60/000000/tensorflow.png" alt="TensorFlow"/>
+                        <img id="pytorch-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/64px-PyTorch_logo_icon.svg.png" alt="PyTorch"/>
+                        <img id="juypter-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/44px-Jupyter_logo.svg.png" alt="Juypter"/>
+                        <img id="mathplotlib-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/NumPy_logo.svg/128px-NumPy_logo.svg.png" alt="Numpy"/>
+                        <img id="colab-logo" data-src="https://colab.research.google.com/img/colab_favicon_256px.png" alt="Colab"/> 
                         
                       </div>
                       </div>
@@ -374,7 +385,7 @@
                       <div class="tools-logo">
                         <i class="fab fa-android fa-3x" style="color: greenyellow;"></i>
                         <i class="fab fa-github fa-3x" ></i>
-                        <img id="gcd-logo" data-src="https://img.icons8.com/color/60/000000/google-cloud-platform.png" alt="gcd"/>
+                        <img id="gcd-logo" data-src="https://img.icons8.com/color/60/000000/google-cloud-platform.png" alt="GCD"/>
     
                       </div>
                       </div>
@@ -403,7 +414,7 @@
     <!---------------------------- Start Project Section------------------------------------------->
 
 
-    <div id="projects-sec" class="section fp-auto-height-responsive">
+    <div id="projects-sec" class="section fp-auto-height-responsive"  style="visibility: hidden; height: 0%;">
       <img  id="project-anim1" src="./Selected/character 18.svg" alt="svg">
       <div class="project-heading">
         <p id="project-heading-text">Projects</p>
@@ -585,7 +596,7 @@
 
     <!---------------------------- Start CP Section------------------------------------------->
   
-    <div id="achieve-sec" class="section fp-auto-height-responsive">
+    <div id="achieve-sec" class="section fp-auto-height-responsive"  style="visibility: hidden; height: 0%;">
       <div class="achieve-heading">
         <p id="achieve-heading-text">Milestones</p>
       </div>
@@ -608,7 +619,7 @@
     <!---------------------------- Start Experience Section------------------------------------------->
 
 
-    <section id="experience-sec" class="section fp-auto-height-responsive">
+    <section id="experience-sec" class="section fp-auto-height-responsive"  style="visibility: hidden; height: 0%;">
 
        <!--   DigitalPersistent -->
         <div class="slide slide1">
@@ -901,7 +912,7 @@
 
     <!---------------------------- Start MOOC Section------------------------------------------->
 
-    <section id="mooc-sec" class="section fp-auto-height-responsive">
+    <section id="mooc-sec" class="section fp-auto-height-responsive"  style="visibility: hidden; height: 0%;">
 
       
       <div class="slide">
@@ -1016,7 +1027,7 @@
 
       <!---------------------------- Start Articles Section------------------------------------------->
 
-      <section id="blog" class="blog section fp-auto-height-responsive">
+      <section id="blog" class="blog section fp-auto-height-responsive"  style="visibility: hidden; height: 0%;">
         <div class="article-heading">
           <p id="article-heading-text">Blogs</p>
         </div>
@@ -1042,7 +1053,7 @@
       <!---------------------------- Start Badges Section------------------------------------------->
 
 
-      <section id="contact-sec" class="section fp-auto-height-responsive">
+      <section id="contact-sec" class="section fp-auto-height-responsive"  style="visibility: hidden; height: 0%;">
           <div class="contact-heading">
             <p id="contact-heading-text">Contact</p>
           </div>
@@ -1119,13 +1130,11 @@
 <!---------------------------- Start Bootstrap scripts------------------------------------------->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" ></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" ></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" ></script>
 <!---------------------------- End Bootstrap scripts------------------------------------------->
 <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js" ></script>
-<script type="text/javascript" src="fullpage.js" ></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js" ></script>
 
 <script src="https://smtpjs.com/v3/smtp.js"></script>
