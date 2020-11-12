@@ -5,7 +5,11 @@
 
 &nbsp;
 
-##### 🤖  &emsp;   You can use the AI chatbot "ShekharBot" on the home page for have some fun. It's made on Azure using Dialogflow.
+##### 🤖  &emsp;   You can use the AI chatbot "ShekharBot" on the home page for have some fun. It's made on Azure using Dialogflow. 
+Some example questions that you can ask from the bot - 
+* Who are you ?
+* Who is your master?
+
 &nbsp;
 ##### ✏️   &emsp; This website is purely build from scratch using HTML , CSS and JavaScript  .
 &nbsp;
