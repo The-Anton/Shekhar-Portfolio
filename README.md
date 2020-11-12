@@ -3,16 +3,15 @@
   🔗 https://shekhar-resume.web.app
 &nbsp;
 
+&nbsp;
 
 ##### 🤖  &emsp;   You can use the AI chatbot "ShekharBot" on the home page for have some fun. It's made on Azure using Dialogflow.
 &nbsp;
 ##### ✏️   &emsp; This website is purely build from scratch using HTML , CSS and JavaScript  .
-
-
 &nbsp;
 ##### ⚡  &emsp;   Website is coded keeping in mind the rule of ShowCase 2020
-
 &nbsp;
+
 
 ### Libraries
 
