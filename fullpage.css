@@ -77,6 +77,8 @@ html.fp-enabled,
     height: 150px;
     background: url("./media/left-arrow.svg") no-repeat;
     cursor: pointer;
+    transition: transform .3s;
+
 }
 .fp-controlArrow.fp-next {
     right: 20px;
@@ -85,6 +87,15 @@ html.fp-enabled,
     height: 150px;
     background: url("./media/right-arrow.svg") no-repeat;
     cursor: pointer;
+    transition: transform .3s;
+
+}
+.fp-controlArrow.fp-prev:hover{
+    transform: scale(1.1);
+
+}
+.fp-controlArrow.fp-next:hover {
+    transform: scale(1.1);
 }
 .fp-scrollable {
     overflow: hidden;
