@@ -141,3 +141,13 @@
     box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.1);
   }
 }
+
+
+
+@media (min-width: 601px) and (max-width: 850px) { 
+  .intro-area {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    padding-left: 5rem;
+  }
+} 

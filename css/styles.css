@@ -6,37 +6,35 @@
   --gradient-3: linear-gradient(210deg, #74EBD5 0%, #f7e8ad 100%);
 }
 
+
+
 body {
   font-family: Raleway,Poppins;
+  
 }
 
 #home-sec {
   z-index: 0;
-  background-color: white;
   font-family: Raleway,Poppins;
   overflow: hidden;
 }
 
 #intro-sec {
-  background-color: white;
   font-family: Raleway,Poppins;
   overflow: hidden;
 }
 
 #timeline-sec {
-  background-color: white;
   font-family: Raleway,Poppins;
   overflow: hidden;
 }
 
 #skill-sec {
-  background-color: white;
   font-family: Raleway,Poppins;
   overflow: hidden;
 }
 
 #projects-sec {
-  background-color: white;
   font-family: Raleway,Poppins;
   overflow: hidden;
 }
@@ -48,25 +46,21 @@ body {
 }
 
 #experience-sec {
-  background-color: white;
   font-family: Raleway,Poppins;
   overflow: hidden;
 }
 
 #blog {
-  background-color: white;
   font-family: Raleway,Poppins;
   overflow: hidden;
 }
 
 #mooc-sec {
-  background-color: white;
   font-family: Raleway,Poppins;
   overflow: hidden;
 }
 
 #contact-sec {
-  background-color: white;
   font-family: Raleway,Poppins;
   overflow: hidden;
 }
@@ -74,3 +68,4 @@ body {
 .card {
   border: 0;
 }
+

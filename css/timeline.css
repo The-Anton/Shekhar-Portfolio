@@ -464,4 +464,16 @@
 
 
 
-
+  
+@media (min-width: 601px) and (max-width: 850px) { 
+  #container #end {
+    top: 96.7%;
+    height: 200px;
+    width: 200px;
+  }
+  #container #circle3 #circle3content {
+    
+    width: 250px;
+   
+  }
+} 

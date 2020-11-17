@@ -105,3 +105,12 @@
       font-size: 18px;
     }
   }
+
+  
+@media (min-width: 601px) and (max-width: 850px) { 
+  #intro-area {
+    font-size: 22px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+} 
