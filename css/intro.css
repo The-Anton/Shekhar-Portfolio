@@ -86,6 +86,11 @@
     #interest-area {
       padding-left: 2rem;
     }
+    #interest-area {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      text-align: center;
+    }
   
     .cp-skills {
       margin-top: 4rem;
@@ -106,8 +111,24 @@
     }
   }
 
+
+
+  @media (min-width: 601px) and (max-width: 750px) {
+    #topic-1 {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    #interest-area {
+      padding-left: 0rem;
+      text-align: center;
+    }
+    .multipleStrings {
+      text-align: center;
+    
+    }
+  } 
   
-@media (min-width: 601px) and (max-width: 850px) { 
+@media (min-width: 751px) and (max-width: 850px) { 
   #intro-area {
     font-size: 22px;
     padding-left: 1rem;

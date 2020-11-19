@@ -112,7 +112,7 @@
   font-size: medium;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 780px) {
 
 
   #experience-sec {
@@ -196,3 +196,27 @@
   }
 }
   
+
+
+
+@media (min-width: 781px) and (max-width: 1200px) {
+  
+  #experience-sec .slide .job-text {
+    font-size: small;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+  #experience-sec .company-logo img {
+    z-index: 1;
+    margin: 2rem 0rem 2rem 2rem;
+    width: 70%;
+    filter: drop-shadow( 0 14px 26px rgba(0, 0, 0, 0.04));
+  }
+
+  #experience-sec .examcenter-logo {
+    margin: 1rem;
+  }
+  
+  #experience-sec .igpixel-logo {
+    margin: 1rem;
+  }
+} 

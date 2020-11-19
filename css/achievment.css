@@ -52,3 +52,17 @@
 		margin-bottom: 0rem;
 	}
 }
+
+
+@media (min-width: 601px) and (max-width: 1300px) {
+	#image-contain-lg img{
+		padding: 0;
+		width: 100%;
+		visibility: visible;
+	}
+	#image-contain-lg{
+		padding: 0;
+		width: 100%;
+		visibility: visible;
+	}
+} 

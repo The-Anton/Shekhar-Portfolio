@@ -254,9 +254,52 @@
 }
 
 
-@media (min-width: 601px) and (max-width: 850px) { 
+@media (min-width: 601px) and (max-width: 700px) {
+    
+  .secondary-skills  .tools .card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #prime-skill-card {
+    width: 90%;
+  }
+} 
+@media (min-width: 701px) and (max-width: 1200px) { 
   
   #prime-skill-card {
     width: 90%;
+  }
+
+  .ml-tools .tools-logo  img {
+    margin: 0.1rem 0.5rem;
+  }
+  #sql-logo {
+    width: 10%;
+  }
+
+  #tensorflow-logo {
+    width: 40px;
+  }
+
+  #colab-logo {
+    width: 40px;
+  }
+
+  #pytorch-logo {
+    width: 30px;
+  }
+
+  #mathplotlib-logo {
+    width: 80px;
+  }
+
+  #juypter-logo {
+    width: 30px;
+  }
+
+  #gcd-logo {
+    position: absolute;
+    top: -8px;
   }
 } 
