@@ -12,11 +12,10 @@ Some example questions that you can ask from the bot -
 
 ##### 📝  &emsp;   All the blogs/article are loaded using Medium API.
 
-&nbsp;
 ##### ✏️   &emsp; This website is purely build from scratch using HTML , CSS and JavaScript  .
-&nbsp;
+
 ##### ⚡  &emsp;   Website is coded keeping in mind the rule of ShowCase 2020
-&nbsp;
+
 
 
 ### Libraries
